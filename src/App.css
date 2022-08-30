@@ -11,6 +11,11 @@ body {
   padding: 63px 0;
 }
 
+
+#login-right {
+  padding: 0;
+}
+
 .carousel-item {
   height: 100%;
 }
@@ -21,10 +26,6 @@ body {
   font-weight: 700 !important;
   height: 100%;
   padding-top: 40px;
-}
-
-#login-right {
-  padding: 0;
 }
 
 #login-right p {
