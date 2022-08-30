@@ -170,7 +170,7 @@ body {
 }
 
 .otp:focus {
-  border: 3px solid #283891
+  /* border: 3px solid #283891 */
 }
 
 

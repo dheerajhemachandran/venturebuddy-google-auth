@@ -31,6 +31,7 @@ const OTP = ({ phoneOrEmail }) => {
   const handleDigitOne = (e) => {
     if (e !== null) {
       document.getElementById("digit1").style.border = "3px solid #283891";
+      document.getElementById("digit1").style.color = "#283891";
       document.getElementById("digit2").focus();
     } else {
       document.getElementById("digit1").style.border = "1px solid #d9d9d9";
@@ -39,6 +40,7 @@ const OTP = ({ phoneOrEmail }) => {
   const handleDigitTwo = (e) => {
     if (e !== null) {
       document.getElementById("digit2").style.border = "3px solid #283891";
+      document.getElementById("digit2").style.color = "#283891";
 
       document.getElementById("digit3").focus();
     } else {
@@ -49,6 +51,7 @@ const OTP = ({ phoneOrEmail }) => {
   const handleDigitThree = (e) => {
     if (e !== null) {
       document.getElementById("digit3").style.border = "3px solid #283891";
+      document.getElementById("digit3").style.color = "#283891";
 
       document.getElementById("digit4").focus();
     } else {
@@ -62,6 +65,7 @@ const OTP = ({ phoneOrEmail }) => {
       document.getElementById("digit4").style.border = "1px solid #d9d9d9";
     } else {
       document.getElementById("digit4").style.border = "3px solid #283891";
+      document.getElementById("digit4").style.color = "#283891";
     }
   };
 
