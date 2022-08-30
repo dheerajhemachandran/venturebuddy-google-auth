@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const OTP = ({ phoneOrEmail }) => {
   const [digitOne, setDigitOne] = useState("");
@@ -9,18 +9,24 @@ const OTP = ({ phoneOrEmail }) => {
 
   const checkOTP = () => {
     const result = digitOne + digitTwo + digitThree + digitFour;
-    result === "1234" ? setError(false) : setError(true);
 
-    for (const items of document.getElementsByClassName("otp")) {
-      if (error) {
-        items.style.border = "3px solid #FF2A2A";
+    // here dynamic value can be use for checking the otp
+    result === "1234" ? setError(false) : setError(true);
+  };
+
+  useEffect(() => {
+    if (error) {
+      for (const items of document.getElementsByClassName("otp")) {
         items.style.color = "#FF2A2A";
-      } else {
+        items.style.border = "3px solid #FF2A2A";
+      }
+    } else {
+      for (const items of document.getElementsByClassName("otp")) {
         items.style.border = "3px solid #283891";
         items.style.color = "#283891";
       }
     }
-  };
+  }, [error]);
 
   const handleDigitOne = (e) => {
     if (e !== null) {
