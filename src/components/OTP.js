@@ -22,8 +22,8 @@ const OTP = ({ phoneOrEmail }) => {
       }
     } else {
       for (const items of document.getElementsByClassName("otp")) {
-        items.style.border = "3px solid #283891";
-        items.style.color = "#283891";
+        items.style.border = "3px solid #d9d9d9";
+        items.style.color = "#d9d9d9";
       }
     }
   }, [error]);
