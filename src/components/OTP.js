@@ -9,8 +9,17 @@ const OTP = ({ phoneOrEmail }) => {
 
   const checkOTP = () => {
     const result = digitOne + digitTwo + digitThree + digitFour;
-    console.log(result);
     result === "1234" ? setError(false) : setError(true);
+
+    for (const items of document.getElementsByClassName("otp")) {
+      if (error) {
+        items.style.border = "3px solid #FF2A2A";
+        items.style.color = "#FF2A2A";
+      } else {
+        items.style.border = "3px solid #283891";
+        items.style.color = "#283891";
+      }
+    }
   };
 
   const handleDigitOne = (e) => {
@@ -44,8 +53,9 @@ const OTP = ({ phoneOrEmail }) => {
   const handleDigitFour = (e) => {
     if (e === null) {
       document.getElementById("digit3").focus();
+      document.getElementById("digit4").style.border = "1px solid #d9d9d9";
     } else {
-      document.getElementById("digit1").style.border = "3px solid #283891";
+      document.getElementById("digit4").style.border = "3px solid #283891";
     }
   };
 
