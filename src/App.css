@@ -1,0 +1,183 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#login-left {
+  background: #283891;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  border-radius: 12px 0 0 12px;
+  padding: 63px 0;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel {
+  background-color: #F8F9FA;
+  border-radius: 0 12px 12px 0;
+  font-weight: 700 !important;
+  height: 100%;
+  padding-top: 40px;
+}
+
+#login-right {
+  padding: 0;
+}
+
+#login-right p {
+  margin-top: 18px;
+  margin-bottom: 12px;
+}
+
+#emailOrPhone {
+  margin-bottom: 0;
+}
+
+#or {
+  margin: 12px 0 !important;
+}
+
+.login-form {
+  border-radius: 12px;
+  box-shadow: 0px 1px 6px rgba(134, 134, 134, 0.25);
+  width: 800px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.col-md-7 {
+  padding: 0;
+}
+
+.carousel h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.carousel p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 18px;
+  margin-bottom: 12px;
+}
+
+.carousel input[type="text"] {
+  border-radius: 8px;
+}
+
+.carousel input[type="text"]:focus {
+  outline: 1px solid #d9d9d9;
+}
+
+.btn-blue {
+  background-color: #283891;
+  padding: 16px 0;
+  color: white !important;
+  border: 0;
+  margin-top: 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 2px solid #283891;
+}
+
+.btn-blue:hover {
+  background-color: transparent;
+  color: #283891 !important;
+  border: 2px solid #283891;
+  transition: all 200ms;
+}
+
+.btn-outline-blue {
+  background-color: transparent;
+  border: 2px solid #283891;
+  color: #283891;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.btn-outline-blue:hover {
+  background-color: #283891;
+  color: white;
+  border: 2px solid #283891;
+  transition: all 200ms;
+}
+
+.text-blue {
+  color: #3D4B9B;
+}
+
+.text-blue:hover {
+  color: #3D4B9B;
+  text-decoration: none;
+}
+
+.signUpLink {
+  color: #3D4B9B;
+}
+
+.signUpLink:hover {
+  text-decoration: none;
+  color: #3D4B9B;
+}
+
+#loginImage {
+  margin-top: 64px;
+  height: 180px;
+  width: 100px;
+}
+
+.carousel-control-next {
+  position: relative !important;
+  width: 100%;
+  opacity: 1;
+}
+
+.carousel {
+  width: 100%;
+}
+
+#password {
+  position: relative;
+}
+
+#eye {
+  position: absolute;
+  top: 30%;
+  right: 4%;
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
+.otp {
+  width: 75px;
+  height: 54px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #d9d9d9;
+}
+
+.otp:focus {
+  border: 3px solid #283891
+}
+
+
+#change {
+  color: #283891;
+  font-weight: 700;
+}
+
+#error {
+  color: #EE5454;
+}
