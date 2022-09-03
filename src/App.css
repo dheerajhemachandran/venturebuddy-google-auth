@@ -11,6 +11,13 @@ body {
   padding: 63px 0;
 }
 
+.text-green {
+  color: #39B54A;
+}
+
+.btn-green {
+  background-color: #39B54A;
+}
 
 #login-right {
   padding: 0;
