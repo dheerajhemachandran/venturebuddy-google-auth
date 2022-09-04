@@ -131,7 +131,7 @@ const OTP = ({ phoneOrEmail }) => {
 
           <input
             type="submit"
-            className={`btn-blue w-100 ${error ? "mt-0" : ""} border-0`}
+            className={`btn-blue w-100 ${error ? "mt-0" : ""}`}
             onClick={checkOTP}
             value="VERIFY"
           />
