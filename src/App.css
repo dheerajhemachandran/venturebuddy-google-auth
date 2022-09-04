@@ -19,6 +19,7 @@
 .text-green {
   color: #18a62b;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .text-green:hover {
@@ -27,6 +28,12 @@
 
 .btn-green {
   background-color: #39B54A;
+  border: 2px solid #39B54A;
+}
+
+.btn-green:hover {
+  border: 2px solid #39B54A;
+  color: #39B54A !important;
 }
 
 #login-right {
@@ -152,6 +159,7 @@
 
 .text-blue {
   color: #3D4B9B;
+  cursor: pointer;
 }
 
 .text-blue:hover {

@@ -7,7 +7,8 @@ const OTP = ({ phoneOrEmail }) => {
   const [digitFour, setDigitFour] = useState("");
   const [error, setError] = useState(false);
 
-  const checkOTP = () => {
+  const checkOTP = (e) => {
+    e.preventDefault();
     const result = digitOne + digitTwo + digitThree + digitFour;
 
     // here dynamic value can be use for checking the otp
@@ -82,60 +83,59 @@ const OTP = ({ phoneOrEmail }) => {
         <h6 className="mt-4 fw-bolder ps-1" style={{ marginTop: "32px" }}>
           Enter OTP
         </h6>
-        <div
-          className="row row-cols-4 justify-content-between px-3"
-          style={{ marginTop: 10 }}
-        >
-          <input
-            type="text"
-            maxLength={1}
-            onChange={(e) => {
-              setDigitOne(e.target.value);
-              handleDigitOne(e.nativeEvent.data);
-            }}
-            id="digit1"
-            className="otp"
-          />
-          <input
-            type="text"
-            maxLength={1}
-            onChange={(e) => {
-              setDigitTwo(e.target.value);
-              handleDigitTwo(e.nativeEvent.data);
-            }}
-            id="digit2"
-            className="otp"
-          />
-          <input
-            type="text"
-            maxLength={1}
-            onChange={(e) => {
-              setDigitThree(e.target.value);
-              handleDigitThree(e.nativeEvent.data);
-            }}
-            id="digit3"
-            className="otp"
-          />
-          <input
-            type="text"
-            maxLength={1}
-            onChange={(e) => {
-              setDigitFour(e.target.value);
-              handleDigitFour(e.nativeEvent.data);
-            }}
-            id="digit4"
-            className="otp"
-          />
-        </div>
+        <form className="" style={{ marginTop: 10 }} onSubmit={checkOTP}>
+          <div className="row row-cols-4 justify-content-between px-3">
+            <input
+              type="text"
+              maxLength={1}
+              onChange={(e) => {
+                setDigitOne(e.target.value);
+                handleDigitOne(e.nativeEvent.data);
+              }}
+              id="digit1"
+              className="otp"
+            />
+            <input
+              type="text"
+              maxLength={1}
+              onChange={(e) => {
+                setDigitTwo(e.target.value);
+                handleDigitTwo(e.nativeEvent.data);
+              }}
+              id="digit2"
+              className="otp"
+            />
+            <input
+              type="text"
+              maxLength={1}
+              onChange={(e) => {
+                setDigitThree(e.target.value);
+                handleDigitThree(e.nativeEvent.data);
+              }}
+              id="digit3"
+              className="otp"
+            />
+            <input
+              type="text"
+              maxLength={1}
+              onChange={(e) => {
+                setDigitFour(e.target.value);
+                handleDigitFour(e.nativeEvent.data);
+              }}
+              id="digit4"
+              className="otp"
+            />
+          </div>
 
-        {error ? <p id="error">Please enter a valid PIN</p> : ""}
+          {error ? <p id="error">Please enter a valid PIN</p> : ""}
 
-        <button
-          className={`btn-blue w-100 ${error ? "mt-0" : ""}`}
-          onClick={checkOTP}
-        >
-          VERIFY
-        </button>
+          <input
+            type="submit"
+            className={`btn-blue w-100 ${error ? "mt-0" : ""} border-0`}
+            onClick={checkOTP}
+            value="VERIFY"
+          />
+        </form>
         <p
           className="text-center w-100 ms-1"
           style={{ fontSize: "15px", fontWeight: 600, marginTop: 24 }}
