@@ -3,9 +3,9 @@ import logo from "./../images/logo.png";
 
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-lg bg-white px-0 px-lg-5 py-4 fixed-top fw-bold">
-      <div class="container-fluid mx-0 mx-lg-5">
-        <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg bg-white py-4 fixed-top fw-bold">
+      <div class="container-fluid mx-0 mx-xl-5">
+        <a href="#">
           <img src={logo} className="col-5" alt="" />
         </a>
         <button

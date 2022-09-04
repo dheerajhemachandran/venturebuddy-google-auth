@@ -27,10 +27,12 @@ const LoginEmail = ({ setPhoneOrEmail }) => {
 
   return (
     <div>
-      <div id="login-right" className="col-10">
+      <div id="login-right">
         <form className="my-auto d-flex flex-column justify-content-between">
-          <h1>Login</h1>
-          <h6>Email ID or Mobile number</h6>
+          <h1 className="my-0">Login</h1>
+          <h6 style={{ fontWeight: 500, marginTop: 18, marginBottom: 12 }}>
+            Email ID/Mobile number
+          </h6>
           <input
             type="text"
             className="form-control p-3"
@@ -39,7 +41,7 @@ const LoginEmail = ({ setPhoneOrEmail }) => {
               setEmailOrPhone(e.target.value);
               setPhoneOrEmail(e.target.value);
             }}
-            placeholder="Email ID or Mobile number"
+            placeholder="Email ID or mobile number."
             required
           />
           <button
@@ -66,7 +68,7 @@ const LoginEmail = ({ setPhoneOrEmail }) => {
           </button>
 
           <p className="text-center" id="signUp">
-            Don't Have an Account?{" "}
+            Don’t have an account?{" "}
             <a href="##" className="text-green">
               Sign Up
             </a>

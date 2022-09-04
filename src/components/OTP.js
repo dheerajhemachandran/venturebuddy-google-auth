@@ -71,19 +71,16 @@ const OTP = ({ phoneOrEmail }) => {
   };
 
   return (
-    <div
-      id="login-right"
-      className="rounded-4 rounded-md-0 col-md-10 d-flex align-items-center justify-content-center"
-    >
-      <div>
+    <div id="login-right" className="rounded-4 rounded-md-0">
+      <div className="mx-0 px-0">
         <p className="text-center fw-bold mt-5 pt-3">
-          Please enter the OTP sent to {phoneOrEmail}.{" "}
-          <span className="text-blue py-1 px-1 mt-0">Change</span>
+          Please enter the OTP sent to <br /> {phoneOrEmail}.
+          <span className="text-blue py-1 px-1">Change</span>
         </p>
         <h6 className="mt-4 fw-bolder ps-1" style={{ marginTop: "32px" }}>
           Enter OTP
         </h6>
-        <form className="" style={{ marginTop: 10 }} onSubmit={checkOTP}>
+        <form style={{ marginTop: 10 }} onSubmit={checkOTP}>
           <div className="row row-cols-4 justify-content-between px-3">
             <input
               type="text"
@@ -140,7 +137,7 @@ const OTP = ({ phoneOrEmail }) => {
           className="text-center w-100 ms-1"
           style={{ fontSize: "15px", fontWeight: 600, marginTop: 24 }}
         >
-          Not Received Your Code?
+          Not received your code?
           <span className="text-green py-1 px-2 mt-0 cursor-pointer">
             Resend Code
           </span>

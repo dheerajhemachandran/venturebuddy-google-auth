@@ -4,6 +4,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.nav-link {
+  font-size: 16px !important;
+}
+
 #login-left {
   background: #283891;
   border-radius: 12px 0 0 12px;
@@ -38,6 +42,7 @@
 
 #login-right {
   padding: 0;
+  background-color: #F8F9FA;
 }
 
 .carousel-item {
@@ -45,7 +50,6 @@
 }
 
 .carousel {
-  background-color: #F8F9FA;
   border-radius: 0 12px 12px 0;
   height: 100%;
 }
@@ -95,15 +99,17 @@
 }
 
 .carousel h1 {
-  font-weight: 700 !important;
+  font-style: normal;
+  font-weight: 900 !important;
   font-size: 24px;
   line-height: 32px;
 }
 
 .carousel h6 {
+  font-style: normal;
   font-weight: 500;
-  margin-top: 18px;
   font-size: 16px;
+  line-height: 24px;
 }
 
 .carousel p {
@@ -193,8 +199,7 @@
 }
 
 .carousel-item {
-  padding-top: 40px;
-  padding-left: 56px;
+  padding: 40px 56px;
 }
 
 #password {

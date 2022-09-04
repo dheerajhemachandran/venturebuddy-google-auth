@@ -26,16 +26,18 @@ const LoginPass = ({ setPassword }) => {
 
   return (
     <div>
-      <div id="login-right" className="col-10">
+      <div id="login-right">
         <div>
           <h1>Login</h1>
-          <h6>Your Password</h6>
+          <h6 style={{ fontWeight: 500, marginTop: 18, marginBottom: 12 }}>
+            Password
+          </h6>
           <div id="password">
             <input
               type="password"
               className="form-control p-3"
               id="passwordField"
-              placeholder="Your Password"
+              placeholder="your password"
               onBlur={(e) => setPassword(e.target.value)}
               required
             />
@@ -68,7 +70,7 @@ const LoginPass = ({ setPassword }) => {
           </button>
 
           <p className="text-center fw-bold">
-            Don't Have an Account?{" "}
+            Don’t have an account?{" "}
             <a href="#" className="text-green">
               Sign Up
             </a>
