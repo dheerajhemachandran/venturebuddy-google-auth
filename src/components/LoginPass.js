@@ -11,7 +11,7 @@ const LoginPass = ({ setPassword }) => {
       document.getElementById("passwordField").type = "text";
 
       img.src = eyeImage;
-      img.width = 20;
+      img.width = 18;
       document.getElementById("eye").innerHTML = "";
       document.getElementById("eye").appendChild(img);
       document.getElementById("eye").style.paddingRight = "2px";
