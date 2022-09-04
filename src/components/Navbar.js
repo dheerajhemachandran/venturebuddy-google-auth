@@ -4,7 +4,7 @@ import logo from "./../images/logo.png";
 const Navbar = () => {
   return (
     <nav class="navbar navbar-expand-lg bg-white py-4 fixed-top fw-bold">
-      <div class="container-fluid mx-0 mx-lg-5">
+      <div class="container-fluid px-lg-5 mx-lg-3 px-4">
         <div className="col-4 col-lg-1">
           <img src={logo} className="img-fluid col-12" alt="" />
         </div>
@@ -51,12 +51,12 @@ const Navbar = () => {
                 Contact Us
               </a>
             </li>
-            <li class="nav-item text-light px-4 py-0 my-auto">
+            <li class="nav-item text-light ps-4 pe-2 py-0 my-auto">
               <a class="text-green" href="#">
                 Login & SignUp
               </a>
             </li>
-            <li class="nav-item text-light px-4 py-0">
+            <li class="nav-item text-light ps-4 py-0">
               <a class="nav-link btn btn-green px-4 py-2 text-light" href="#">
                 Live Deals
               </a>
