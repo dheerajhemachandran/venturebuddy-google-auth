@@ -14,13 +14,11 @@ const LoginPass = ({ setPassword }) => {
       img.width = 18;
       document.getElementById("eye").innerHTML = "";
       document.getElementById("eye").appendChild(img);
-      document.getElementById("eye").style.paddingRight = "2px";
     } else {
       document.getElementById("eye").innerHTML = "";
       const i = document.createElement("i");
       i.classList.add("fas");
       i.classList.add("fa-eye-slash");
-      i.style.marginTop = "6px";
       document.getElementById("eye").appendChild(i);
       document.getElementById("passwordField").type = "password";
     }

@@ -3,7 +3,7 @@ import logo from "./../images/logo.png";
 
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-lg bg-light px-0 px-lg-5 fixed-top">
+    <nav class="navbar navbar-expand-lg px-0 px-lg-5 fixed-top">
       <div class="container-fluid mx-5">
         <a class="navbar-brand" href="#">
           <img src={logo} className="col-5" alt="" />
@@ -52,7 +52,7 @@ const Navbar = () => {
               </a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link btn btn-green px-4 text-white" href="#">
+              <a class="nav-link btn btn-green px-4 py-2 text-white" href="#">
                 Live Demo
               </a>
             </li>
