@@ -26,13 +26,14 @@ const LoginEmail = ({ setPhoneOrEmail }) => {
   };
 
   return (
-    <div className="d-flex justify-content-center">
+    <div>
       <div id="login-right" className="col-10">
         <form className="my-auto d-flex flex-column justify-content-between">
-          <h3 className="my-0">Login</h3>
+          <h1>Login</h1>
+          <h6>Email ID or Mobile number</h6>
           <input
             type="text"
-            className="form-control p-3 mt-3"
+            className="form-control p-3"
             id="emailOrPhone"
             onChange={(e) => {
               setEmailOrPhone(e.target.value);
@@ -53,21 +54,20 @@ const LoginEmail = ({ setPhoneOrEmail }) => {
             type="submit"
             value="CONTINUE"
             onClick={emailValidate}
-            className="w-100 btn-blue"
+            className="w-100 btn-blue fw-bolder"
+            id="continue"
           />
 
-          <p id="or" className="text-center">
-            OR
-          </p>
+          <p className="text-center or">OR</p>
 
-          <button className="btn-outline-blue w-100 py-3">
+          <button className="btn-outline-blue w-100">
             <img src={gIcon} className="img-fluid me-3" width={20} alt="" />
-            Continue with Google
+            Login with Google
           </button>
 
-          <p className="text-center fw-bold">
+          <p className="text-center" id="signUp">
             Don't Have an Account?{" "}
-            <a href="##" className="signUpLink">
+            <a href="##" className="text-green">
               Sign Up
             </a>
           </p>

@@ -1,17 +1,27 @@
-body {
-  font-family: "Poppins", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
 #login-left {
   background: #283891;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 28px;
   border-radius: 12px 0 0 12px;
   padding: 63px 0;
 }
 
+#login-left p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+
 .text-green {
+  color: #18a62b;
+  text-decoration: none;
+}
+
+.text-green:hover {
   color: #39B54A;
 }
 
@@ -30,22 +40,35 @@ body {
 .carousel {
   background-color: #F8F9FA;
   border-radius: 0 12px 12px 0;
-  font-weight: 700 !important;
   height: 100%;
-  padding-top: 40px;
 }
 
 #login-right p {
   margin-top: 18px;
   margin-bottom: 12px;
+  font-weight: 600;
+  color: #000;
 }
 
 #emailOrPhone {
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 
-#or {
-  margin: 12px 0 !important;
+.or {
+  margin: 16px 0 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+#continue {
+  margin: 0 !important;
+}
+
+
+#signUp {
+  font-weight: 600 !important;
+  font-size: 15px;
+  margin-top: 16px !important;
 }
 
 .login-form {
@@ -64,10 +87,16 @@ body {
   padding: 0;
 }
 
-.carousel h3 {
+.carousel h1 {
+  font-weight: 700 !important;
   font-size: 24px;
-  font-weight: 700;
   line-height: 32px;
+}
+
+.carousel h6 {
+  font-weight: 500;
+  margin-top: 18px;
+  font-size: 16px;
 }
 
 .carousel p {
@@ -95,6 +124,7 @@ body {
   font-size: 14px;
   border-radius: 8px;
   border: 2px solid #283891;
+  letter-spacing: 1px;
 }
 
 .btn-blue:hover {
@@ -110,6 +140,7 @@ body {
   color: #283891;
   border-radius: 8px;
   font-weight: 800;
+  padding: 16px 0 !important;
 }
 
 .btn-outline-blue:hover {
@@ -138,9 +169,9 @@ body {
 }
 
 #loginImage {
-  margin-top: 64px;
-  height: 180px;
-  width: 100px;
+  margin-top: 60.5px;
+  height: 250px;
+  width: 250px;
 }
 
 .carousel-control-next {
@@ -151,6 +182,11 @@ body {
 
 .carousel {
   width: 100%;
+}
+
+.carousel-item {
+  padding-top: 40px;
+  padding-left: 56px;
 }
 
 #password {
