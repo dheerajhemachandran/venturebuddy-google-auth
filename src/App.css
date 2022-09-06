@@ -4,6 +4,37 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.bg-blue {
+  background-color: #283891;
+}
+
+section {
+  margin: 100px 0;
+}
+
+.btn-secondary-blue {
+  background-color: #E9EBF4;
+  border: 2px solid #E9EBF4;
+  border-radius: 8px;
+  color: #283891;
+}
+
+.btn-secondary-blue:hover {
+  border: 2px solid #283891;
+  background: transparent;
+}
+
+#hello {
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 1%;
+  font-weight: 600;
+}
+
+.active {
+  color: #39B54A !important;
+}
+
 .nav-link {
   font-size: 18px !important;
 }
@@ -245,4 +276,58 @@
   margin-top: 8px !important;
   margin-bottom: 16px !important;
   font-weight: 400 !important;
+}
+
+header h2 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+header p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #6D747A
+}
+
+header .col-10 {
+  position: relative;
+}
+
+.border-image {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+#insights {
+  left: -8%;
+  top: 55%;
+}
+
+#bar-charts {
+  right: -9%;
+  top: 11%;
+}
+
+
+
+/* why-choose-us */
+
+#why-choose-us h1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #283891;
+}
+
+.why-choose-card h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.why-choose-card p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
 }

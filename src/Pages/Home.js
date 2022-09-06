@@ -1,7 +1,13 @@
 import React from "react";
-
+import Header from "../components/Header";
+import WhyChooseUs from "../components/WhyChooseUs";
 const Home = () => {
-  return <div className="container">this is the home</div>;
+  return (
+    <div>
+      <Header />
+      <WhyChooseUs />
+    </div>
+  );
 };
 
 export default Home;
