@@ -205,7 +205,6 @@ section {
 
 .text-blue {
   color: #3D4B9B;
-  cursor: pointer;
 }
 
 .text-blue:hover {
@@ -335,4 +334,9 @@ header .col-10 {
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
+}
+
+#how-it-works .row h2 {
+  font-size: 28px;
+  line-height: 36.4px;
 }
