@@ -367,7 +367,7 @@ header .col-10 {
 
 #why-choose-us {
   background: url(./images/organisations-bg.png);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -398,7 +398,7 @@ header .col-10 {
 
 #how-it-works {
   background: url("./images/organisations-bg.png");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
 }
@@ -445,7 +445,7 @@ img.star {
 #organizations {
   background: url(./images/organisations-bg.png);
   background-repeat: no-repeat;
-  background-size: 105vw 100%;
+  background-size: cover;
   padding: 41vh 0;
 }
 
