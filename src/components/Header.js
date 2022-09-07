@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header className="container">
       <div className="row row-cols-lg-2 row-cols-1 align-items-center">
-        <div className="order-2 order-lg-0">
+        <div className="order-2 order-lg-0 py-5">
           <div className="text-blue">THE INVESTMENT PLATFORM</div>
           <h2>Start investing and earning money now.</h2>
           <p className="pt-2">

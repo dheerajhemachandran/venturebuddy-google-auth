@@ -26,7 +26,7 @@ const Organizations = () => {
           </div>
         </div>
       </div>
-      <div className="container px-0">
+      <div className="container px-0 px-3">
         <div
           className="bg-secondary-blue text-center p-5 rounded-4"
           id="join-growing-businesses"
