@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import JoinAsInvestor from "../components/JoinAsInvestor";
 import WhyChooseUs from "../components/WhyChooseUs";
 import HowItWorks from "./../components/HowItWorks";
+import Testimonial from "./../components/Testimonial";
 const Home = () => {
   return (
     <div>
@@ -10,6 +11,7 @@ const Home = () => {
       <WhyChooseUs />
       <JoinAsInvestor />
       <HowItWorks />
+      <Testimonial />
     </div>
   );
 };

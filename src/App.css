@@ -8,6 +8,10 @@
   background-color: #283891;
 }
 
+.bg-green {
+  background-color: #39B54A;
+}
+
 .bg-secondary-blue {
   background: #E9EBF4;
 }
@@ -264,11 +268,6 @@ section {
   border: 3px solid #d9d9d9;
 }
 
-.otp:focus {
-  /* border: 3px solid #283891 */
-}
-
-
 #change {
   color: #283891;
   font-weight: 700;
@@ -339,4 +338,21 @@ header .col-10 {
 #how-it-works .row h2 {
   font-size: 28px;
   line-height: 36.4px;
+}
+
+#testimonial .nav .active {
+  background: transparent;
+  box-shadow: 0 0 10px;
+}
+
+#testimonial button {
+  color: #000;
+}
+
+#counts h1 {
+  font-size: 48px;
+}
+
+#counts h6 {
+  font-size: 18px;
 }
