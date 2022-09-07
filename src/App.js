@@ -7,6 +7,12 @@ import Login from "./Pages/Login";
 function App() {
   return (
     <>
+      <div
+        className="container-fluid bg-blue text-white text-center py-3"
+        id="hello"
+      >
+        Calculate the valuation of your busniess in just 15 minutes. Click here.
+      </div>
       <Navbar></Navbar>
 
       <Routes>
