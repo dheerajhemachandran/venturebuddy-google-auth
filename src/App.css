@@ -372,3 +372,51 @@ img.star {
   font-weight: 500;
   margin-top: 42px;
 }
+
+#login h1,
+#login h6,
+.fa-eye-slash {
+  color: black;
+}
+
+#organizations {
+  background: url(./images/organisations-bg.png);
+  background-repeat: no-repeat;
+  background-size: 105vw 100%;
+  padding: 41vh 0;
+}
+
+#join-growing-businesses {
+  position: relative;
+  top: -11vh;
+}
+
+#dhl {
+  width: 182px;
+  height: 40px;
+}
+
+#next {
+  width: 138px;
+  height: 40px;
+}
+
+#aviva {
+  width: 110px;
+  height: 80px;
+}
+
+#santander {
+  width: 175px;
+  height: 56px;
+}
+
+#serco {
+  width: 189px;
+  height: 56px;
+}
+
+#healthShield {
+  width: 200px;
+  height: 80px;
+}
