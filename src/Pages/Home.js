@@ -1,4 +1,5 @@
 import React from "react";
+import GetTouchWithUs from "../components/GetTouchWithUs";
 import Header from "../components/Header";
 import JoinAsInvestor from "../components/JoinAsInvestor";
 import Organizations from "../components/Organizations";
@@ -14,6 +15,7 @@ const Home = () => {
       <HowItWorks />
       <Testimonial />
       <Organizations />
+      <GetTouchWithUs />
     </div>
   );
 };

@@ -11,9 +11,9 @@ const Testimonial = () => {
         What Clients say About us
       </h1>
 
-      <div class="d-flex align-items-start py-5">
+      <div class="d-flex align-items-start flex-column flex-lg-row py-5">
         <div
-          class="nav flex-column nav-pills me-3 col-4"
+          class="nav d-flex flex-row flex-lg-column nav-pills me-3 col-12 col-lg-4"
           id="v-pills-tab"
           role="tablist"
           aria-orientation="vertical"
@@ -87,7 +87,7 @@ const Testimonial = () => {
             </div>
           </button>
         </div>
-        <div class="tab-content col-8" id="v-pills-tabContent">
+        <div class="tab-content col-12 col-lg-8" id="v-pills-tabContent">
           <div
             class="tab-pane fade show active"
             id="v-pills-home"

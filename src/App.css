@@ -191,6 +191,11 @@ section {
   transition: all 200ms;
 }
 
+.btn-blue:focus {
+  background-color: #283891;
+  color: #fff;
+}
+
 .btn-outline-blue {
   background-color: transparent;
   border: 2px solid #283891;
