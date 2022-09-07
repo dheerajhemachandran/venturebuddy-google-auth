@@ -321,6 +321,13 @@ header .col-10 {
 
 /* why-choose-us */
 
+#why-choose-us {
+  background: url(./images/organisations-bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 #why-choose-us h1 {
   font-weight: 600;
   font-size: 36px;
@@ -343,6 +350,13 @@ header .col-10 {
 #how-it-works .row h2 {
   font-size: 28px;
   line-height: 36.4px;
+}
+
+#how-it-works {
+  background: url("./images/organisations-bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: center;
 }
 
 #testimonial .nav .active {
@@ -393,7 +407,7 @@ img.star {
 
 #join-growing-businesses {
   position: relative;
-  top: -11vh;
+  top: -15vh;
 }
 
 #dhl {

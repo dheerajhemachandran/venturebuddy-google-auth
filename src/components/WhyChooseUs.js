@@ -45,8 +45,8 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="text-center container" id="why-choose-us">
-      <div className="col-6 mx-auto">
+    <section className="text-center" id="why-choose-us">
+      <div className="col-6 mx-auto container">
         <h1>Why Businesses Choose Us</h1>
         <p>
           At VentureBuddy, we believe that the success of your business is our
@@ -54,14 +54,16 @@ const WhyChooseUs = () => {
         </p>
       </div>
 
-      <div className="row row-cols-3 justify-content-center mt-5">
-        {servicess.map((item) => (
-          <WhyChooseCard
-            img={item.img}
-            header={item.header}
-            desc={item.description}
-          />
-        ))}
+      <div className="container">
+        <div className="row row-cols-3 justify-content-center mt-5">
+          {servicess.map((item) => (
+            <WhyChooseCard
+              img={item.img}
+              header={item.header}
+              desc={item.description}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

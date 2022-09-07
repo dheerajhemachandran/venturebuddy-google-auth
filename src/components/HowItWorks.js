@@ -6,16 +6,16 @@ import HowItWorks4 from "./../images/how-it-works-4.png";
 
 const HowItWorks = () => {
   return (
-    <div>
-      <div className="container col-7 mt-5" id="how-it-works">
+    <div id="how-it-works">
+      <div className="container-fluid col-lg-7 col-11 mt-5">
         <div className="text-center">
           <h1 className="text-center text-blue">How It Works</h1>
           <p>Get Started in 4 easy steps</p>
 
           <div className="text-start">
-            <div className="row row-cols-2 align-items-center justify-content-center">
-              <div className="col">
-                <div className="col-8 mx-auto">
+            <div className="row row-cols-1 row-cols-lg-2 align-items-center justify-content-center">
+              <div className="col order-2 order-lg-0">
+                <div className="col-12 col-lg-8 mx-auto">
                   <h1 className="text-blue text-start fw-bolder">1</h1>
                   <h2 className="fw-bolder">Become an Investor</h2>
                   <div className="">
@@ -32,12 +32,12 @@ const HowItWorks = () => {
               </div>
             </div>
 
-            <div className="row row-cols-2 align-items-center justify-content-center">
+            <div className="row row-cols-1 row-cols-lg-2 align-items-center justify-content-center">
               <div className="col">
                 <img src={HowItWorks2} alt="" className="img-fluid" />
               </div>
               <div className="col">
-                <div className="col-8 mx-auto">
+                <div className="col-12 col-lg-8 mx-auto">
                   <h1 className="text-blue text-start fw-bolder">2</h1>
                   <h2 className="fw-bolder">Explore startups</h2>
                   <div className="">
@@ -51,9 +51,9 @@ const HowItWorks = () => {
               </div>
             </div>
 
-            <div className="row row-cols-2 align-items-center justify-content-center">
-              <div className="col">
-                <div className="col-8 mx-auto">
+            <div className="row row-cols-1 row-cols-lg-2 align-items-center justify-content-center">
+              <div className="col order-2 order-lg-0">
+                <div className="col-12 col-lg-8 mx-auto">
                   <h1 className="text-blue text-start fw-bolder">3</h1>
                   <h2 className="fw-bolder">Get your agreements</h2>
                   <div className="">
@@ -67,12 +67,12 @@ const HowItWorks = () => {
               </div>
             </div>
 
-            <div className="row row-cols-2 align-items-center justify-content-center">
+            <div className="row row-cols-1 row-cols-lg-2 align-items-center justify-content-center">
               <div className="col">
                 <img src={HowItWorks4} alt="" className="img-fluid" />
               </div>
               <div className="col">
-                <div className="col-8 mx-auto">
+                <div className="col-12 col-lg-8 mx-auto">
                   <h1 className="text-blue text-start fw-bolder">4</h1>
                   <h2 className="fw-bolder">Relax and earn 10x return</h2>
                   <div className="">

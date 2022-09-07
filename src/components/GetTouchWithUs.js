@@ -10,7 +10,7 @@ const GetTouchWithUs = () => {
       </p>
 
       <form className="col-11 p-5 rounded-4 mx-auto border" action="">
-        <div className="row row-cols-2">
+        <div className="col-10 mx-auto row row-cols-2">
           <div>
             <label for="name" class="form-label">
               Name
@@ -40,8 +40,9 @@ const GetTouchWithUs = () => {
             </div>
           </div>
         </div>
-
-        <input type="button" value="Send" className="btn btn-blue w-100" />
+        <div className="col-10 mx-auto px-3">
+          <input type="submit" value="Send" className="btn btn-blue col-12" />
+        </div>
       </form>
     </div>
   );
