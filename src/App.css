@@ -398,7 +398,7 @@ header .col-10 {
 
 #how-it-works {
   background: url("./images/organisations-bg.png");
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: center;
 }
