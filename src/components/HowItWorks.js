@@ -90,20 +90,20 @@ const HowItWorks = () => {
 
       <div className="my-5 py-5 bg-green text-white" id="counts">
         <div className="container-fluid px-5">
-          <div className="row row-cols-4">
-            <div className="d-flex align-items-center justify-content-center">
+          <div className="row row-cols-1 row-cols-lg-4">
+            <div className="d-flex align-items-center justify-content-center flex-column flex-lg-row my-3">
               <h1 className="fw-bolder">1.8B</h1>
               <h6 className="ms-3">Total Valuation</h6>
             </div>
-            <div className="d-flex align-items-center justify-content-center">
+            <div className="d-flex align-items-center justify-content-center flex-column flex-lg-row my-3">
               <h1 className="fw-bolder">200+</h1>
               <h6 className="ms-3">Businesses assisted all over an India</h6>
             </div>
-            <div className="d-flex align-items-center justify-content-center">
+            <div className="d-flex align-items-center justify-content-center flex-column flex-lg-row my-3">
               <h1 className="fw-bolder">60+</h1>
               <h6 className="ms-3">Valued Startups</h6>
             </div>
-            <div className="d-flex align-items-center justify-content-center">
+            <div className="d-flex align-items-center justify-content-center flex-column flex-lg-row my-3">
               <h1 className="fw-bolder">15</h1>
               <h6 className="ms-3">Industries</h6>
             </div>

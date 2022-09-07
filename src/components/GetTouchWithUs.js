@@ -4,13 +4,13 @@ const GetTouchWithUs = () => {
   return (
     <div className="container">
       <h1 className="text-blue fw-bold text-center">Get Touch With Us</h1>
-      <p className="text-center col-5 mx-auto">
+      <p className="text-center col-12 col-lg-5 mx-auto">
         We are here to help and answer any questions you might have or any
         services you are looking for!
       </p>
 
-      <form className="col-11 p-5 rounded-4 mx-auto border" action="">
-        <div className="col-10 mx-auto row row-cols-2">
+      <form className="col-11 p-5 rounded-4 mx-auto border my-3" action="">
+        <div className="col-12 col-lg-10 mx-auto row row-cols-1 row-cols-lg-2">
           <div>
             <label for="name" class="form-label">
               Name

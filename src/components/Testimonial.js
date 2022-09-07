@@ -13,10 +13,10 @@ const Testimonial = () => {
 
       <div class="d-flex align-items-start flex-column flex-lg-row py-5">
         <div
-          class="nav d-flex flex-row flex-lg-column nav-pills me-3 col-12 col-lg-4"
+          class="nav nav-pills me-lg-3 col-12 col-lg-4"
           id="v-pills-tab"
           role="tablist"
-          aria-orientation="vertical"
+          aria-orientation="horizontal"
         >
           <button
             class="nav-link active d-flex align-items-center"
@@ -104,7 +104,7 @@ const Testimonial = () => {
                 <img className="star" src={star} alt="" />
                 <img className="star" src={star} alt="" />
               </div>
-              <p className="pt-5 comment">
+              <p className="pt-2 pt-lg-5 comment">
                 It was a great experience It was a great experience It was a
                 great experience It was a great experience It was a great
                 experience It was a great experience It was a great experience
@@ -133,7 +133,7 @@ const Testimonial = () => {
                 <img className="star" src={star} alt="" />
                 <img className="star" src={star} alt="" />
               </div>
-              <p className="pt-5 comment">
+              <p className="pt-2 pt-lg-5 comment">
                 It was a great experience It was a great experience It was a
                 great experience It was a great experience It was a great
                 experience It was a great experience It was a great experience
@@ -162,7 +162,7 @@ const Testimonial = () => {
                 <img className="star" src={star} alt="" />
                 <img className="star" src={star} alt="" />
               </div>
-              <p className="pt-5 comment">
+              <p className="pt-2 pt-lg-5 comment">
                 It was a great experience It was a great experience It was a
                 great experience It was a great experience It was a great
                 experience It was a great experience It was a great experience

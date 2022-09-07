@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@keyframes button-expand {
+  from {
+    transform: scaleX(1) scaleY(1);
+    opacity: 1;
+  }
+
+  to {
+    transform: scaleX(1.2) scaleY(1.4);
+    opacity: 0;
+  }
+}
+
 * {
   font-family: 'Poppins', sans-serif;
 }
@@ -10,6 +22,29 @@
 
 .bg-green {
   background-color: #39B54A;
+}
+
+.outline {
+  position: absolute;
+  background-color: #39B54A;
+  z-index: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  height: 100%;
+  border-radius: 50px;
+  animation-name: button-expand;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+.btn-green.rounded-pill {
+  position: relative;
+  z-index: 100;
 }
 
 .bg-secondary-blue {
@@ -79,7 +114,14 @@ section {
   color: #E9EBF4 !important;
 }
 
+.btn-green:focus {
+  background-color: #39B54A;
+  border: 2px solid #39B54A;
+  color: #E9EBF4 !important;
+}
+
 .btn-green:hover {
+  background-color: transparent;
   border: 2px solid #39B54A;
   color: #39B54A !important;
 }

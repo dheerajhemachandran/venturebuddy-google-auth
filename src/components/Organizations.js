@@ -18,11 +18,11 @@ const Organizations = () => {
           </h4>
 
           <div className="row align-items-center justify-content-around mt-5">
-            <img src={dhl} alt="" id="dhl" />
-            <img src={next} alt="" id="next" />
-            <img src={aviva} alt="" id="aviva" />
-            <img src={santander} alt="" id="santander" />
-            <img src={healthShield} alt="" id="healthShield" />
+            <img className="my-4" src={dhl} alt="" id="dhl" />
+            <img className="my-4" src={next} alt="" id="next" />
+            <img className="my-4" src={aviva} alt="" id="aviva" />
+            <img className="my-4" src={santander} alt="" id="santander" />
+            <img className="my-4" src={healthShield} alt="" id="healthShield" />
           </div>
         </div>
       </div>

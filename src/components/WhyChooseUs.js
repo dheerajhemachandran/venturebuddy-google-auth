@@ -46,7 +46,7 @@ const WhyChooseUs = () => {
 
   return (
     <section className="text-center" id="why-choose-us">
-      <div className="col-6 mx-auto container">
+      <div className="col-10 col-lg-6 mx-auto container">
         <h1>Why Businesses Choose Us</h1>
         <p>
           At VentureBuddy, we believe that the success of your business is our
@@ -55,7 +55,7 @@ const WhyChooseUs = () => {
       </div>
 
       <div className="container">
-        <div className="row row-cols-3 justify-content-center mt-5">
+        <div className="row row-cols-1 row-cols-lg-3 justify-content-center mt-5">
           {servicess.map((item) => (
             <WhyChooseCard
               img={item.img}

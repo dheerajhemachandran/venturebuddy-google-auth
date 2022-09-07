@@ -6,8 +6,8 @@ import barcharts from "./../images/bar-charts.png";
 const Header = () => {
   return (
     <header className="container">
-      <div className="row align-items-center">
-        <div className="col-6">
+      <div className="row row-cols-lg-2 row-cols-1 align-items-center">
+        <div>
           <div className="text-blue">THE INVESTMENT PLATFORM</div>
           <h2>Start investing and earning money now.</h2>
           <p className="pt-2">
@@ -19,8 +19,8 @@ const Header = () => {
             Become an Investor
           </a>
         </div>
-        <div className="col-6">
-          <div className="col-10 border border-1 p-3 rounded-4">
+        <div>
+          <div className="col-10 border border-1 p-3 mx-auto mt-3 rounded-4">
             <div>
               <div className="position-relative">
                 <img src={uberEats} className="img-fluid rounded-4" alt="" />

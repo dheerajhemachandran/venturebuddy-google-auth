@@ -79,12 +79,15 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-item ps-4 py-0">
-                <NavLink
-                  className="nav-link btn btn-green px-4 py-2"
-                  to="/live-deals"
-                >
-                  Live Deals
-                </NavLink>
+                <div className="position-relative">
+                  <div className="outline mx-auto"></div>
+                  <Link
+                    to="/"
+                    className="btn btn-green rounded-pill mx-auto px-4 py-2"
+                  >
+                    Live Deals
+                  </Link>
+                </div>
               </li>
             </ul>
           </div>
