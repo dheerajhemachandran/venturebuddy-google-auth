@@ -341,12 +341,13 @@ header .col-10 {
 }
 
 #testimonial .nav .active {
-  background: transparent;
-  box-shadow: 0 0 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 40px rgba(40, 56, 145, 0.2);
+  border-radius: 16px;
 }
 
-#testimonial button {
-  color: #000;
+#testimonial .active {
+  color: #000 !important;
 }
 
 #counts h1 {
@@ -355,4 +356,19 @@ header .col-10 {
 
 #counts h6 {
   font-size: 18px;
+}
+
+.comment-name {
+  border-right: 2px solid blue;
+}
+
+img.star {
+  width: 16px;
+}
+
+#testimonial .comment {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
+  margin-top: 42px;
 }

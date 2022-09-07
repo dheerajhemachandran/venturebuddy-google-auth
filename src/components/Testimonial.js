@@ -1,17 +1,25 @@
 import React from "react";
+import rohitImg from "./../images/rohit.png";
+import jeniffer from "./../images/Jenifar.png";
+import Niromi from "./../images/Niromi.png";
+import star from "./../images/star.png";
 
 const Testimonial = () => {
   return (
-    <div className="container" id="testimonial">
-      <div class="d-flex align-items-start">
+    <div className="container py-5" id="testimonial">
+      <h1 className="text-blue text-center fw-bold">
+        What Clients say About us
+      </h1>
+
+      <div class="d-flex align-items-start py-5">
         <div
-          class="nav flex-column nav-pills me-3"
+          class="nav flex-column nav-pills me-3 col-4"
           id="v-pills-tab"
           role="tablist"
           aria-orientation="vertical"
         >
           <button
-            class="nav-link active"
+            class="nav-link active d-flex align-items-center"
             id="v-pills-home-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-home"
@@ -20,10 +28,19 @@ const Testimonial = () => {
             aria-controls="v-pills-home"
             aria-selected="true"
           >
-            Home
+            <img src={rohitImg} className="col-3 my-2" alt="" />
+            <div className="col-9 text-start">
+              <div className="d-flex align-items-center ps-3">
+                <h5 className="comment-name mb-0 pe-2 text-black">
+                  Rohit Ransore
+                </h5>
+                <p className="ms-2 mb-0 text-blue">Investor</p>
+              </div>
+              <div className="ms-3 pt-0 text-secondary">UX Designer, ATG</div>
+            </div>
           </button>
           <button
-            class="nav-link"
+            class="nav-link d-flex align-items-center my-3"
             id="v-pills-profile-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-profile"
@@ -32,11 +49,22 @@ const Testimonial = () => {
             aria-controls="v-pills-profile"
             aria-selected="false"
           >
-            Profile
+            <img src={jeniffer} className="col-3 my-2" alt="" />
+            <div className="col-9 text-start">
+              <div className="d-flex align-items-center ps-3">
+                <h5 className="comment-name mb-0 pe-2 text-black">
+                  Jeniffer White
+                </h5>
+                <p className="ms-2 mb-0 text-blue">Investor</p>
+              </div>
+              <div className="ms-3 pt-0 text-secondary">
+                Vice President, Google
+              </div>
+            </div>
           </button>
 
           <button
-            class="nav-link"
+            class="nav-link d-flex align-items-center my-3"
             id="v-pills-messages-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-messages"
@@ -45,22 +73,21 @@ const Testimonial = () => {
             aria-controls="v-pills-messages"
             aria-selected="false"
           >
-            Messages
-          </button>
-          <button
-            class="nav-link"
-            id="v-pills-settings-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-pills-settings"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-settings"
-            aria-selected="false"
-          >
-            Settings
+            <img src={Niromi} className="col-3 my-2" alt="" />
+            <div className="col-9 text-start">
+              <div className="d-flex align-items-center ps-3">
+                <h5 className="comment-name mb-0 pe-2 text-black">
+                  Niromi Taylor
+                </h5>
+                <p className="ms-2 mb-0 text-blue">Business</p>
+              </div>
+              <div className="ms-3 pt-0 text-secondary">
+                Senior Manager, IKEA
+              </div>
+            </div>
           </button>
         </div>
-        <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-content col-8" id="v-pills-tabContent">
           <div
             class="tab-pane fade show active"
             id="v-pills-home"
@@ -68,7 +95,27 @@ const Testimonial = () => {
             aria-labelledby="v-pills-home-tab"
             tabindex="0"
           >
-            Home
+            <div className="col-10 mx-auto">
+              <h4 className="fw-bolder">It was a Great Experience</h4>
+              <div className="d-flex gap-2">
+                <img className="star" src={star} alt="" />
+                <img className="star" src={star} alt="" />
+                <img className="star" src={star} alt="" />
+                <img className="star" src={star} alt="" />
+                <img className="star" src={star} alt="" />
+              </div>
+              <p className="pt-5 comment">
+                It was a great experience It was a great experience It was a
+                great experience It was a great experience It was a great
+                experience It was a great experience It was a great experience
+                It was a great experience It was a great experience It was a
+                great experience It was a great experience It was a great
+                experience It was a great experience It was a great experience
+                It was a great experience It was a great experience It was a
+                great experience It was a great experience It was a great
+                experience It was a great experience{" "}
+              </p>
+            </div>
           </div>
           <div
             class="tab-pane fade"
@@ -77,7 +124,27 @@ const Testimonial = () => {
             aria-labelledby="v-pills-profile-tab"
             tabindex="0"
           >
-            Profile
+            <div className="col-10 mx-auto">
+              <h4 className="fw-bolder">It was a Great Experience</h4>
+              <div className="d-flex gap-2">
+                <img className="star" src={star} alt="" />
+                <img className="star" src={star} alt="" />
+                <img className="star" src={star} alt="" />
+                <img className="star" src={star} alt="" />
+                <img className="star" src={star} alt="" />
+              </div>
+              <p className="pt-5 comment">
+                It was a great experience It was a great experience It was a
+                great experience It was a great experience It was a great
+                experience It was a great experience It was a great experience
+                It was a great experience It was a great experience It was a
+                great experience It was a great experience It was a great
+                experience It was a great experience It was a great experience
+                It was a great experience It was a great experience It was a
+                great experience It was a great experience It was a great
+                experience It was a great experience{" "}
+              </p>
+            </div>
           </div>
           <div
             class="tab-pane fade"
@@ -86,16 +153,27 @@ const Testimonial = () => {
             aria-labelledby="v-pills-messages-tab"
             tabindex="0"
           >
-            Messages
-          </div>
-          <div
-            class="tab-pane fade"
-            id="v-pills-settings"
-            role="tabpanel"
-            aria-labelledby="v-pills-settings-tab"
-            tabindex="0"
-          >
-            Settings
+            <div className="col-10 mx-auto">
+              <h4 className="fw-bolder">It was a Great Experience</h4>
+              <div className="d-flex gap-2">
+                <img className="star" src={star} alt="" />
+                <img className="star" src={star} alt="" />
+                <img className="star" src={star} alt="" />
+                <img className="star" src={star} alt="" />
+                <img className="star" src={star} alt="" />
+              </div>
+              <p className="pt-5 comment">
+                It was a great experience It was a great experience It was a
+                great experience It was a great experience It was a great
+                experience It was a great experience It was a great experience
+                It was a great experience It was a great experience It was a
+                great experience It was a great experience It was a great
+                experience It was a great experience It was a great experience
+                It was a great experience It was a great experience It was a
+                great experience It was a great experience It was a great
+                experience It was a great experience{" "}
+              </p>
+            </div>
           </div>
         </div>
       </div>
