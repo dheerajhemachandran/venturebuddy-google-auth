@@ -80,7 +80,7 @@ const Navbar = () => {
                   <div className="outline mx-auto"></div>
                   <Link
                     to="/"
-                    className="btn btn-green rounded-pill mx-auto px-4 py-2"
+                    className="btn btn-green rounded-pill mx-auto px-4 py-2 w-100"
                   >
                     Live Deals
                   </Link>
