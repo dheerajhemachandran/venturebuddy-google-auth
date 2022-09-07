@@ -350,13 +350,15 @@ header .col-10 {
 }
 
 #insights {
-  left: -8%;
-  top: 55%;
+  left: -10%;
+  top: 63%;
+  z-index: 1;
 }
 
 #bar-charts {
   right: -9%;
   top: 11%;
+  z-index: 1;
 }
 
 
@@ -480,4 +482,8 @@ img.star {
 #healthShield {
   width: 200px;
   height: 80px;
+}
+
+header .position-absolute {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }

@@ -16,7 +16,10 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="bg-blue text-white text-center py-3" id="hello">
+      <div
+        className="container-fluid bg-blue text-white text-center py-3"
+        id="hello"
+      >
         Calculate the valuation of your busniess in just 15 minutes. Click here.
       </div>
       <nav className="navbar navbar-expand-lg bg-white py-4 fw-bold">
