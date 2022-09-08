@@ -13,7 +13,7 @@ import slide4 from "./../images/slider/Slide 4.png";
 
 const Header = () => {
   return (
-    <header className="container">
+    <header className="container-fluid">
       <div className="row row-cols-lg-2 row-cols-1 align-items-center">
         <div className="order-2 order-lg-0 py-5">
           <div className="text-blue">THE INVESTMENT PLATFORM</div>

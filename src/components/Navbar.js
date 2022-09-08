@@ -16,8 +16,8 @@ const Navbar = () => {
 
   return (
     <div className="sticky-top">
-      <nav className="navbar navbar-expand-lg bg-white py-4 fw-bold">
-        <div className="container-fluid px-lg-5 mx-lg-5 px-4">
+      <nav className="navbar navbar-expand-lg py-0 bg-white fw-bold">
+        <div className="container-fluid">
           <div className="col-4 col-lg-2">
             <NavLink to="/">
               <img src={logo} className="img-fluid col-8" alt="" />

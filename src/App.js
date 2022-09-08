@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div
-        className="container-fluid bg-blue text-white text-center py-3"
+        className="container-fluid bg-blue text-white text-center text-uppercase"
         id="hello"
       >
         Calculate the valuation of your busniess in just 15 minutes. Click here.
