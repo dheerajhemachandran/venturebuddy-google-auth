@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import gIcon from "./../icons/google-icon.png";
 
-const RegisterEmail = ({ setEmailOrPhone, emailValidate }) => {
+const RegisterEmail = ({ setEmailOrPhone, emailValidate, setName }) => {
   const [method, setMethod] = useState("email");
 
   useEffect(() => {
@@ -30,9 +30,12 @@ const RegisterEmail = ({ setEmailOrPhone, emailValidate }) => {
         <h6 className="pb-2">Full Name</h6>
 
         <input
+          id="name"
           type="text"
           placeholder="Your full name"
           className="form-control px-4 py-3"
+          onChange={(e) => setName(e.target.value)}
+          required
         />
 
         <div className="row row-cols-2">
@@ -65,17 +68,21 @@ const RegisterEmail = ({ setEmailOrPhone, emailValidate }) => {
           <div id="mobile-input">
             <input
               type="text"
+              id="register-email"
               className="form-control px-4 py-3"
               placeholder="Your mobile number"
               onChange={(e) => setEmailOrPhone(e.target.value)}
+              required
             />
           </div>
           <div id="email-input">
             <input
               type="email"
+              id="register-phone"
               className="form-control px-4 py-3"
               placeholder="Your email address"
               onChange={(e) => setEmailOrPhone(e.target.value)}
+              required
             />
           </div>
         </div>

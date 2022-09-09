@@ -1,20 +1,39 @@
 import React, { useState } from "react";
 import RegisterEmail from "../components/RegisterEmail";
 import loginImage from "./../images/login-image.png";
+import RegisterVerification from "./../components/RegisterVerification";
 
 const Register = () => {
   const [emailOrPhone, setEmailOrPhone] = useState("");
-  const [method, setMethod] = useState("email");
+  const [name, setName] = useState("");
 
   const emailValidation =
     /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
   const phoneValidation = /^((\+91)?|91|91\s|\+91\s)?[789][0-9]{9}/g;
+  const nameValidation = /(^[a-zA-Z][a-zA-Z\s]{0,20}[a-zA-Z]$)/;
 
   const emailValidate = () => {
-    if (phoneValidation.test(emailOrPhone)) {
+    console.log(name);
+
+    if (!nameValidation.test(name)) {
+      document
+        .getElementById("name")
+        .setCustomValidity("Please enter your name correctly");
+    }
+
+    if (!emailOrPhone) {
+      document
+        .getElementById("register-email")
+        .setCustomValidity("Please Enter Your Email");
+      document
+        .getElementById("register-phone")
+        .setCustomValidity("Please Enter Your Phone Number");
+    }
+
+    if (phoneValidation.test(emailOrPhone) && nameValidation.test(name)) {
       document.getElementById("next").click();
     } else {
-      if (emailValidation.test(emailOrPhone)) {
+      if (emailValidation.test(emailOrPhone) && nameValidation.test(name)) {
         document.getElementById("next").click();
       } else {
         document
@@ -52,14 +71,14 @@ const Register = () => {
           >
             <div className="carousel-inner">
               <div className="carousel-item active">
-                {/* <LoginEmail setPhoneOrEmail={setPhoneOrEmail}></LoginEmail> */}
                 <RegisterEmail
+                  setName={setName}
                   setEmailOrPhone={setEmailOrPhone}
                   emailValidate={emailValidate}
                 />
               </div>
               <div className="carousel-item">
-                {/* <LoginPass setPassword={setPassword}></LoginPass> */}
+                <RegisterVerification email={emailOrPhone} />
               </div>
               <div className="carousel-item">
                 {/* <OTP phoneOrEmail={phoneOrEmail}></OTP> */}

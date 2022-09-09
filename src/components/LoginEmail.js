@@ -34,6 +34,7 @@ const LoginEmail = ({ setPhoneOrEmail }) => {
           <h6 style={{ fontWeight: 500, marginTop: 18, marginBottom: 12 }}>
             Email ID/Mobile number
           </h6>
+
           <input
             type="text"
             className="form-control p-3"
@@ -45,6 +46,7 @@ const LoginEmail = ({ setPhoneOrEmail }) => {
             placeholder="Email ID or mobile number."
             required
           />
+
           <button
             className="carousel-control-next"
             type="button"
