@@ -12,7 +12,7 @@ const Navbar = () => {
           : (document.getElementById("hello").style.display = "none");
       });
     }
-  }, [links.length]);
+  }, [links]);
 
   return (
     <div className="sticky-top bg-white">
