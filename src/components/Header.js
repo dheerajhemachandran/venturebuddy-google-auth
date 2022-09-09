@@ -14,8 +14,8 @@ import slide4 from "./../images/slider/Slide 4.png";
 const Header = () => {
   return (
     <header className="container-fluid">
-      <div className="row row-cols-lg-2 row-cols-1 align-items-center">
-        <div className="order-2 order-lg-0 py-5">
+      <div className="row row-cols-1 align-items-center">
+        <div className="order-2 col-5 order-lg-0 py-5">
           <div className="text-blue">THE INVESTMENT PLATFORM</div>
           <h2>Start investing and earning money now.</h2>
           <p className="pt-2">
@@ -23,12 +23,12 @@ const Header = () => {
             launched by Uber in 2014.
           </p>
 
-          <a href="#" className="btn btn-secondary-blue mt-3">
+          <a href="#" className="btn btn-secondary-blue fw-bold mt-3">
             Become an Investor
           </a>
         </div>
-        <div>
-          <div className="col-10 border border-1 p-3 mx-auto mt-3 rounded-4">
+        <div className="col-7 pe-5">
+          <div className="col-8 border border-1 p-3 ms-auto me-5 mt-3 rounded-4">
             <div>
               <Swiper
                 autoplay={{ delay: 3000 }}

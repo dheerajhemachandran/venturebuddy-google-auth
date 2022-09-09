@@ -15,8 +15,8 @@ const Navbar = () => {
   }, [links.length]);
 
   return (
-    <div className="sticky-top">
-      <nav className="navbar navbar-expand-lg py-0 bg-white fw-bold">
+    <div className="sticky-top bg-white">
+      <nav className="navbar navbar-expand-lg fw-bold mt-0">
         <div className="container-fluid">
           <div className="col-4 col-lg-2">
             <NavLink to="/">
