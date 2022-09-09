@@ -13,6 +13,8 @@ const RegisterVerification = ({ email }) => {
 
     // here dynamic value can be use for checking the otp
     result === "1234" ? setError(false) : setError(true);
+
+    document.getElementById("next").click();
   };
 
   useEffect(() => {
@@ -128,6 +130,14 @@ const RegisterVerification = ({ email }) => {
           onClick={checkOTP}
           value="VERIFY"
         />
+
+        <button
+          className="carousel-control-next mt-3"
+          type="button"
+          data-bs-target="#carouselExampleControls2"
+          data-bs-slide="next"
+          id="next"
+        ></button>
       </form>
       <p
         className="text-end w-100 ms-1"

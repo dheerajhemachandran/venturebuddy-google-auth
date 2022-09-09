@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import RegisterEmail from "../components/RegisterEmail";
-import loginImage from "./../images/login-image.png";
 import RegisterVerification from "./../components/RegisterVerification";
+import RegisterPass from "../components/RegisterPass";
+import loginImage from "./../images/login-image.png";
+import TypeOfDeals from "../components/TypeOfDeals";
+import TypeOfStartUps from "../components/TypeOfStartUps";
 
 const Register = () => {
   const [emailOrPhone, setEmailOrPhone] = useState("");
   const [name, setName] = useState("");
+  const { pass, setPass } = useState("");
 
   const emailValidation =
     /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
@@ -81,7 +85,13 @@ const Register = () => {
                 <RegisterVerification email={emailOrPhone} />
               </div>
               <div className="carousel-item">
-                {/* <OTP phoneOrEmail={phoneOrEmail}></OTP> */}
+                <RegisterPass setPassword={setPass} />
+              </div>
+              <div className="carousel-item">
+                <TypeOfDeals />
+              </div>
+              <div className="carousel-item">
+                <TypeOfStartUps />
               </div>
             </div>
           </div>

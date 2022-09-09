@@ -16,13 +16,7 @@ const Navbar = () => {
   }, [links]);
 
   return (
-    <div
-      className={`bg-white ${
-        location.pathname === "/register" || location.pathname === "/login"
-          ? "fixed-top"
-          : "sticky-top"
-      }`}
-    >
+    <div className={`bg-white fixed-top`}>
       <nav className="navbar navbar-expand-lg fw-bold mt-0">
         <div className="container-fluid">
           <div className="col-4 col-lg-2">
