@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import logo from "./../images/logo.png";
 
 const Navbar = () => {
   const links = document.getElementsByClassName("nav-link");
+  const location = useLocation();
   useEffect(() => {
     for (let i = 0; i <= links.length; i++) {
       links[i]?.addEventListener("click", () => {
@@ -15,7 +16,13 @@ const Navbar = () => {
   }, [links]);
 
   return (
-    <div className="sticky-top bg-white">
+    <div
+      className={`bg-white ${
+        location.pathname === "/register" || location.pathname === "/login"
+          ? "fixed-top"
+          : "sticky-top"
+      }`}
+    >
       <nav className="navbar navbar-expand-lg fw-bold mt-0">
         <div className="container-fluid">
           <div className="col-4 col-lg-2">

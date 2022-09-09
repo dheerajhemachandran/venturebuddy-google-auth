@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import gIcon from "./../icons/google-icon.png";
 
 const LoginEmail = ({ setPhoneOrEmail }) => {
@@ -69,9 +70,9 @@ const LoginEmail = ({ setPhoneOrEmail }) => {
 
           <p className="text-center" id="signUp">
             Don’t have an account?{" "}
-            <a href="##" className="text-green">
+            <Link to="/register" className="text-green">
               Sign Up
-            </a>
+            </Link>
           </p>
         </form>
       </div>
