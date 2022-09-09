@@ -16,6 +16,10 @@ const TypeOfStartUps = () => {
     document.getElementById(id).classList.add("active");
   };
 
+  const nextOfDeals = () => {
+    document.getElementById("next").click();
+  };
+
   return (
     <div className="text-dark pt-4" id="typeofstartups">
       <h5 className="text-center fw-bold">
@@ -145,7 +149,7 @@ const TypeOfStartUps = () => {
         <div className="text-center">
           <button
             className={`btn btn-blue px-4 ${buttonActive ? "" : "disabled"}`}
-            // onClick={nextOfDeals}
+            onClick={nextOfDeals}
           >
             Next
           </button>

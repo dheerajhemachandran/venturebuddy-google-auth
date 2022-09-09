@@ -5,6 +5,7 @@ import RegisterPass from "../components/RegisterPass";
 import loginImage from "./../images/login-image.png";
 import TypeOfDeals from "../components/TypeOfDeals";
 import TypeOfStartUps from "../components/TypeOfStartUps";
+import TermsAndCondition from "./../components/TermsAndCondition";
 
 const Register = () => {
   const [emailOrPhone, setEmailOrPhone] = useState("");
@@ -92,6 +93,9 @@ const Register = () => {
               </div>
               <div className="carousel-item">
                 <TypeOfStartUps />
+              </div>
+              <div className="carousel-item">
+                <TermsAndCondition />
               </div>
             </div>
           </div>
