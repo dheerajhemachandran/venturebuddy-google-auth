@@ -22,6 +22,10 @@ input[name="method"] {
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .bg-blue {
   background-color: #283891;
 }
