@@ -21,7 +21,7 @@ const TypeOfStartUps = () => {
   };
 
   return (
-    <div className="text-dark pt-4" id="typeofstartups">
+    <div className="text-dark pt-4 ms-4" id="typeofstartups">
       <h5 className="text-center fw-bold">
         What type of startups are you looking for?
       </h5>

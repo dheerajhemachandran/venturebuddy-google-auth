@@ -22,7 +22,7 @@ const TypeOfDeals = () => {
         What type of deals are you looking for?
       </h6>
 
-      <div className="row row-cols-2 gap-4 justify-content-center text-blue my-5 py-5">
+      <div className="row row-cols-2 gap-4 justify-content-center text-blue py-5 m-5">
         <div
           id="retail"
           className="bg-white border-1 border border-secondary rounded-4 deal"

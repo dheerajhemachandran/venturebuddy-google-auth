@@ -58,7 +58,7 @@ const RegisterEmail = ({ setEmailOrPhone, emailValidate, setName }) => {
               type="radio"
               onChange={() => setMethod("phone")}
             />
-            <label htmlFor="phone" className="ms-2" value="Email Address">
+            <label htmlFor="phone" className="ms-2" value="Mobile Number">
               Mobile Number
             </label>
           </div>
