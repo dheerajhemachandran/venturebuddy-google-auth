@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import GetTouchWithUs from "../components/GetTouchWithUs";
 import Header from "../components/Header";
 import JoinAsInvestor from "../components/JoinAsInvestor";
@@ -16,6 +17,7 @@ const Home = () => {
       <Testimonial />
       <Organizations />
       <GetTouchWithUs />
+      <Footer />
     </div>
   );
 };

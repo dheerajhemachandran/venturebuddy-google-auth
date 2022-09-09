@@ -20,7 +20,7 @@ const GetTouchWithUs = () => {
                 type="text"
                 class="form-control p-3"
                 id="name"
-                placeholder="Enter Your Name"
+                placeholder="Enter your name"
                 aria-describedby="basic-addon3"
               />
             </div>
@@ -34,7 +34,7 @@ const GetTouchWithUs = () => {
                 type="text"
                 class="form-control p-3"
                 id="email"
-                placeholder="Enter Your Email ID"
+                placeholder="Enter your email Id"
                 aria-describedby="basic-addon3"
               />
             </div>

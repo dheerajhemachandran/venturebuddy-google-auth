@@ -359,13 +359,13 @@ header .col-8 {
 }
 
 #insights {
-  left: -10%;
+  left: -7%;
   top: 63%;
   z-index: 1;
 }
 
 #bar-charts {
-  right: -9%;
+  right: 10%;
   top: 11%;
   z-index: 1;
 }

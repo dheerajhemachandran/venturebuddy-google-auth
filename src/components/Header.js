@@ -10,6 +10,7 @@ import airbnb from "./../images/slider/airbnb.png";
 import cocacola from "./../images/slider/coca-cola.png";
 import uberEats from "./../images/slider/uber-eats.png";
 import slide4 from "./../images/slider/Slide 4.png";
+import CarouselSlide from "./CarouselSlide";
 
 const Header = () => {
   return (
@@ -27,9 +28,9 @@ const Header = () => {
             Become an Investor
           </a>
         </div>
-        <div className="col-7 pe-5">
-          <div className="col-8 border border-1 p-3 ms-auto me-5 mt-3 rounded-4">
-            <div>
+        <div className="col-7">
+          <div className="col-8 ms-auto mt-3 pe-5">
+            <div className="border border-1 p-3 rounded-4 me-5">
               <Swiper
                 autoplay={{ delay: 3000 }}
                 grabCursor={true}
@@ -47,44 +48,39 @@ const Header = () => {
                 className="mySwiper"
               >
                 <SwiperSlide>
-                  <div className="position-relative">
-                    <img src={airbnb} className="img-fluid rounded-4" alt="" />
-                    <div className="position-absolute bottom-0 text-white p-4 ps-5">
-                      <h3>Uber Eats</h3>
-                      <p className="text-white">
-                        Uber Eats is an online food ordering and delivery
-                        platform launched by Uber in 2014.
-                      </p>
-                    </div>
-                  </div>
+                  <CarouselSlide
+                    image={uberEats}
+                    header="Uber Eats"
+                    paragraph="Uber Eats is an online food ordering and delivery
+                        platform launched by Uber in 2014."
+                  />
                 </SwiperSlide>
+
                 <SwiperSlide>
-                  <div className="position-relative">
-                    <img
-                      src={cocacola}
-                      className="img-fluid rounded-4"
-                      alt=""
-                    />
-                    <div className="position-absolute bottom-0 text-white p-4 ps-5">
-                      <h3>Uber Eats</h3>
-                      <p className="text-white">
-                        Uber Eats is an online food ordering and delivery
-                        platform launched by Uber in 2014.
-                      </p>
-                    </div>
-                  </div>
+                  <CarouselSlide
+                    image={cocacola}
+                    header="Coca Cola"
+                    paragraph="Uber Eats is an online food ordering and delivery
+                        platform launched by Uber in 2014."
+                  />
                 </SwiperSlide>
+
                 <SwiperSlide>
-                  <div className="position-relative">
-                    <img src={slide4} className="img-fluid rounded-4" alt="" />
-                    <div className="position-absolute bottom-0 text-white p-4 ps-5">
-                      <h3>Uber Eats</h3>
-                      <p className="text-white">
-                        Uber Eats is an online food ordering and delivery
-                        platform launched by Uber in 2014.
-                      </p>
-                    </div>
-                  </div>
+                  <CarouselSlide
+                    image={airbnb}
+                    header="Airbnb"
+                    paragraph="Uber Eats is an online food ordering and delivery
+                        platform launched by Uber in 2014."
+                  />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <CarouselSlide
+                    image={slide4}
+                    header="Subway"
+                    paragraph="Uber Eats is an online food ordering and delivery
+                        platform launched by Uber in 2014."
+                  />
                 </SwiperSlide>
               </Swiper>
             </div>
