@@ -15,7 +15,7 @@ const HowItWorks = () => {
           <div className="text-start">
             <div className="row row-cols-1 row-cols-lg-2 align-items-center justify-content-center">
               <div className="col order-2 order-lg-0">
-                <div className="col-12 col-lg-8 mx-auto">
+                <div className="col-12 col-lg-9">
                   <h1 className="text-blue text-start fw-bolder">1</h1>
                   <h2 className="fw-bolder">Become an Investor</h2>
                   <div className="">
@@ -37,7 +37,7 @@ const HowItWorks = () => {
                 <img src={HowItWorks2} alt="" className="img-fluid" />
               </div>
               <div className="col">
-                <div className="col-12 col-lg-8 mx-auto">
+                <div className="col-12 col-lg-9">
                   <h1 className="text-blue text-start fw-bolder">2</h1>
                   <h2 className="fw-bolder">Explore startups</h2>
                   <div className="">
@@ -53,7 +53,7 @@ const HowItWorks = () => {
 
             <div className="row row-cols-1 row-cols-lg-2 align-items-center justify-content-center">
               <div className="col order-2 order-lg-0">
-                <div className="col-12 col-lg-8 mx-auto">
+                <div className="col-12 col-lg-9">
                   <h1 className="text-blue text-start fw-bolder">3</h1>
                   <h2 className="fw-bolder">Get your agreements</h2>
                   <div className="">
@@ -72,7 +72,7 @@ const HowItWorks = () => {
                 <img src={HowItWorks4} alt="" className="img-fluid" />
               </div>
               <div className="col">
-                <div className="col-12 col-lg-8 mx-auto">
+                <div className="col-12 col-lg-9">
                   <h1 className="text-blue text-start fw-bolder">4</h1>
                   <h2 className="fw-bolder">Relax and earn 10x return</h2>
                   <div className="">
