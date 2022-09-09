@@ -458,6 +458,11 @@ header .col-8 {
 
 .comment-name {
   border-right: 2px solid blue;
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 600 !important;
 }
 
 img.star {

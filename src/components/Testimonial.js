@@ -30,7 +30,7 @@ const Testimonial = () => {
           >
             <img src={rohitImg} className="col-3 my-2" alt="" />
             <div className="col-9 text-start">
-              <div className="d-flex align-items-center ps-3">
+              <div className="d-flex align-items-center ps-3 bold">
                 <h5 className="comment-name mb-0 pe-2 text-black">
                   Rohit Ransore
                 </h5>
@@ -51,7 +51,7 @@ const Testimonial = () => {
           >
             <img src={jeniffer} className="col-3 my-2" alt="" />
             <div className="col-9 text-start">
-              <div className="d-flex align-items-center ps-3">
+              <div className="d-flex align-items-center ps-3 bold">
                 <h5 className="comment-name mb-0 pe-2 text-black">
                   Jeniffer White
                 </h5>
@@ -75,7 +75,7 @@ const Testimonial = () => {
           >
             <img src={Niromi} className="col-3 my-2" alt="" />
             <div className="col-9 text-start">
-              <div className="d-flex align-items-center ps-3">
+              <div className="d-flex align-items-center ps-3 bold">
                 <h5 className="comment-name mb-0 pe-2 text-black">
                   Niromi Taylor
                 </h5>
