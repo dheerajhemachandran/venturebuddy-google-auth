@@ -93,7 +93,8 @@ section {
   padding: 0 16px;
 }
 
-#login-left {
+#login-left,
+#register-left {
   background: #283891;
   border-radius: 12px 0 0 12px;
   padding: 63px 0;
@@ -152,7 +153,6 @@ section {
 
 .carousel {
   border-radius: 0 12px 12px 0;
-  height: 100%;
 }
 
 #login-right p {
@@ -347,6 +347,8 @@ section {
 
 #register-right {
   background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 4px #ccc;
 }
 
 #register-right .carousel-inner {

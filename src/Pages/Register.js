@@ -54,8 +54,8 @@ const Register = () => {
       id="register"
       style={{ height: "100vh", display: "flex", alignItems: "center" }}
     >
-      <div className="row login-form mx-auto col-12 col-lg-8">
-        <div className="text-center col-5 d-none d-md-block" id="login-left">
+      <div className="row mt-5 mx-auto col-12 col-lg-8">
+        <div className="text-center col-5 d-none d-md-block" id="register-left">
           <p className="text-white mx-auto col-9">
             “Don't shoot your shot, without testing your aim”
           </p>

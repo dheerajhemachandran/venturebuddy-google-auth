@@ -18,12 +18,14 @@ const TypeOfDeals = () => {
 
   return (
     <div className="text-dark mt-5" id="typeofdeals">
-      <h6 className="text-center">What type of deals are you looking for?</h6>
+      <h6 className="text-center fw-bold">
+        What type of deals are you looking for?
+      </h6>
 
-      <div className="row justify-content-center gap-5 text-blue my-5 py-5">
+      <div className="row row-cols-2 gap-4 justify-content-center text-blue my-5 py-5">
         <div
           id="retail"
-          className="col-4 bg-white border-1 border border-secondary rounded-4 deal"
+          className="bg-white border-1 border border-secondary rounded-4 deal"
           onClick={() => {
             setRetailActive();
             setButtonActive(true);
@@ -34,7 +36,7 @@ const TypeOfDeals = () => {
           </div>
         </div>
         <div
-          className="col-4 bg-white border-1 border border-secondary rounded-4 p-4 deal"
+          className="bg-white border-1 border border-secondary rounded-4 p-4 deal"
           id="angel"
           onClick={() => {
             setAngelActive();

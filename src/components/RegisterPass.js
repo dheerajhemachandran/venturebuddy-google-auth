@@ -4,13 +4,17 @@ import eyeImage from "./../images/eye.png";
 const RegisterPass = ({ setPassword }) => {
   const [isVisible, setPasswordVisibility] = useState(false);
   const [eye, setEye] = useState("eye");
+  const [display, setDisplay] = useState("block");
+  if (document.getElementById("register-left")) {
+    document.getElementById("register-left").style.display = display;
+  }
 
   const submitPassword = () => {
-    document.getElementById("next").click();
-
-    document.getElementById("login-left").style.width = 0;
+    setDisplay("none");
     document.getElementById("register-right").classList.remove("col-md-7");
-    // document.getElementById("register-right").classList.add("col-md-7");
+    document.getElementById("next").click();
+    // document.getElementById("register-left").classList.add("d-none");
+    document.getElementById("register-left").classList.remove("d-md-block");
   };
 
   useEffect(() => {

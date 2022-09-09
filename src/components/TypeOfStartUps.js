@@ -17,12 +17,12 @@ const TypeOfStartUps = () => {
   };
 
   return (
-    <div className="text-dark" id="typeofstartups">
-      <h6 className="text-center">
+    <div className="text-dark pt-4" id="typeofstartups">
+      <h5 className="text-center fw-bold">
         What type of startups are you looking for?
-      </h6>
+      </h5>
 
-      <div className="row justify-content-center gap-5 text-blue text-dark">
+      <div className="row justify-content-center text-blue text-dark pt-5 pb-0 mb-0">
         <div className="row row-cols-5 justify-content-center">
           <div className="text-center py-3">
             <div
