@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
   return (
     <section className="text-center" id="why-choose-us">
       <div className="col-10 col-lg-6 mx-auto container">
-        <h1>Why Businesses Choose Us</h1>
+        <h1>Why businesses choose us</h1>
         <p>
           At VentureBuddy, we believe that the success of your business is our
           success. That's why we work closely with you, to help you succeed.
