@@ -96,7 +96,7 @@ const Testimonial = () => {
             tabindex="0"
           >
             <div className="col-10 mx-auto">
-              <h4 className="fw-bolder">It was a Great Experience</h4>
+              <h4 className="fw-bolder">It was a great experience</h4>
               <div className="d-flex gap-2">
                 <img className="star" src={star} alt="" />
                 <img className="star" src={star} alt="" />
@@ -125,7 +125,7 @@ const Testimonial = () => {
             tabindex="0"
           >
             <div className="col-10 mx-auto">
-              <h4 className="fw-bolder">It was a Great Experience</h4>
+              <h4 className="fw-bolder">It was a great experience</h4>
               <div className="d-flex gap-2">
                 <img className="star" src={star} alt="" />
                 <img className="star" src={star} alt="" />
@@ -154,7 +154,7 @@ const Testimonial = () => {
             tabindex="0"
           >
             <div className="col-10 mx-auto">
-              <h4 className="fw-bolder">It was a Great Experience</h4>
+              <h4 className="fw-bolder">It was a great experience</h4>
               <div className="d-flex gap-2">
                 <img className="star" src={star} alt="" />
                 <img className="star" src={star} alt="" />

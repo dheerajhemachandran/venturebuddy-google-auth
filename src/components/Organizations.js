@@ -4,25 +4,36 @@ import next from "./../images/organizations/next.png";
 import aviva from "./../images/organizations/aviva.png";
 import santander from "./../images/organizations/santander.png";
 import healthShield from "./../images/organizations/health-shield.png";
+import serco from "./../images/organizations/serco.png";
 
 const Organizations = () => {
   return (
     <>
-      <div
-        id="organizations"
-        className="container-fluid w-100 d-flex align-items-center justify-content-center"
-      >
+      <div id="organizations" className="container-fluid">
         <div>
           <h4 className="text-blue text-center fw-bold">
             2500+ Organisations using our services
           </h4>
 
-          <div className="row align-items-center justify-content-around mt-5">
-            <img className="my-4" src={dhl} alt="" id="dhl" />
-            <img className="my-4" src={next} alt="" id="next" />
-            <img className="my-4" src={aviva} alt="" id="aviva" />
-            <img className="my-4" src={santander} alt="" id="santander" />
-            <img className="my-4" src={healthShield} alt="" id="healthShield" />
+          <div className="row row-cols-6 align-items-center justify-content-center px-5">
+            <div className="d-flex justify-content-center p-5">
+              <img className="my-4 img-fluid" src={dhl} alt="" />
+            </div>
+            <div className="d-flex justify-content-center p-5">
+              <img className="my-4 img-fluid" src={next} alt="" />
+            </div>
+            <div className="d-flex justify-content-center p-5">
+              <img className="my-4 img-fluid" src={aviva} alt="" />
+            </div>
+            <div className="d-flex justify-content-center p-5">
+              <img className="my-4 img-fluid" src={santander} alt="" />
+            </div>
+            <div className="d-flex justify-content-center p-5">
+              <img className="my-4 img-fluid" src={healthShield} alt="" />
+            </div>
+            <div className="d-flex justify-content-center p-5">
+              <img className="my-4 img-fluid" src={serco} alt="" />
+            </div>
           </div>
         </div>
       </div>

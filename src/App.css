@@ -463,7 +463,7 @@ img.star {
   top: -15vh;
 }
 
-#dhl {
+/* #dhl {
   width: 182px;
   height: 40px;
 }
@@ -491,7 +491,7 @@ img.star {
 #healthShield {
   width: 200px;
   height: 80px;
-}
+} */
 
 header .position-absolute {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
