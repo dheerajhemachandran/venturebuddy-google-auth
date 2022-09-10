@@ -27,7 +27,7 @@ const LoginEmail = ({ setPhoneOrEmail }) => {
   };
 
   return (
-    <div>
+    <>
       <div id="login-right">
         <form className="my-auto d-flex flex-column justify-content-between">
           <h1 className="my-0">Login</h1>
@@ -78,7 +78,7 @@ const LoginEmail = ({ setPhoneOrEmail }) => {
           </p>
         </form>
       </div>
-    </div>
+    </>
   );
 };
 

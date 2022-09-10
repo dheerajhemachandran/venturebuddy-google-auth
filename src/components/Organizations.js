@@ -10,7 +10,7 @@ const Organizations = () => {
   return (
     <>
       <div id="organizations" className="container-fluid">
-        <div>
+        <>
           <h4 className="text-blue text-center fw-bold">
             2500+ Organisations using our services
           </h4>
@@ -35,7 +35,7 @@ const Organizations = () => {
               <img className="my-4 img-fluid" src={healthShield} alt="" />
             </div>
           </div>
-        </div>
+        </>
       </div>
       <div className="container px-0 px-3">
         <div

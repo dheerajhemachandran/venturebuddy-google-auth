@@ -21,7 +21,7 @@ const RegisterEmail = ({ setEmailOrPhone, emailValidate, setName }) => {
   }, [method]);
 
   return (
-    <div>
+    <>
       <form
         className="my-auto d-flex flex-column justify-content-between text-dark"
         onSubmit={(e) => e.preventDefault()}
@@ -116,7 +116,7 @@ const RegisterEmail = ({ setEmailOrPhone, emailValidate, setName }) => {
           </Link>
         </p>
       </form>
-    </div>
+    </>
   );
 };
 

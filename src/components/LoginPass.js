@@ -25,9 +25,9 @@ const LoginPass = ({ setPassword }) => {
   }, [isVisible]);
 
   return (
-    <div>
+    <>
       <div id="login-right">
-        <div>
+        <>
           <h1>Login</h1>
           <h6 style={{ fontWeight: 500, marginTop: 18, marginBottom: 12 }}>
             Password
@@ -75,9 +75,9 @@ const LoginPass = ({ setPassword }) => {
               Sign Up
             </a>
           </p>
-        </div>
+        </>
       </div>
-    </div>
+    </>
   );
 };
 

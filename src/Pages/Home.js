@@ -9,7 +9,7 @@ import HowItWorks from "./../components/HowItWorks";
 import Testimonial from "./../components/Testimonial";
 const Home = () => {
   return (
-    <div>
+    <>
       <Header />
       <WhyChooseUs />
       <JoinAsInvestor />
@@ -18,7 +18,7 @@ const Home = () => {
       <Organizations />
       <GetTouchWithUs />
       <Footer />
-    </div>
+    </>
   );
 };
 
