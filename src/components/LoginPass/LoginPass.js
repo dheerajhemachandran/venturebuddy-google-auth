@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import eyeImage from "./../../Assets/images/eye.png";
 import styles from "./LoginPass.module.css";
 
@@ -66,9 +67,9 @@ const LoginPass = ({ setPassword }) => {
 
       <p className="text-center text-dark fw-bold">
         Don’t have an account?{" "}
-        <a href="#" className="text-green">
+        <Link to="/register" className="text-green">
           Sign Up
-        </a>
+        </Link>
       </p>
     </div>
   );

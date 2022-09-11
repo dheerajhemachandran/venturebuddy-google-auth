@@ -1,9 +1,9 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./Pages/Home";
+import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
-import Register from "./Pages/Register";
+import Register from "./Pages/Register/Register";
 // import "./components/HeaderCarousel/HeaderCarousel.module.css";
 
 const App = () => {

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import RegisterEmail from "../components/RegisterEmail";
-import RegisterVerification from "./../components/RegisterVerification";
-import RegisterPass from "../components/RegisterPass";
-import loginImage from "./../Assets/images/login-image.png";
-import TypeOfDeals from "../components/TypeOfDeals";
-import TypeOfStartUps from "../components/TypeOfStartUps";
-import TermsAndCondition from "./../components/TermsAndCondition";
+import RegisterEmail from "../../components/RegisterEmail";
+import RegisterVerification from "../../components/RegisterVerification/RegisterVerification";
+import RegisterPass from "../../components/RegisterPass";
+import loginImage from "./../../Assets/images/login-image.png";
+import TypeOfDeals from "../../components/TypeOfDeals";
+import TypeOfStartUps from "../../components/TypeOfStartUps";
+import TermsAndCondition from "../../components/TermsAndCondition";
 
 const Register = () => {
   const [emailOrPhone, setEmailOrPhone] = useState("");
