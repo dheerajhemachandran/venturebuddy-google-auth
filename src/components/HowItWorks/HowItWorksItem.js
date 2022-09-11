@@ -21,7 +21,7 @@ const HowItWorksItem = ({ serial, heading, paragraph, image, reverse }) => {
         </>
       ) : (
         <>
-          <div className="col order-2 order-lg-0 ps-5 ">
+          <div className="col order-2 order-lg-0 ps-3">
             <div className="col-12 col-lg-9">
               <h1 className="text-blue text-start fw-bolder">{serial}</h1>
               <h2 className="fw-bolder">{heading}</h2>

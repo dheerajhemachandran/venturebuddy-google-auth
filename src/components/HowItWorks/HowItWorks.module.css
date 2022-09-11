@@ -3,9 +3,28 @@
     line-height: 36.4px;
 }
 
-#howItWorks {
-    background: url("./../../Assets/images/organisations-bg.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position-y: center;
+
+
+@media(max-width: 600px) {
+    #howItWorks {
+        background: url("./../../Assets/images/organisations-bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: center;
+    }
+}
+
+@media(min-width: 600px) {
+    #howItWorks {
+        background: url("./../../Assets/images/organisations-bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: center;
+    }
+}
+
+@media(min-width: 768px) {
+    #howItWorks {
+        background-size: 100%;
+    }
 }
