@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import styles from "./OTP.module.css";
 
 const OTP = ({ phoneOrEmail }) => {
   const [digitOne, setDigitOne] = useState("");
@@ -17,12 +18,12 @@ const OTP = ({ phoneOrEmail }) => {
 
   useEffect(() => {
     if (error) {
-      for (const items of document.getElementsByClassName("otp")) {
+      for (const items of document.getElementsByClassName(styles.otp)) {
         items.style.color = "#FF2A2A";
         items.style.border = "1px solid #FF2A2A";
       }
     } else {
-      for (const items of document.getElementsByClassName("otp")) {
+      for (const items of document.getElementsByClassName(styles.otp)) {
         items.style.border = "1px solid #d9d9d9";
         items.style.color = "#d9d9d9";
       }
@@ -71,8 +72,8 @@ const OTP = ({ phoneOrEmail }) => {
   };
 
   return (
-    <div id="login-right" className="rounded-4 rounded-md-0">
-      <div className="mx-0 px-0">
+    <div id={styles.loginRight} className="rounded-4 rounded-md-0 text-dark">
+      <div className="mx-0 px-0 h-100">
         <p className="text-center fw-bold mt-5 pt-3">
           Please enter the OTP sent to <br /> {phoneOrEmail}.
           <span className="text-blue py-1 px-1">Change</span>
@@ -90,7 +91,7 @@ const OTP = ({ phoneOrEmail }) => {
                 handleDigitOne(e.nativeEvent.data);
               }}
               id="digit1"
-              className="otp"
+              className={styles.otp}
             />
             <input
               type="text"
@@ -100,7 +101,7 @@ const OTP = ({ phoneOrEmail }) => {
                 handleDigitTwo(e.nativeEvent.data);
               }}
               id="digit2"
-              className="otp"
+              className={styles.otp}
             />
             <input
               type="text"
@@ -110,7 +111,7 @@ const OTP = ({ phoneOrEmail }) => {
                 handleDigitThree(e.nativeEvent.data);
               }}
               id="digit3"
-              className="otp"
+              className={styles.otp}
             />
             <input
               type="text"
@@ -120,7 +121,7 @@ const OTP = ({ phoneOrEmail }) => {
                 handleDigitFour(e.nativeEvent.data);
               }}
               id="digit4"
-              className="otp"
+              className={styles.otp}
             />
           </div>
 

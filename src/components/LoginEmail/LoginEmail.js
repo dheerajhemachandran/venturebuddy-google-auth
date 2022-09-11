@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import gIcon from "./../Assets/icons/google-icon.png";
+import gIcon from "./../../Assets/icons/google-icon.png";
+import "./LoginEmail.module.css";
 
 const LoginEmail = ({ setPhoneOrEmail }) => {
   const emailValidation =
@@ -28,7 +29,7 @@ const LoginEmail = ({ setPhoneOrEmail }) => {
 
   return (
     <>
-      <div id="login-right">
+      <div id="login-right" className="text-dark">
         <form className="my-auto d-flex flex-column justify-content-between">
           <h1 className="my-0">Login</h1>
           <h6 style={{ fontWeight: 500, marginTop: 18, marginBottom: 12 }}>
@@ -63,7 +64,7 @@ const LoginEmail = ({ setPhoneOrEmail }) => {
             id="continue"
           />
 
-          <p className="text-center or">OR</p>
+          <p className="text-center fw-bold or">OR</p>
 
           <button className="btn-outline-blue w-100">
             <img src={gIcon} className="img-fluid me-3" width={20} alt="" />
