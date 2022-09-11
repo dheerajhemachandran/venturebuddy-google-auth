@@ -1,0 +1,20 @@
+.borderImg {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+
+#insights {
+    left: -8%;
+    top: 63%;
+}
+
+#barchart {
+    right: 2%;
+    top: 11%;
+}
+
+.carContainer {
+    position: relative;
+}

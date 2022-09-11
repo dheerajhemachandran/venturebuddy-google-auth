@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import gIcon from "./../icons/google-icon.png";
+import gIcon from "./../Assets/icons/google-icon.png";
 
 const RegisterEmail = ({ setEmailOrPhone, emailValidate, setName }) => {
   const [method, setMethod] = useState("email");

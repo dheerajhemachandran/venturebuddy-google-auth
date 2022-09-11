@@ -138,10 +138,6 @@ section {
   color: #39B54A !important;
 }
 
-.container-fluid {
-  padding: 0 68px;
-}
-
 .sticky-top {
   padding: 13px 0;
 }
@@ -367,45 +363,11 @@ section {
   font-weight: 500;
 }
 
-header h2 {
-  font-size: 48px;
-  font-weight: 600;
-}
-
-header p {
-  font-size: 18px;
-  line-height: 30px;
-  color: #6D747A
-}
-
-header .col-8 {
-  position: relative;
-}
-
-.border-image {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-}
-
-#insights {
-  left: -7%;
-  top: 63%;
-  z-index: 1;
-}
-
-#bar-charts {
-  right: 10%;
-  top: 11%;
-  z-index: 1;
-}
-
-
 
 /* why-choose-us */
 
 #why-choose-us {
-  background: url(./images/organisations-bg.png);
+  background: url(./Assets/images/organisations-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -436,7 +398,7 @@ header .col-8 {
 }
 
 #how-it-works {
-  background: url("./images/organisations-bg.png");
+  background: url("./Assets/images/organisations-bg.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -487,7 +449,7 @@ img.star {
 }
 
 #organizations {
-  background: url(./images/organisations-bg.png);
+  background: url(./Assets/images/organisations-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 41vh 0;
@@ -520,7 +482,7 @@ header .position-absolute {
 }
 
 #retail {
-  background-image: url("./images/retailpng.png");
+  background-image: url("./Assets/images/retailpng.png");
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-size: 100%;
@@ -529,7 +491,7 @@ header .position-absolute {
 }
 
 #angel {
-  background-image: url("./images/angel-investor.png");
+  background-image: url(./Assets/images/angel-investor.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-y: 177px;
@@ -538,7 +500,7 @@ header .position-absolute {
 }
 
 #retail.active {
-  background-image: url("./images/retailpng.png");
+  background-image: url("./Assets/images/retailpng.png");
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-size: 100%;
@@ -547,7 +509,7 @@ header .position-absolute {
 }
 
 #angel.active {
-  background-image: url("./images/angel-investor.png");
+  background-image: url("./Assets/images/angel-investor.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-y: 99px;

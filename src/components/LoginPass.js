@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import eyeImage from "./../images/eye.png";
+import eyeImage from "./../Assets/images/eye.png";
 
 const LoginPass = ({ setPassword }) => {
   const [isVisible, setPasswordVisibility] = useState(false);

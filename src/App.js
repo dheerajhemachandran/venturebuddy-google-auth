@@ -4,11 +4,11 @@ import Navbar from "./components/Navbar";
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
+// import "./components/HeaderCarousel/HeaderCarousel.module.css";
 
-function App() {
+const App = () => {
   const location = useLocation();
 
-  console.log(location);
   return (
     <>
       <div
@@ -28,6 +28,6 @@ function App() {
       </Routes>
     </>
   );
-}
+};
 
 export default App;

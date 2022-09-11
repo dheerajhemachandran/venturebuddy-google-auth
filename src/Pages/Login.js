@@ -4,7 +4,7 @@ import LoginEmail from "./../components/LoginEmail";
 import LoginPass from "./../components/LoginPass";
 
 import OTP from "./../components/OTP";
-import loginImage from "./../images/login-image.png";
+import loginImage from "./../Assets/images/login-image.png";
 
 const Login = () => {
   const [password, setPassword] = useState("");

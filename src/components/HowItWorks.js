@@ -1,8 +1,8 @@
 import React from "react";
-import HowItWorks1 from "./../images/how-it-works-1.png";
-import HowItWorks2 from "./../images/how-it-works-2.png";
-import HowItWorks3 from "./../images/how-it-works-3.png";
-import HowItWorks4 from "./../images/how-it-works-4.png";
+import HowItWorks1 from "./../Assets/images/how-it-works-1.png";
+import HowItWorks2 from "./../Assets/images/how-it-works-2.png";
+import HowItWorks3 from "./../Assets/images/how-it-works-3.png";
+import HowItWorks4 from "./../Assets/images/how-it-works-4.png";
 
 const HowItWorks = () => {
   return (

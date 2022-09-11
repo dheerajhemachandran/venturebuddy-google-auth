@@ -1,4 +1,5 @@
 import React from "react";
+import "./Carousel.module.css";
 
 const CarouselSlide = ({ image, header, paragraph }) => {
   return (

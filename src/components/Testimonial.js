@@ -1,8 +1,8 @@
 import React from "react";
-import rohitImg from "./../images/rohit.png";
-import jeniffer from "./../images/Jenifar.png";
-import Niromi from "./../images/Niromi.png";
-import star from "./../images/star.png";
+import rohitImg from "./../Assets/images/rohit.png";
+import jeniffer from "./../Assets/images/Jenifar.png";
+import Niromi from "./../Assets/images/Niromi.png";
+import star from "./../Assets/images/star.png";
 
 const Testimonial = () => {
   return (

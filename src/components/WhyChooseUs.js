@@ -1,8 +1,8 @@
 import React from "react";
-import HasselessProject from "./../images/Hasseless-Process.png";
-import investorDashboard from "./../images/investor-dashboard.png";
-import periodic from "./../images/periodic-reports.png";
-import buddies from "./../images/genuine-startups.png";
+import HasselessProject from "./../Assets/images/Hasseless-Process.png";
+import investorDashboard from "./../Assets/images/investor-dashboard.png";
+import periodic from "./../Assets/images/periodic-reports.png";
+import buddies from "./../Assets/images/genuine-startups.png";
 import WhyChooseCard from "./WhyChooseCard";
 
 const WhyChooseUs = () => {

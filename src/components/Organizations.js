@@ -1,10 +1,10 @@
 import React from "react";
-import dhl from "./../images/organizations/dhl.png";
-import next from "./../images/organizations/next.png";
-import aviva from "./../images/organizations/aviva.png";
-import santander from "./../images/organizations/santander.png";
-import healthShield from "./../images/organizations/health-shield.png";
-import serco from "./../images/organizations/serco.png";
+import dhl from "./../Assets/images/organizations/dhl.png";
+import next from "./../Assets/images/organizations/next.png";
+import aviva from "./../Assets/images/organizations/aviva.png";
+import santander from "./../Assets/images/organizations/santander.png";
+import healthShield from "./../Assets/images/organizations/health-shield.png";
+import serco from "./../Assets/images/organizations/serco.png";
 
 const Organizations = () => {
   return (

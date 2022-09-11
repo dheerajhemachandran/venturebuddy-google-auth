@@ -1,5 +1,5 @@
 import React from "react";
-import loginImage from "./../images/login-image.png";
+import loginImage from "./../Assets/images/login-image.png";
 
 const RegisterLeft = () => {
   return (

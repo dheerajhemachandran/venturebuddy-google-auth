@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import logo from "./../images/logo.png";
+import logo from "./../Assets/images/logo.png";
 
 const Navbar = () => {
   const links = document.getElementsByClassName("nav-link");
@@ -16,7 +16,7 @@ const Navbar = () => {
   }, [links]);
 
   return (
-    <div className={`bg-white sticky-top`}>
+    <div className={`bg-white sticky-top px-5`}>
       <nav className="navbar navbar-expand-lg fw-bold mt-0">
         <div className="container-fluid">
           <div className="col-4 col-lg-2">
