@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import logo from "./../Assets/images/logo.png";
+import logo from "./../../Assets/images/logo.png";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   const links = document.getElementsByClassName("nav-link");
@@ -38,27 +39,27 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarText">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item text-light py-0">
+              <li className="nav-item px-4 text-light py-0">
                 <NavLink className="nav-link" aria-current="page" to="/">
                   Home
                 </NavLink>
               </li>
-              <li className="nav-item text-light py-0">
+              <li className="nav-item px-4 text-light py-0">
                 <NavLink className="nav-link" to="/invest">
                   Invest and Raise
                 </NavLink>
               </li>
-              <li className="nav-item text-light py-0">
+              <li className="nav-item px-4 text-light py-0">
                 <NavLink className="nav-link" to="/valuation">
                   Valuation Calculation
                 </NavLink>
               </li>
-              <li className="nav-item text-light py-0 border-bottom d-lg-none border-3">
+              <li className="nav-item px-4 text-light py-0 border-bottom d-lg-none border-3">
                 <NavLink className="nav-link" to="/contact">
                   Contact Us
                 </NavLink>
               </li>
-              <li className="nav-item text-light">
+              <li className="nav-item px-4 text-light">
                 <NavLink
                   className="py-0 nav-link border-end d-none d-lg-block border-3"
                   style={{ marginTop: 9, paddingRight: "32px" }}
@@ -76,7 +77,7 @@ const Navbar = () => {
                   Login & SignUp
                 </NavLink>
               </li>
-              <li className="nav-item ps-4 py-0">
+              <li className="nav-item px-4 ps-4 py-0">
                 <div className="position-relative">
                   <div className="outline mx-auto"></div>
                   <Link

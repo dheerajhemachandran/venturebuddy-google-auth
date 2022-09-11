@@ -93,10 +93,6 @@ section {
   font-size: 18px !important;
 }
 
-.nav-item {
-  padding: 0 16px;
-}
-
 #login-left,
 #register-left {
   background: #283891;
@@ -278,13 +274,6 @@ section {
   width: 100%;
 }
 
-
-
-#change {
-  color: #283891;
-  font-weight: 700;
-}
-
 #error {
   color: #ff2a2a !important;
   font-weight: 500 !important;
@@ -301,7 +290,6 @@ section {
 }
 
 #register-right .carousel-inner {
-  /* padding: 16px 56px; */
   padding-top: 16px;
   padding-left: 56px;
   padding-right: 96px;
@@ -311,7 +299,6 @@ section {
   font-size: 16px !important;
   font-weight: 500;
 }
-
 
 #testimonial .nav .active {
   background: #FFFFFF;
