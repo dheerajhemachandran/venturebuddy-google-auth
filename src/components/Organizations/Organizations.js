@@ -1,15 +1,17 @@
 import React from "react";
-import dhl from "./../Assets/images/organizations/dhl.png";
-import next from "./../Assets/images/organizations/next.png";
-import aviva from "./../Assets/images/organizations/aviva.png";
-import santander from "./../Assets/images/organizations/santander.png";
-import healthShield from "./../Assets/images/organizations/health-shield.png";
-import serco from "./../Assets/images/organizations/serco.png";
+import dhl from "./../../Assets/images/organizations/dhl.png";
+import next from "./../../Assets/images/organizations/next.png";
+import aviva from "./../../Assets/images/organizations/aviva.png";
+import santander from "./../../Assets/images/organizations/santander.png";
+import healthShield from "./../../Assets/images/organizations/health-shield.png";
+import serco from "./../../Assets/images/organizations/serco.png";
+import styles from "./Organization.module.css";
 
 const Organizations = () => {
+  console.log(styles);
   return (
     <>
-      <div id="organizations" className="container-fluid">
+      <div id={styles.organizations} className="container-fluid">
         <>
           <h4 className="text-blue text-center fw-bold">
             2500+ Organisations using our services
@@ -37,12 +39,13 @@ const Organizations = () => {
           </div>
         </>
       </div>
+
       <div className="container px-0 px-3">
         <div
           className="bg-secondary-blue text-center p-5 rounded-4"
-          id="join-growing-businesses"
+          id={styles.joinGrowingBusinesses}
         >
-          <h1 className="text-blue">
+          <h1 className="text-blue" id={styles.organizationsHeading}>
             Join 23,000+ growing businesses that use Venturebuddy.
           </h1>
           <p className="text-blue py-3">

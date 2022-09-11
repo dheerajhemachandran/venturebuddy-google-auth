@@ -1,0 +1,11 @@
+.item-heading {
+    font-size: 28px;
+    line-height: 36.4px;
+}
+
+#howItWorks {
+    background: url("./../../Assets/images/organisations-bg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}

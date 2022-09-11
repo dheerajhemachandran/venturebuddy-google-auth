@@ -1,0 +1,25 @@
+#whyChooseUs {
+    background: url(./../../Assets/images/organisations-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#whyChooseUs h1 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #283891;
+}
+
+.whyChooseCardHeader {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.whyChooseCardParagraph {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+}

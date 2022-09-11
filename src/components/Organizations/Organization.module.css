@@ -1,0 +1,23 @@
+#organizations {
+    background: url(./../../Assets/images/organisations-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 41vh 0;
+}
+
+#organizationsHeading {
+    font-weight: bold;
+}
+
+#joinGrowingBusinesses {
+    position: relative;
+    top: -15vh;
+}
+
+#joinGrowingBusinesses h1 {
+    font-size: 40px;
+}
+
+#joinGrowingBusinesses p {
+    font-size: 16px;
+}

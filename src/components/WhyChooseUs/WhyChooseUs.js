@@ -1,9 +1,10 @@
 import React from "react";
-import HasselessProject from "./../Assets/images/Hasseless-Process.png";
-import investorDashboard from "./../Assets/images/investor-dashboard.png";
-import periodic from "./../Assets/images/periodic-reports.png";
-import buddies from "./../Assets/images/genuine-startups.png";
+import HasselessProject from "./../../Assets/images/Hasseless-Process.png";
+import investorDashboard from "./../../Assets/images/investor-dashboard.png";
+import periodic from "./../../Assets/images/periodic-reports.png";
+import buddies from "./../../Assets/images/genuine-startups.png";
 import WhyChooseCard from "./WhyChooseCard";
+import styles from "./WhyChooseUs.module.css";
 
 const WhyChooseUs = () => {
   const servicess = [
@@ -45,10 +46,10 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="text-center" id="why-choose-us">
+    <section className="text-center" id={styles.whyChooseUs}>
       <div className="col-10 col-lg-6 mx-auto container">
-        <h1>Why businesses choose us</h1>
-        <p>
+        <h1 className={styles.sectionHeader}>Why businesses choose us</h1>
+        <p className={styles.sectionText}>
           At VentureBuddy, we believe that the success of your business is our
           success. That's why we work closely with you, to help you succeed.
         </p>

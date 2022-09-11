@@ -364,46 +364,6 @@ section {
 }
 
 
-/* why-choose-us */
-
-#why-choose-us {
-  background: url(./Assets/images/organisations-bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-#why-choose-us h1 {
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 44px;
-  color: #283891;
-}
-
-.why-choose-card h2 {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 32px;
-}
-
-.why-choose-card p {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-#how-it-works .row h2 {
-  font-size: 28px;
-  line-height: 36.4px;
-}
-
-#how-it-works {
-  background: url("./Assets/images/organisations-bg.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position-y: center;
-}
-
 #testimonial .nav .active {
   background: #FFFFFF;
   box-shadow: 0px 0px 40px rgba(40, 56, 145, 0.2);
@@ -448,17 +408,7 @@ img.star {
   color: black;
 }
 
-#organizations {
-  background: url(./Assets/images/organisations-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 41vh 0;
-}
 
-#join-growing-businesses {
-  position: relative;
-  top: -15vh;
-}
 
 header .position-absolute {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));

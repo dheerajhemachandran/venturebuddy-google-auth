@@ -1,0 +1,9 @@
+#testimonial .nav .active {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(40, 56, 145, 0.2);
+    border-radius: 16px;
+}
+
+#testimonial .active {
+    color: #000 !important;
+}
