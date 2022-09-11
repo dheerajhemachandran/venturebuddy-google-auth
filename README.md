@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+# Venturbuddy Project ID 2,3 & 4
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Site is [Here](https://tiny-marzipan-457afd.netlify.app/).
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Installs the required dependencies
 
 ### `npm start`
 
