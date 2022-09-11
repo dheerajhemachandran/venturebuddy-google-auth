@@ -3,9 +3,9 @@ import RegisterEmail from "../../components/RegisterEmail/RegisterEmail";
 import RegisterVerification from "../../components/RegisterVerification/RegisterVerification";
 import RegisterPass from "../../components/RegisterPass/RegisterPass";
 import loginImage from "./../../Assets/images/login-image.png";
-import TypeOfDeals from "../../components/TypeOfDeals";
-import TypeOfStartUps from "../../components/TypeOfStartUps";
-import TermsAndCondition from "../../components/TermsAndCondition";
+import TypeOfDeals from "../../components/TypeOfDeals/TypeOfDeals";
+import TypeOfStartUps from "../../components/TypeOfStartUps/TypeOfStartUps";
+import TermsAndCondition from "../../components/TermsAndCondition/TermsAndCondition";
 import styles from "./Register.module.css";
 
 const Register = () => {

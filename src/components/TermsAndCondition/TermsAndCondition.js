@@ -1,9 +1,10 @@
 import React from "react";
+import styles from "./TermsAndCondition.module.css";
 
 const TermsAndCondition = () => {
   return (
     <>
-      <div id="terms-and-condition" className="text-dark bg-white p-3">
+      <div id={styles.termsAndCondition} className="text-dark bg-white p-3">
         <h3 className="fw-bold">Terms and Conditions</h3>
         <p>
           When it comes to what you should include in your terms and conditions

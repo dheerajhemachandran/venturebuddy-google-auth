@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import technology from "./../Assets/images/startups/tech.png";
-import ecommerce from "./../Assets/images/startups/ecommerce.png";
-import wearables from "./../Assets/images/startups/wearables.png";
-import agency from "./../Assets/images/startups//agancy.png";
-import marketing from "./../Assets/images/startups/marketing.png";
-import services from "./../Assets/images/startups/services.png";
-import saas from "./../Assets/images/startups/saas.png";
-import consumer from "./../Assets/images/startups/consumer.png";
-import others from "./../Assets/images/startups/others.png";
+import technology from "./../../Assets/images/startups/tech.png";
+import ecommerce from "./../../Assets/images/startups/ecommerce.png";
+import wearables from "./../../Assets/images/startups/wearables.png";
+import agency from "./../../Assets/images/startups//agancy.png";
+import marketing from "./../../Assets/images/startups/marketing.png";
+import services from "./../../Assets/images/startups/services.png";
+import saas from "./../../Assets/images/startups/saas.png";
+import consumer from "./../../Assets/images/startups/consumer.png";
+import others from "./../../Assets/images/startups/others.png";
 
 const TypeOfStartUps = () => {
   const [buttonActive, setButtonActive] = useState(false);

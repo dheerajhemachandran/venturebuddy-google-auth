@@ -15,7 +15,9 @@ const RegisterPass = () => {
     setDisplay("none");
     document.getElementById("register-right").classList.remove("col-md-7");
     document.getElementById("next").click();
-    document.getElementById("register-left").classList.remove("d-md-block");
+    document
+      .getElementById("Register_registerLeft__hroVu")
+      .classList.remove("d-md-block");
   };
 
   useEffect(() => {
