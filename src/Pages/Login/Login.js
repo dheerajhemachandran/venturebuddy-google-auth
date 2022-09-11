@@ -12,7 +12,10 @@ const Login = () => {
   return (
     <div className="container">
       <div className="row login-form mx-auto my-5 col-12 col-lg-8">
-        <div className="text-center col-5 d-none d-md-block" id="login-left">
+        <div
+          className="text-center col-5 d-none d-md-block"
+          id={styles.loginLeft}
+        >
           <p className="text-white mx-auto col-9">
             “Don't shoot your shot, without testing your aim”
           </p>

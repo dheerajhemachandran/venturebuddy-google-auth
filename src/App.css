@@ -93,18 +93,6 @@ section {
   font-size: 18px !important;
 }
 
-#login-left,
-#register-left {
-  background: #283891;
-  border-radius: 12px 0 0 12px;
-  padding: 63px 0;
-}
-
-#login-left p {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 28px;
-}
 
 .text-green {
   color: #39B54A;
@@ -292,7 +280,7 @@ section {
 #register-right .carousel-inner {
   padding-top: 16px;
   padding-left: 56px;
-  padding-right: 96px;
+  padding-right: 78px;
 }
 
 #register-right label {

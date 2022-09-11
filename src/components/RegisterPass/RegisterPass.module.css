@@ -1,0 +1,15 @@
+#password {
+    position: relative;
+}
+
+#eye {
+    position: absolute;
+    top: 30%;
+    right: 4%;
+    cursor: pointer;
+    transform: scaleX(-1);
+}
+
+#check {
+    display: none;
+}

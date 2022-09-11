@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import RegisterEmail from "../../components/RegisterEmail";
+import RegisterEmail from "../../components/RegisterEmail/RegisterEmail";
 import RegisterVerification from "../../components/RegisterVerification/RegisterVerification";
-import RegisterPass from "../../components/RegisterPass";
+import RegisterPass from "../../components/RegisterPass/RegisterPass";
 import loginImage from "./../../Assets/images/login-image.png";
 import TypeOfDeals from "../../components/TypeOfDeals";
 import TypeOfStartUps from "../../components/TypeOfStartUps";
 import TermsAndCondition from "../../components/TermsAndCondition";
+import styles from "./Register.module.css";
 
 const Register = () => {
   const [emailOrPhone, setEmailOrPhone] = useState("");
@@ -18,8 +19,6 @@ const Register = () => {
   const nameValidation = /(^[a-zA-Z][a-zA-Z\s]{0,20}[a-zA-Z]$)/;
 
   const emailValidate = () => {
-    console.log(name);
-
     if (!nameValidation.test(name)) {
       document
         .getElementById("name")
@@ -50,13 +49,12 @@ const Register = () => {
   };
 
   return (
-    <div
-      className="container"
-      id="register"
-      style={{ height: "100vh", display: "flex", alignItems: "center" }}
-    >
+    <div className="container" id="register">
       <div className="row mt-5 mx-auto col-12 col-lg-9">
-        <div className="text-center col-5 d-none d-md-block" id="register-left">
+        <div
+          className="text-center col-5 d-none d-md-block"
+          id={styles.registerLeft}
+        >
           <p className="text-white mx-auto col-9">
             “Don't shoot your shot, without testing your aim”
           </p>

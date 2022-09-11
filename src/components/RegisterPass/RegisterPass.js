@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-import eyeImage from "./../Assets/images/eye.png";
+import eyeImage from "./../../Assets/images/eye.png";
+import styles from "./RegisterPass.module.css";
 
-const RegisterPass = ({ setPassword }) => {
+const RegisterPass = () => {
   const [isVisible, setPasswordVisibility] = useState(false);
   const [eye, setEye] = useState("eye");
   const [display, setDisplay] = useState("block");
+
   if (document.getElementById("register-left")) {
     document.getElementById("register-left").style.display = display;
   }
@@ -13,7 +15,6 @@ const RegisterPass = ({ setPassword }) => {
     setDisplay("none");
     document.getElementById("register-right").classList.remove("col-md-7");
     document.getElementById("next").click();
-    // document.getElementById("register-left").classList.add("d-none");
     document.getElementById("register-left").classList.remove("d-md-block");
   };
 
@@ -24,14 +25,14 @@ const RegisterPass = ({ setPassword }) => {
 
       img.src = eyeImage;
       img.width = 18;
-      document.getElementById("eye").innerHTML = "";
-      document.getElementById("eye").appendChild(img);
+      document.getElementById(styles.eye).innerHTML = "";
+      document.getElementById(styles.eye).appendChild(img);
     } else {
-      document.getElementById("eye").innerHTML = "";
+      document.getElementById(styles.eye).innerHTML = "";
       const i = document.createElement("i");
       i.classList.add("fas");
       i.classList.add("fa-eye-slash");
-      document.getElementById("eye").appendChild(i);
+      document.getElementById(styles.eye).appendChild(i);
       document.getElementById("passwordField").type = "password";
     }
   }, [isVisible]);
@@ -41,23 +42,22 @@ const RegisterPass = ({ setPassword }) => {
       <h1 className="my-0 h1 fw-bolder pb-4">Signup</h1>
       <h6 className="pb-2 fw-bold">Set Password</h6>
 
-      <div id="password">
+      <div id={styles.password}>
         <input
           type="password"
           className="form-control p-3"
           id="passwordField"
           placeholder="your password"
-          onBlur={(e) => setPassword(e.target.value)}
           required
         />
-        <label id="eye" htmlFor="check">
+        <label id={styles.eye} htmlFor={styles.check}>
           <i className={`fas fa-${eye}`}></i>
         </label>
         <input
           type="checkbox"
-          id="check"
+          id={styles.check}
           onChange={() =>
-            setPasswordVisibility(document.getElementById("check").checked)
+            setPasswordVisibility(document.getElementById(styles.check).checked)
           }
         />
       </div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import gIcon from "./../Assets/icons/google-icon.png";
+import gIcon from "./../../Assets/icons/google-icon.png";
 
 const RegisterEmail = ({ setEmailOrPhone, emailValidate, setName }) => {
   const [method, setMethod] = useState("email");
@@ -34,6 +34,7 @@ const RegisterEmail = ({ setEmailOrPhone, emailValidate, setName }) => {
           type="text"
           placeholder="Your full name"
           className="form-control px-4 py-3"
+          name="name"
           onChange={(e) => setName(e.target.value)}
           required
         />
