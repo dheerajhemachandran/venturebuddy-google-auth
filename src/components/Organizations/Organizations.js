@@ -18,22 +18,22 @@ const Organizations = () => {
           </h4>
 
           <div className="row row-cols-6 align-items-center justify-content-center px-5">
-            <div className="d-flex justify-content-center p-5">
+            <div className="d-flex justify-content-center p-lg-5">
               <img className="my-4 img-fluid" src={dhl} alt="" />
             </div>
-            <div className="d-flex justify-content-center p-5">
+            <div className="d-flex justify-content-center p-lg-5">
               <img className="my-4 img-fluid" src={next} alt="" />
             </div>
-            <div className="d-flex justify-content-center p-5">
+            <div className="d-flex justify-content-center p-lg-5">
               <img className="my-4 img-fluid" src={aviva} alt="" />
             </div>
-            <div className="d-flex justify-content-center p-5">
+            <div className="d-flex justify-content-center p-lg-5">
               <img className="my-4 img-fluid" src={santander} alt="" />
             </div>
-            <div className="d-flex justify-content-center p-5">
+            <div className="d-flex justify-content-center p-lg-5">
               <img className="my-4 img-fluid" src={serco} alt="" />
             </div>
-            <div className="d-flex justify-content-center p-5">
+            <div className="d-flex justify-content-center p-lg-5">
               <img className="my-4 img-fluid" src={healthShield} alt="" />
             </div>
           </div>
