@@ -1,0 +1,59 @@
+.deal {
+    width: 245px;
+    height: 270px;
+}
+
+.deal h5 {
+    font-weight: bold;
+}
+
+.deal p {
+    font-size: 14px;
+}
+
+#retail>div {
+    height: 100%;
+}
+
+#retail {
+    background-image: url("./../../Assets/images/retailpng.png");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-size: 100%;
+    background-position-y: 185%;
+    transition: all 500ms;
+    cursor: pointer;
+    border: 2px solid #283891 !important;
+}
+
+#angel {
+    background-image: url("./../../Assets/images/angel-investor.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 177px;
+    transition: all 500ms;
+    background-position-x: 54px;
+    cursor: pointer;
+    border: 2px solid #283891 !important;
+}
+
+#retail.active {
+    background-image: url("./../../Assets/images/retailpng.png");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-size: 100%;
+    background-position-y: 104%;
+    border: 2px solid #39B54A !important;
+    color: #39B54A;
+}
+
+#angel.active {
+    background-image: url("./../../Assets/images/angel-investor.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 99px;
+    transition: all 500ms;
+    background-position-x: 54px;
+    border: 2px solid #39B54A !important;
+    color: #39B54A;
+}

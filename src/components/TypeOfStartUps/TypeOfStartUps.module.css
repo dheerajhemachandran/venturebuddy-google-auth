@@ -1,0 +1,16 @@
+.startUp {
+    background-color: #3e4c9cc3;
+    width: 80px;
+    height: 80px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+.startUp h5 {
+    font-size: 14px !important;
+}
+
+.startUp.active {
+    background-color: #4dbc5c;
+    box-shadow: 0px 0px 16px rgba(77, 188, 92, 0.5);
+}

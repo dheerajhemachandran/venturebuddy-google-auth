@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import gIcon from "./../../Assets/icons/google-icon.png";
+import styles from "./RegisterEmail.module.css";
 
 const RegisterEmail = ({ setEmailOrPhone, emailValidate, setName }) => {
   const [method, setMethod] = useState("email");
@@ -25,8 +26,9 @@ const RegisterEmail = ({ setEmailOrPhone, emailValidate, setName }) => {
       <form
         className="my-auto d-flex flex-column justify-content-between text-dark"
         onSubmit={(e) => e.preventDefault()}
+        id={styles.registerEmail}
       >
-        <h1 className="my-0 h1 fw-bolder pb-4">Signup</h1>
+        <h1 className="my-0 pb-4">Signup</h1>
         <h6 className="pb-2">Full Name</h6>
 
         <input

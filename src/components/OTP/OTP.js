@@ -82,7 +82,7 @@ const OTP = ({ phoneOrEmail }) => {
           Enter OTP
         </h6>
         <form style={{ marginTop: 10 }} onSubmit={checkOTP}>
-          <div className="row row-cols-4 justify-content-between px-3">
+          <div className="row row-cols-4 px-3">
             <input
               type="text"
               maxLength={1}

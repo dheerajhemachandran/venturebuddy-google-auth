@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./RegisterVerification.module.css";
+import styles from "./RegisterVerification.module.css";
 
 const RegisterVerification = ({ email }) => {
   const [digitOne, setDigitOne] = useState("");
@@ -80,7 +80,7 @@ const RegisterVerification = ({ email }) => {
       <p>We have sent a verification code to {email}</p>
 
       <form style={{ marginTop: 10 }} onSubmit={checkOTP}>
-        <div className="row row-cols-5 justify-content-between px-3">
+        <div className="row row-cols-4 justify-content-between px-3">
           <input
             type="text"
             maxLength={1}
@@ -89,7 +89,7 @@ const RegisterVerification = ({ email }) => {
               handleDigitOne(e.nativeEvent.data);
             }}
             id="digit1"
-            className="otp p-3 text-center"
+            className={styles.otp}
           />
           <input
             type="text"
@@ -99,7 +99,7 @@ const RegisterVerification = ({ email }) => {
               handleDigitTwo(e.nativeEvent.data);
             }}
             id="digit2"
-            className="otp p-3 text-center"
+            className={styles.otp}
           />
           <input
             type="text"
@@ -109,7 +109,7 @@ const RegisterVerification = ({ email }) => {
               handleDigitThree(e.nativeEvent.data);
             }}
             id="digit3"
-            className="otp p-3 text-center"
+            className={styles.otp}
           />
           <input
             type="text"
@@ -119,7 +119,7 @@ const RegisterVerification = ({ email }) => {
               handleDigitFour(e.nativeEvent.data);
             }}
             id="digit4"
-            className="otp p-3 text-center"
+            className={styles.otp}
           />
         </div>
 

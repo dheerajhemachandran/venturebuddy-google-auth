@@ -8,12 +8,13 @@ import services from "./../../Assets/images/startups/services.png";
 import saas from "./../../Assets/images/startups/saas.png";
 import consumer from "./../../Assets/images/startups/consumer.png";
 import others from "./../../Assets/images/startups/others.png";
+import styles from "./TypeOfStartUps.module.css";
 
 const TypeOfStartUps = () => {
   const [buttonActive, setButtonActive] = useState(false);
 
   const setStartUp = (id) => {
-    document.getElementById(id).classList.add("active");
+    document.getElementById(id).classList.add(styles.active);
   };
 
   const nextOfDeals = () => {
@@ -30,7 +31,7 @@ const TypeOfStartUps = () => {
         <div className="row row-cols-5 justify-content-center">
           <div className="text-center py-3">
             <div
-              className="start-up d-flex align-items-center justify-content-center rounded-circle mx-auto"
+              className={`${styles.startUp} d-flex align-items-center justify-content-center rounded-circle mx-auto`}
               id="technology"
               onClick={() => {
                 setStartUp("technology");
@@ -43,7 +44,7 @@ const TypeOfStartUps = () => {
           </div>
           <div className="text-center py-3">
             <div
-              className="start-up d-flex align-items-center justify-content-center rounded-circle mx-auto"
+              className={`${styles.startUp} d-flex align-items-center justify-content-center rounded-circle mx-auto`}
               id="ecommerce"
               onClick={() => {
                 setStartUp("ecommerce");
@@ -56,7 +57,7 @@ const TypeOfStartUps = () => {
           </div>
           <div className="text-center py-3">
             <div
-              className="start-up d-flex align-items-center justify-content-center rounded-circle mx-auto"
+              className={`${styles.startUp} d-flex align-items-center justify-content-center rounded-circle mx-auto`}
               id="wearables"
               onClick={() => {
                 setStartUp("wearables");
@@ -69,7 +70,7 @@ const TypeOfStartUps = () => {
           </div>
           <div className="text-center py-3">
             <div
-              className="start-up d-flex align-items-center justify-content-center rounded-circle mx-auto"
+              className={`${styles.startUp} d-flex align-items-center justify-content-center rounded-circle mx-auto`}
               id="agency"
               onClick={() => {
                 setStartUp("agency");
@@ -82,7 +83,7 @@ const TypeOfStartUps = () => {
           </div>
           <div className="text-center py-3">
             <div
-              className="start-up d-flex align-items-center justify-content-center rounded-circle mx-auto"
+              className={`${styles.startUp} d-flex align-items-center justify-content-center rounded-circle mx-auto`}
               id="marketing"
               onClick={() => {
                 setStartUp("marketing");
@@ -95,7 +96,7 @@ const TypeOfStartUps = () => {
           </div>
           <div className="text-center py-3">
             <div
-              className="start-up d-flex align-items-center justify-content-center rounded-circle mx-auto"
+              className={`${styles.startUp} d-flex align-items-center justify-content-center rounded-circle mx-auto`}
               id="services"
               onClick={() => {
                 setStartUp("services");
@@ -108,7 +109,7 @@ const TypeOfStartUps = () => {
           </div>
           <div className="text-center py-3">
             <div
-              className="start-up d-flex align-items-center justify-content-center rounded-circle mx-auto"
+              className={`${styles.startUp} d-flex align-items-center justify-content-center rounded-circle mx-auto`}
               id="saas"
               onClick={() => {
                 setStartUp("saas");
@@ -121,7 +122,7 @@ const TypeOfStartUps = () => {
           </div>
           <div className="text-center py-3">
             <div
-              className="start-up d-flex align-items-center justify-content-center rounded-circle mx-auto"
+              className={`${styles.startUp} d-flex align-items-center justify-content-center rounded-circle mx-auto`}
               id="consumer"
               onClick={() => {
                 setStartUp("consumer");
@@ -134,7 +135,7 @@ const TypeOfStartUps = () => {
           </div>
           <div className="text-center py-3">
             <div
-              className="start-up d-flex align-items-center justify-content-center rounded-circle mx-auto"
+              className={`${styles.startUp} d-flex align-items-center justify-content-center rounded-circle mx-auto`}
               id="others"
               onClick={() => {
                 setStartUp("others");
