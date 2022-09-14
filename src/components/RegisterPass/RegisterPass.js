@@ -6,18 +6,25 @@ const RegisterPass = () => {
   const [isVisible, setPasswordVisibility] = useState(false);
   const [eye, setEye] = useState("eye");
   const [display, setDisplay] = useState("block");
+  const [pass, setPass] = useState("");
 
   if (document.getElementById("register-left")) {
     document.getElementById("register-left").style.display = display;
   }
 
   const submitPassword = () => {
-    setDisplay("none");
-    document.getElementById("register-right").classList.remove("col-md-7");
-    document.getElementById("next").click();
-    document
-      .getElementById("Register_registerLeft__hroVu")
-      .classList.remove("d-md-block");
+    if (pass.length > 0) {
+      setDisplay("none");
+      document.getElementById("register-right").classList.remove("col-md-7");
+      document.getElementById("next").click();
+      document
+        .getElementById("Register_registerLeft__hroVu")
+        .classList.remove("d-md-block");
+    } else {
+      document
+        .getElementById("passwordField")
+        .setCustomValidity("Please enter a password");
+    }
   };
 
   useEffect(() => {
@@ -25,6 +32,9 @@ const RegisterPass = () => {
     if (isVisible) {
       document.getElementById("passwordField").type = "text";
 
+      // document
+      //   .getElementById("passwordField")
+      //   .setAttribute("-webkit-text-security", "none");
       img.src = eyeImage;
       img.width = 18;
       document.getElementById(styles.eye).innerHTML = "";
@@ -41,8 +51,8 @@ const RegisterPass = () => {
 
   return (
     <div className="text-dark">
-      <h1 className="my-0 h1 fw-bolder pb-4">Signup</h1>
-      <h6 className="pb-2 fw-bold">Set Password</h6>
+      <h1 className="my-0 pb-4">Signup</h1>
+      <h6 className="pb-2">Set Password</h6>
 
       <div id={styles.password}>
         <input
@@ -50,6 +60,7 @@ const RegisterPass = () => {
           className="form-control p-3"
           id="passwordField"
           placeholder="your password"
+          onChange={(e) => setPass(e.target.value)}
           required
         />
         <label id={styles.eye} htmlFor={styles.check}>
@@ -64,9 +75,7 @@ const RegisterPass = () => {
         />
       </div>
 
-      <h6 className="pt-4 pb-2">
-        <span className="fw-bold">Referral Code</span> (Optional)
-      </h6>
+      <h6 className="pt-4 pb-2">Referral Code (Optional)</h6>
       <input
         type="text"
         className="form-control p-3"

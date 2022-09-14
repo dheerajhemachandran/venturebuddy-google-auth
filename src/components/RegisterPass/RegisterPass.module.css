@@ -2,6 +2,10 @@
     position: relative;
 }
 
+#passwordField {
+    -webkit-text-security: none
+}
+
 #eye {
     position: absolute;
     top: 30%;
@@ -12,4 +16,8 @@
 
 #check {
     display: none;
+}
+
+.fa-eye-slash:before {
+    font-size: 15px !important;
 }

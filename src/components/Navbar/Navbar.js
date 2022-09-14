@@ -38,28 +38,28 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarText">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item px-4 text-light py-0">
+            <ul className="navbar-nav ms-auto gap-4 mb-2 mb-lg-0">
+              <li className="nav-item text-light py-0">
                 <NavLink className="nav-link" aria-current="page" to="/">
                   Home
                 </NavLink>
               </li>
-              <li className="nav-item px-4 text-light py-0">
+              <li className="nav-item text-light py-0">
                 <NavLink className="nav-link" to="/invest">
                   Invest and Raise
                 </NavLink>
               </li>
-              <li className="nav-item px-4 text-light py-0">
+              <li className="nav-item text-light py-0">
                 <NavLink className="nav-link" to="/valuation">
                   Valuation Calculator
                 </NavLink>
               </li>
-              <li className="nav-item px-4 text-light py-0 border-bottom d-lg-none border-3">
+              <li className="nav-item text-light py-0 border-bottom d-lg-none border-3">
                 <NavLink className="nav-link" to="/contact">
                   Contact us
                 </NavLink>
               </li>
-              <li className="nav-item px-4 text-light">
+              <li className="nav-item text-light">
                 <NavLink
                   className="py-0 nav-link border-end d-none d-lg-block border-3"
                   style={{ marginTop: 9, paddingRight: "32px" }}

@@ -6,8 +6,14 @@
     padding: 63px 0;
 }
 
-#login-left p {
+
+
+#registerPara {
+    font-size: 20px !important;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
+}
+
+#registerLeft img {
+    width: 250px;
+    height: 250px;
 }

@@ -13,9 +13,14 @@ const RegisterVerification = ({ email }) => {
     const result = digitOne + digitTwo + digitThree + digitFour;
 
     // here dynamic value can be use for checking the otp
-    result === "1234" ? setError(false) : setError(true);
 
-    document.getElementById("next").click();
+    if (result === "1234") {
+      setError(false);
+
+      document.getElementById("next").click();
+    } else {
+      setError(true);
+    }
   };
 
   useEffect(() => {
@@ -74,12 +79,14 @@ const RegisterVerification = ({ email }) => {
   };
 
   return (
-    <div className="text-dark">
-      <h1 className="my-0 h1 fw-bolder pb-4">Signup</h1>
+    <div className="text-dark" id={styles.verifyEmail}>
+      <h1 className="my-0 pb-4">Signup</h1>
       <h6 className="pb-2">Enter Verification Code</h6>
-      <p>We have sent a verification code to {email}</p>
+      <p className="col-10 pb-2 mt-0">
+        We have sent a verification code to {email}
+      </p>
 
-      <form style={{ marginTop: 10 }} onSubmit={checkOTP}>
+      <form onSubmit={checkOTP}>
         <div className="row row-cols-4 justify-content-between px-3">
           <input
             type="text"
@@ -129,7 +136,7 @@ const RegisterVerification = ({ email }) => {
           type="submit"
           className={`btn-blue w-100 ${error ? "mt-0" : ""}`}
           onClick={checkOTP}
-          value="VERIFY"
+          value="NEXT"
         />
 
         <button
@@ -140,10 +147,7 @@ const RegisterVerification = ({ email }) => {
           id="next"
         ></button>
       </form>
-      <p
-        className="text-end w-100 ms-1"
-        style={{ fontSize: "15px", marginTop: 24 }}
-      >
+      <p className="text-end w-100 ms-1 mt-0">
         <span
           className="text-primary py-1 px-2 mt-0 cursor-pointer"
           style={{ cursor: "pointer" }}
