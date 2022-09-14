@@ -20,12 +20,13 @@ const TypeOfDeals = () => {
   };
 
   return (
-    <div className="text-dark mt-5">
-      <h6 className="text-center fw-bold">
-        What type of deals are you looking for?
-      </h6>
+    <div className="text-dark mt-5" id={styles.typeOfDeals}>
+      <h6 className="text-center">What type of deals are you looking for?</h6>
 
-      <div className="row row-cols-2 gap-4 justify-content-center text-blue py-5 m-5">
+      <div
+        id={styles.types}
+        className="row row-cols-2 justify-content-center text-blue py-5 m-5 text-center"
+      >
         <div
           className={`bg-white border-1 border border-secondary rounded-4 ${styles.deal}`}
           id={styles.retail}
@@ -34,12 +35,10 @@ const TypeOfDeals = () => {
             setButtonActive(true);
           }}
         >
-          <div className="p-4">
-            <h5>Retail Investor</h5> <p>upto ₹ 2 lakhs </p>
-          </div>
+          <h5>Retail Investor</h5> <p>upto ₹ 2 lakhs </p>
         </div>
         <div
-          className={`bg-white border-1 border border-secondary rounded-4 p-4 ${styles.deal}`}
+          className={`bg-white border-1 border border-secondary rounded-4 ${styles.deal}`}
           id={styles.angel}
           onClick={() => {
             setAngelActive();
