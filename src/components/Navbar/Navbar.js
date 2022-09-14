@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <div className={`bg-white sticky-top px-5`}>
-      <nav className="navbar navbar-expand-lg fw-bold mt-0">
+      <nav className={`navbar navbar-expand-lg fw-bold mt-0 ${styles.navbar}`}>
         <div className="container-fluid">
           <div className="col-4 col-lg-2">
             <NavLink to="/">
@@ -51,12 +51,12 @@ const Navbar = () => {
               </li>
               <li className="nav-item px-4 text-light py-0">
                 <NavLink className="nav-link" to="/valuation">
-                  Valuation Calculation
+                  Valuation Calculator
                 </NavLink>
               </li>
               <li className="nav-item px-4 text-light py-0 border-bottom d-lg-none border-3">
                 <NavLink className="nav-link" to="/contact">
-                  Contact Us
+                  Contact us
                 </NavLink>
               </li>
               <li className="nav-item px-4 text-light">
@@ -65,7 +65,7 @@ const Navbar = () => {
                   style={{ marginTop: 9, paddingRight: "32px" }}
                   to="/contact"
                 >
-                  Contact Us
+                  Contact us
                 </NavLink>
               </li>
               <li className="py-0 my-auto">
@@ -84,7 +84,7 @@ const Navbar = () => {
                     to="/"
                     className="btn btn-green rounded-pill mx-auto px-4 py-2 w-100"
                   >
-                    Live Deals
+                    Live deals
                   </Link>
                 </div>
               </li>

@@ -105,7 +105,9 @@ const RegisterEmail = ({ setEmailOrPhone, emailValidate, setName }) => {
           id="continue"
         />
 
-        <p className="text-center or">OR</p>
+        <p className="text-center" id={styles.or}>
+          OR
+        </p>
 
         <button className="btn-outline-blue w-100">
           <img src={gIcon} className="img-fluid me-3" width={20} alt="" />
