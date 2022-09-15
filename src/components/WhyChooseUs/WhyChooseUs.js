@@ -23,21 +23,21 @@ const WhyChooseUs = () => {
         "Venture Buddy is one of the most affordable consulting services out there, with the best value for your money.",
     },
     {
-      id: 1,
+      id: 3,
       img: periodic,
       header: "3. Periodic Reports",
       description:
         "Venturebuddy's team of industry experts & consultants is committed to providing high-quality service to take your business to the next level.",
     },
     {
-      id: 1,
+      id: 4,
       img: buddies,
       header: "4. Verified and Genuine Startups",
       description:
         "We offer end-to-end business consulting services to help you in all stages of your company's growth.",
     },
     {
-      id: 1,
+      id: 5,
       img: buddies,
       header: "5. Venturebuddy’s Tools valuation tool access for Lifetime",
       description:

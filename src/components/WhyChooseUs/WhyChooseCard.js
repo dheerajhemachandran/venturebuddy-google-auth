@@ -6,9 +6,7 @@ const WhyChooseCard = ({ img, header, desc }) => {
     <div className="col" style={styles.whyChooseCard}>
       <div className="col-10 mx-auto">
         <img src={img} alt="" className="img-fluid" />
-        <h2 className={`${styles.whyChooseCardHeader} col-8 mx-auto`}>
-          {header}
-        </h2>
+        <h2 className={`${styles.whyChooseCardHeader} mx-auto`}>{header}</h2>
         <p className={`col-9 mx-auto ${styles.whyChooseCardParagraph}`}>
           {desc}
         </p>
