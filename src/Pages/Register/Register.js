@@ -87,7 +87,7 @@ const Register = () => {
               <div className="carousel-item">
                 <TypeOfStartUps />
               </div>
-              <div className="carousel-item">
+              <div className="carousel-item" id={styles.termsContainer}>
                 <TermsAndCondition />
               </div>
             </div>

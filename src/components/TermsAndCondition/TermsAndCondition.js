@@ -4,8 +4,8 @@ import styles from "./TermsAndCondition.module.css";
 const TermsAndCondition = () => {
   return (
     <>
-      <div id={styles.termsAndCondition} className="text-dark bg-white p-3">
-        <h3 className="mt-2">Terms & Conditions</h3>
+      <div id={styles.termsAndCondition} className="text-dark bg-white pt-2">
+        <h3>Terms & Conditions</h3>
         <p>
           When it comes to what you should include in your terms and conditions
           or how you should be wording them, there are what could be considered
@@ -16,7 +16,7 @@ const TermsAndCondition = () => {
           offer and the risks and liabilities that come with those.
         </p>
 
-        <h4 className="mt-2">Condition of use</h4>
+        <h4>Condition of use</h4>
         <p>
           When it comes to what you should include in your terms and conditions
           or how you should be wording them, there are what could be considered
@@ -26,7 +26,7 @@ const TermsAndCondition = () => {
           business, taking into consideration the services or products that you
           offer and the risks and liabilities that come with those.
         </p>
-        <h4 className="mt-2">Privacy Policy</h4>
+        <h4>Privacy Policy</h4>
         <p>
           When it comes to what you should include in your terms and conditions
           or how you should be wording them, there are what could be considered
