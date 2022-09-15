@@ -43,7 +43,7 @@ const TypeOfStartUps = () => {
             >
               <img src={technology} alt="" className="mx-auto" />
             </div>
-            <h5 className="pt-1">Technology</h5>
+            <h6 className="pt-1">Technology</h6>
           </div>
           <div className="text-center py-2 p-0 d-flex align-items-center justify-content-center flex-column">
             <div
@@ -56,7 +56,7 @@ const TypeOfStartUps = () => {
             >
               <img src={ecommerce} alt="" className="mx-auto" />
             </div>
-            <h5 className="pt-1">ECommerce</h5>
+            <h6 className="pt-1">ECommerce</h6>
           </div>
           <div className="text-center py-2 p-0 d-flex align-items-center justify-content-center flex-column">
             <div
@@ -69,7 +69,7 @@ const TypeOfStartUps = () => {
             >
               <img src={wearables} alt="" className="mx-auto" />
             </div>
-            <h5 className="pt-1">Wearables</h5>
+            <h6 className="pt-1">Wearables</h6>
           </div>
           <div className="text-center py-2 p-0 d-flex align-items-center justify-content-center flex-column">
             <div
@@ -82,7 +82,7 @@ const TypeOfStartUps = () => {
             >
               <img src={agency} alt="" className="mx-auto" />
             </div>
-            <h5 className="pt-1">Agency</h5>
+            <h6 className="pt-1">Agency</h6>
           </div>
           <div className="text-center py-2 p-0 d-flex align-items-center justify-content-center flex-column">
             <div
@@ -95,7 +95,7 @@ const TypeOfStartUps = () => {
             >
               <img src={marketing} alt="" className="mx-auto" />
             </div>
-            <h5 className="pt-1">Marketing</h5>
+            <h6 className="pt-1">Marketing</h6>
           </div>
 
           <div className="text-center py-2 p-0 d-flex align-items-center justify-content-center flex-column">
@@ -109,7 +109,7 @@ const TypeOfStartUps = () => {
             >
               <img src={services} alt="" className="mx-auto" />
             </div>
-            <h5 className="pt-1">Services</h5>
+            <h6 className="pt-1">Services</h6>
           </div>
           <div className="text-center py-2 p-0 d-flex align-items-center justify-content-center flex-column">
             <div
@@ -122,7 +122,7 @@ const TypeOfStartUps = () => {
             >
               <img src={saas} alt="" className="mx-auto" />
             </div>
-            <h5 className="pt-1">SAAS</h5>
+            <h6 className="pt-1">SAAS</h6>
           </div>
           <div className="text-center py-2 p-0 d-flex align-items-center justify-content-center flex-column">
             <div
@@ -135,7 +135,7 @@ const TypeOfStartUps = () => {
             >
               <img src={consumer} alt="" className="mx-auto img-fluid" />
             </div>
-            <h5 className="pt-1">Consumer Products</h5>
+            <h6 className="pt-1">Consumer Products</h6>
           </div>
           <div className="text-center py-2 p-0 d-flex align-items-center justify-content-center flex-column">
             <div
@@ -148,7 +148,7 @@ const TypeOfStartUps = () => {
             >
               <img src={others} alt="" className="mx-auto" />
             </div>
-            <h5 className="pt-1">Other</h5>
+            <h6 className="pt-1">Other</h6>
           </div>
         </div>
         <div className="text-center">

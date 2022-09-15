@@ -83,7 +83,10 @@ const RegisterVerification = ({ email }) => {
       <h1 className="my-0 pb-4">Signup</h1>
       <h6 className="pb-2">Enter Verification Code</h6>
       <p className="col-10 pb-2 mt-0">
-        We have sent a verification code to {email}
+        We have sent a verification code to{" "}
+        <span>
+          {email.slice(0, 3)}XXX{email.slice(email.length - 3, email.length)}
+        </span>
       </p>
 
       <form onSubmit={checkOTP}>

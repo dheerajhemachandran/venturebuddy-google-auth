@@ -3,9 +3,15 @@
 #registerLeft {
     background: #283891;
     border-radius: 12px 0 0 12px;
-    padding: 63px 0;
+    padding: 63px 30px;
+    width: 360px;
 }
 
+
+#registerLeft p {
+    font-size: 23px !important;
+    font-weight: 500;
+}
 
 
 #registerPara {
@@ -14,8 +20,9 @@
 }
 
 #registerLeft img {
-    width: 250px;
-    height: 250px;
+    width: 270px;
+    height: 270px;
+    margin-top: 63px;
 }
 
 

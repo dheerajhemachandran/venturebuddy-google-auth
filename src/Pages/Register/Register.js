@@ -50,15 +50,15 @@ const Register = () => {
 
   return (
     <div className="container" id="register">
-      <div className="row mt-5 mx-auto col-12 col-lg-9">
+      <div className="row mt-5 mx-auto col-12 col-lg-9 justify-content-center">
         <div
-          className="text-center col-4 d-none d-md-block"
+          className="text-center col-5 d-none d-md-block"
           id={styles.registerLeft}
         >
-          <p className="text-white mx-4" id={styles.registerPara}>
+          <p className="text-white" id={styles.registerPara}>
             “Don't shoot your shot, without testing your aim”
           </p>
-          <img src={loginImage} className="mx-auto col-6" alt="" />
+          <img src={loginImage} className="mx-auto" alt="" />
         </div>
 
         <div className="col-12 col-md-7" id={styles.registerRight}>
