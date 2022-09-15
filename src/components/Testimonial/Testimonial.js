@@ -3,11 +3,12 @@ import rohitImg from "./../../Assets/images/rohit.png";
 import jeniffer from "./../../Assets/images/Jenifar.png";
 import Niromi from "./../../Assets/images/Niromi.png";
 import star from "./../../Assets/images/star.png";
+import styles from "./Testimonial.module.css";
 
 const Testimonial = () => {
   return (
     <div className="container py-5" id="testimonial">
-      <h1 className="text-blue text-center fw-bold">
+      <h1 className="text-blue text-center" id={styles.sectionHeader}>
         What Clients say About us
       </h1>
 
@@ -31,10 +32,12 @@ const Testimonial = () => {
             <img src={rohitImg} className="col-3 my-2" alt="" />
             <div className="col-9 text-start">
               <div className="d-flex align-items-center ps-3 bold">
-                <h5 className="comment-name mb-0 pe-2 text-black">
+                <h5 className={`${styles.commentName} mb-0 pe-2 text-black`}>
                   Rohit Ransore
                 </h5>
-                <p className="ms-2 mb-0 text-blue">Investor</p>
+                <p className={`ps-2 py-0 mb-0 ${styles.designation}`}>
+                  Investor
+                </p>
               </div>
               <div className="ms-3 pt-0 text-secondary">UX Designer, ATG</div>
             </div>
@@ -52,10 +55,12 @@ const Testimonial = () => {
             <img src={jeniffer} className="col-3 my-2" alt="" />
             <div className="col-9 text-start">
               <div className="d-flex align-items-center ps-3 bold">
-                <h5 className="comment-name mb-0 pe-2 text-black">
+                <h5 className={`${styles.commentName} mb-0 pe-2 text-black`}>
                   Jeniffer White
                 </h5>
-                <p className="ms-2 mb-0 text-blue">Investor</p>
+                <p className={`ps-2 py-0 mb-0 ${styles.designation}`}>
+                  Investor
+                </p>
               </div>
               <div className="ms-3 pt-0 text-secondary">
                 Vice President, Google
@@ -76,10 +81,12 @@ const Testimonial = () => {
             <img src={Niromi} className="col-3 my-2" alt="" />
             <div className="col-9 text-start">
               <div className="d-flex align-items-center ps-3 bold">
-                <h5 className="comment-name mb-0 pe-2 text-black">
+                <h5 className={`${styles.commentName} mb-0 pe-2 text-black`}>
                   Niromi Taylor
                 </h5>
-                <p className="ms-2 mb-0 text-blue">Business</p>
+                <p className={`ps-2 py-0 mb-0 ${styles.designation}`}>
+                  Business
+                </p>
               </div>
               <div className="ms-3 pt-0 text-secondary">
                 Senior Manager, IKEA
@@ -96,7 +103,9 @@ const Testimonial = () => {
             tabindex="0"
           >
             <div className="col-10 mx-auto">
-              <h4 className="fw-bolder">It was a great experience</h4>
+              <h4 className={styles.commentHeader}>
+                It was a great experience
+              </h4>
               <div className="d-flex gap-2">
                 <img className="star" src={star} alt="" />
                 <img className="star" src={star} alt="" />
@@ -104,7 +113,7 @@ const Testimonial = () => {
                 <img className="star" src={star} alt="" />
                 <img className="star" src={star} alt="" />
               </div>
-              <p className="pt-2 pt-lg-5 comment">
+              <p className={`pt-2 pt-lg-5 ${styles.comment}`}>
                 It was a great experience It was a great experience It was a
                 great experience It was a great experience It was a great
                 experience It was a great experience It was a great experience
@@ -125,7 +134,9 @@ const Testimonial = () => {
             tabindex="0"
           >
             <div className="col-10 mx-auto">
-              <h4 className="fw-bolder">It was a great experience</h4>
+              <h4 className={styles.commentHeader}>
+                It was a great experience
+              </h4>
               <div className="d-flex gap-2">
                 <img className="star" src={star} alt="" />
                 <img className="star" src={star} alt="" />
@@ -133,7 +144,7 @@ const Testimonial = () => {
                 <img className="star" src={star} alt="" />
                 <img className="star" src={star} alt="" />
               </div>
-              <p className="pt-2 pt-lg-5 comment">
+              <p className={`pt-2 pt-lg-5 ${styles.comment}`}>
                 It was a great experience It was a great experience It was a
                 great experience It was a great experience It was a great
                 experience It was a great experience It was a great experience
@@ -154,7 +165,9 @@ const Testimonial = () => {
             tabindex="0"
           >
             <div className="col-10 mx-auto">
-              <h4 className="fw-bolder">It was a great experience</h4>
+              <h4 className={styles.commentHeader}>
+                It was a great experience
+              </h4>
               <div className="d-flex gap-2">
                 <img className="star" src={star} alt="" />
                 <img className="star" src={star} alt="" />
@@ -162,7 +175,7 @@ const Testimonial = () => {
                 <img className="star" src={star} alt="" />
                 <img className="star" src={star} alt="" />
               </div>
-              <p className="pt-2 pt-lg-5 comment">
+              <p className={`pt-2 pt-lg-5 ${styles.comment}`}>
                 It was a great experience It was a great experience It was a
                 great experience It was a great experience It was a great
                 experience It was a great experience It was a great experience
