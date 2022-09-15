@@ -1,17 +1,19 @@
 .deal {
-    width: 164px;
-    height: 180px;
-    padding-top: 32px;
+    width: 185px;
+    height: 193px;
+    padding: 32px;
     border: 1px solid #bfc3de;
 }
 
-.deal h5 {
-    font-size: 14px;
+.deal h6 {
     font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 0;
 }
 
 .deal p {
     font-size: 12px;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -33,7 +35,7 @@
     background-image: url("./../../Assets/images/angel-investor.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position-y: 122px;
+    background-position-y: 131px;
     transition: all 500ms;
     background-position-x: 54px;
     cursor: pointer;
@@ -45,8 +47,8 @@
     background-position-x: 100%;
     background-size: 100%;
     background-position-y: 104%;
-    border: 1px solid #39B54A !important;
-    color: #39B54A;
+    border: 1px solid #18a62b !important;
+    color: #18a62b;
 }
 
 #angel.active {
@@ -56,15 +58,16 @@
     background-position-y: 99px;
     transition: all 500ms;
     background-position-x: 54px;
-    border: 1px solid #39B54A !important;
-    color: #39B54A;
+    border: 1px solid #18a62b !important;
+    color: #18a62b;
 }
 
 #types {
     grid-gap: 0 60px;
 }
 
-#typeOfDeals h6 {
-    font-size: 16px;
+#typeOfDeals h5 {
     font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
 }

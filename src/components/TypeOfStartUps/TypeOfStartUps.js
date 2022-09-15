@@ -22,127 +22,131 @@ const TypeOfStartUps = () => {
   };
 
   return (
-    <div className="text-dark pt-4 ms-4" id="typeofstartups">
-      <h5 className="text-center fw-bold">
+    <div className="text-dark pt-4 ms-4" id={styles.typeOfStartUps}>
+      <h5 className="text-center">
         What type of startups are you looking for?
       </h5>
 
-      <div className="row justify-content-center text-blue text-dark pt-5 pb-0 mb-0">
-        <div className="row row-cols-5 justify-content-center">
-          <div className="text-center py-3">
+      <div className="row text-blue text-dark pt-5 pb-0 mb-0">
+        <div
+          className="row row-cols-2 row-cols-md-5 justify-content-center mx-auto gap-0"
+          id={styles.startUpContainer}
+        >
+          <div className="text-center py-2 p-0 d-flex align-items-center justify-content-center flex-column">
             <div
-              className={`${styles.startUp} d-flex align-items-center justify-content-center rounded-circle mx-auto`}
+              className={`${styles.startUp} rounded-circle d-flex justify-content-center align-items-center`}
               id="technology"
               onClick={() => {
                 setStartUp("technology");
                 setButtonActive(true);
               }}
             >
-              <img className="img-fluid" src={technology} alt="" />
+              <img src={technology} alt="" className="mx-auto" />
             </div>
             <h5 className="pt-1">Technology</h5>
           </div>
-          <div className="text-center py-3">
+          <div className="text-center py-2 p-0 d-flex align-items-center justify-content-center flex-column">
             <div
-              className={`${styles.startUp} d-flex align-items-center justify-content-center rounded-circle mx-auto`}
+              className={`${styles.startUp} rounded-circle d-flex justify-content-center align-items-center`}
               id="ecommerce"
               onClick={() => {
                 setStartUp("ecommerce");
                 setButtonActive(true);
               }}
             >
-              <img className="img-fluid" src={ecommerce} alt="" />
+              <img src={ecommerce} alt="" className="mx-auto" />
             </div>
             <h5 className="pt-1">ECommerce</h5>
           </div>
-          <div className="text-center py-3">
+          <div className="text-center py-2 p-0 d-flex align-items-center justify-content-center flex-column">
             <div
-              className={`${styles.startUp} d-flex align-items-center justify-content-center rounded-circle mx-auto`}
+              className={`${styles.startUp} rounded-circle d-flex justify-content-center align-items-center`}
               id="wearables"
               onClick={() => {
                 setStartUp("wearables");
                 setButtonActive(true);
               }}
             >
-              <img className="img-fluid" src={wearables} alt="" />
+              <img src={wearables} alt="" className="mx-auto" />
             </div>
             <h5 className="pt-1">Wearables</h5>
           </div>
-          <div className="text-center py-3">
+          <div className="text-center py-2 p-0 d-flex align-items-center justify-content-center flex-column">
             <div
-              className={`${styles.startUp} d-flex align-items-center justify-content-center rounded-circle mx-auto`}
+              className={`${styles.startUp} rounded-circle d-flex justify-content-center align-items-center`}
               id="agency"
               onClick={() => {
                 setStartUp("agency");
                 setButtonActive(true);
               }}
             >
-              <img className="img-fluid" src={agency} alt="" />
+              <img src={agency} alt="" className="mx-auto" />
             </div>
             <h5 className="pt-1">Agency</h5>
           </div>
-          <div className="text-center py-3">
+          <div className="text-center py-2 p-0 d-flex align-items-center justify-content-center flex-column">
             <div
-              className={`${styles.startUp} d-flex align-items-center justify-content-center rounded-circle mx-auto`}
+              className={`${styles.startUp} rounded-circle d-flex justify-content-center align-items-center`}
               id="marketing"
               onClick={() => {
                 setStartUp("marketing");
                 setButtonActive(true);
               }}
             >
-              <img className="img-fluid" src={marketing} alt="" />
+              <img src={marketing} alt="" className="mx-auto" />
             </div>
             <h5 className="pt-1">Marketing</h5>
           </div>
-          <div className="text-center py-3">
+
+          <div className="text-center py-2 p-0 d-flex align-items-center justify-content-center flex-column">
             <div
-              className={`${styles.startUp} d-flex align-items-center justify-content-center rounded-circle mx-auto`}
+              className={`${styles.startUp} rounded-circle d-flex justify-content-center align-items-centere`}
               id="services"
               onClick={() => {
                 setStartUp("services");
                 setButtonActive(true);
               }}
             >
-              <img className="img-fluid" src={services} alt="" />
+              <img src={services} alt="" className="mx-auto" />
             </div>
             <h5 className="pt-1">Services</h5>
           </div>
-          <div className="text-center py-3">
+          <div className="text-center py-2 p-0 d-flex align-items-center justify-content-center flex-column">
             <div
-              className={`${styles.startUp} d-flex align-items-center justify-content-center rounded-circle mx-auto`}
+              className={`${styles.startUp} rounded-circle d-flex justify-content-center align-items-center`}
               id="saas"
               onClick={() => {
                 setStartUp("saas");
                 setButtonActive(true);
               }}
             >
-              <img className="img-fluid" src={saas} alt="" />
+              <img src={saas} alt="" className="mx-auto" />
             </div>
             <h5 className="pt-1">SAAS</h5>
           </div>
-          <div className="text-center py-3">
+          <div className="text-center py-2 p-0 d-flex align-items-center justify-content-center flex-column">
             <div
-              className={`${styles.startUp} d-flex align-items-center justify-content-center rounded-circle mx-auto`}
+              className={`${styles.startUp} rounded-circle d-flex justify-content-center align-items-center`}
               id="consumer"
               onClick={() => {
                 setStartUp("consumer");
                 setButtonActive(true);
               }}
             >
-              <img className="img-fluid" src={consumer} alt="" />
+              <img src={consumer} alt="" className="mx-auto img-fluid" />
             </div>
             <h5 className="pt-1">Consumer Products</h5>
           </div>
-          <div className="text-center py-3">
+          <div className="text-center py-2 p-0 d-flex align-items-center justify-content-center flex-column">
             <div
-              className={`${styles.startUp} d-flex align-items-center justify-content-center rounded-circle mx-auto`}
+              className={`${styles.startUp} rounded-circle d-flex justify-content-center align-items-center`}
               id="others"
               onClick={() => {
                 setStartUp("others");
                 setButtonActive(true);
               }}
             >
-              <img className="img-fluid" src={others} alt="" />
+              <img src={others} alt="" className="mx-auto" />
             </div>
             <h5 className="pt-1">Other</h5>
           </div>

@@ -61,7 +61,7 @@ const Register = () => {
           <img src={loginImage} className="mx-auto col-6" alt="" />
         </div>
 
-        <div className="col-12 col-md-7" id="register-right">
+        <div className="col-12 col-md-7" id={styles.registerRight}>
           <div
             id="carouselExampleControls2"
             className="carousel slide"

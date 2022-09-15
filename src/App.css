@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 @keyframes button-expand {
   from {
@@ -269,26 +270,6 @@ section {
   font-weight: 400 !important;
 }
 
-
-#register-right {
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  box-shadow: 0 0 4px #ccc;
-}
-
-#register-right .carousel-inner {
-  padding-top: 16px;
-  padding-left: 56px;
-  padding-right: 78px;
-  height: 70vh;
-}
-
-
-
-#register-right label {
-  font-size: 16px !important;
-  font-weight: 500;
-}
 
 #testimonial .nav .active {
   background: #FFFFFF;

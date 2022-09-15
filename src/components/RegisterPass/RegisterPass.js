@@ -15,8 +15,10 @@ const RegisterPass = () => {
   const submitPassword = () => {
     if (pass.length > 0) {
       setDisplay("none");
-      document.getElementById("register-right").classList.remove("col-md-7");
       document.getElementById("next").click();
+      document
+        .getElementById("Register_registerRight__IOYTK")
+        .classList.remove("col-md-7");
       document
         .getElementById("Register_registerLeft__hroVu")
         .classList.remove("d-md-block");
@@ -50,7 +52,7 @@ const RegisterPass = () => {
   }, [isVisible]);
 
   return (
-    <div className="text-dark">
+    <div className="text-dark" id={styles.registerPass}>
       <h1 className="my-0 pb-4">Signup</h1>
       <h6 className="pb-2">Set Password</h6>
 

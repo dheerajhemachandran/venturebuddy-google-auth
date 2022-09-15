@@ -21,7 +21,7 @@ const TypeOfDeals = () => {
 
   return (
     <div className="text-dark mt-5" id={styles.typeOfDeals}>
-      <h6 className="text-center">What type of deals are you looking for?</h6>
+      <h5 className="text-center">What type of deals are you looking for?</h5>
 
       <div
         id={styles.types}
@@ -35,7 +35,7 @@ const TypeOfDeals = () => {
             setButtonActive(true);
           }}
         >
-          <h5>Retail Investor</h5> <p>upto ₹ 2 lakhs </p>
+          <h6>Retail Investor</h6> <p>upto ₹ 2 lakhs </p>
         </div>
         <div
           className={`bg-white border-1 border border-secondary rounded-4 ${styles.deal}`}
@@ -45,7 +45,7 @@ const TypeOfDeals = () => {
             setButtonActive(true);
           }}
         >
-          <h5>Angel Investor</h5> <p>above ₹ 2 lakhs </p>
+          <h6>Angel Investor</h6> <p>above ₹ 2 lakhs </p>
         </div>
         <div className="text-center">
           <button
