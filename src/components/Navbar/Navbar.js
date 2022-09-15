@@ -17,7 +17,7 @@ const Navbar = () => {
   }, [links]);
 
   return (
-    <div className={`bg-white sticky-top px-5`}>
+    <div className={`bg-white sticky-top px-lg-5`}>
       <nav className={`navbar navbar-expand-lg fw-bold mt-0 ${styles.navbar}`}>
         <div className="container-fluid">
           <div className="col-4 col-lg-2">

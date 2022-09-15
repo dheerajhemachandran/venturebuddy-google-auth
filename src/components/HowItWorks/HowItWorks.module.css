@@ -1,6 +1,14 @@
-.item-heading {
+.itemHeader {
+    font-weight: 500;
     font-size: 28px;
     line-height: 36.4px;
+}
+
+.itemPara {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #939ca3;
 }
 
 

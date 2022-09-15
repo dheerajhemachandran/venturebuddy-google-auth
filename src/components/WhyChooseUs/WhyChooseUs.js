@@ -49,7 +49,7 @@ const WhyChooseUs = () => {
     <section className="text-center" id={styles.whyChooseUs}>
       <div className="col-10 col-lg-6 mx-auto container">
         <h1 className={styles.sectionHeader}>Why businesses choose us</h1>
-        <p className={styles.sectionText}>
+        <p className={`col-9 mx-auto ${styles.sectionText}`}>
           At VentureBuddy, we believe that the success of your business is our
           success. That's why we work closely with you, to help you succeed.
         </p>

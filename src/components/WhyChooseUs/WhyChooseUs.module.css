@@ -5,6 +5,12 @@
     background-position: center center;
 }
 
+.sectionText {
+    font-weight: 500;
+    font-size: 16px;
+    color: #6d747a;
+}
+
 #whyChooseUs h1 {
     font-weight: 600;
     font-size: 36px;

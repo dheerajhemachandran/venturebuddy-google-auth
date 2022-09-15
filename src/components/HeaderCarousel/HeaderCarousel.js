@@ -18,7 +18,7 @@ const HeaderCarousel = () => {
   const { borderImg, insights, barchart, carContainer } = styles;
 
   return (
-    <div className={`mx-4 ${carContainer}`}>
+    <div className={`mx-lg-4 ${carContainer}`}>
       <div className="border border-1 p-3 rounded-4 me-5">
         <Swiper
           autoplay={{ delay: 3000 }}

@@ -72,13 +72,14 @@ section {
 
 .btn-secondary-blue {
   background-color: #E9EBF4;
-  border: 2px solid #E9EBF4;
+  border: 1px solid #E9EBF4;
   border-radius: 8px;
   color: #283891;
+  font-weight: 600;
 }
 
 .btn-secondary-blue:hover {
-  border: 2px solid #283891;
+  border: 1px solid #283891 !important;
   background: transparent;
 }
 
