@@ -13,7 +13,7 @@ const Organizations = () => {
     <>
       <div id={styles.organizations} className="container-fluid">
         <>
-          <h4 className="text-blue text-center fw-bold">
+          <h4 className="text-blue text-center" id={styles.orgHead}>
             2500+ Organisations using our services
           </h4>
 
@@ -45,7 +45,7 @@ const Organizations = () => {
           className="bg-secondary-blue text-center p-5 rounded-4"
           id={styles.joinGrowingBusinesses}
         >
-          <h1 className="text-blue" id={styles.organizationsHeading}>
+          <h1 className="text-blue" id={styles.growHead}>
             Join 23,000+ growing businesses that use Venturebuddy.
           </h1>
           <p className="text-blue py-3">
@@ -53,7 +53,7 @@ const Organizations = () => {
             stages of your company's growth.
           </p>
 
-          <a href="#" className="btn-blue px-4">
+          <a href="#" className="btn-blue px-4" id={styles.growBtn}>
             Get Started
           </a>
         </div>
