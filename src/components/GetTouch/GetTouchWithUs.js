@@ -5,7 +5,7 @@ const GetTouchWithUs = () => {
   return (
     <div className="container my-5 py-5">
       <h1 className="text-blue text-center" id={styles.getTouchHeader}>
-        Get Touch With Us
+        Get In Touch With Us
       </h1>
       <p
         className="text-center col-12 col-lg-5 mx-auto"

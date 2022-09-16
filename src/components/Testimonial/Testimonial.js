@@ -20,7 +20,7 @@ const Testimonial = () => {
           aria-orientation="horizontal"
         >
           <button
-            class="nav-link active d-flex align-items-center w-100"
+            class="nav-link active d-flex align-items-center px-5 py-4"
             id="v-pills-home-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-home"
@@ -29,8 +29,8 @@ const Testimonial = () => {
             aria-controls="v-pills-home"
             aria-selected="true"
           >
-            <img src={rohitImg} className="col-3 my-2" alt="" />
-            <div className="col-9 text-start">
+            <img src={rohitImg} className="col-2 my-2" alt="" />
+            <div className="col-10 text-start">
               <div className="d-flex align-items-center ps-3 bold">
                 <h5 className={`${styles.commentName} mb-0 pe-2 text-black`}>
                   Rohit Ransore
@@ -44,7 +44,7 @@ const Testimonial = () => {
             </div>
           </button>
           <button
-            class="nav-link d-flex align-items-center my-3 w-100"
+            class="nav-link d-flex align-items-center my-3 px-5 py-4"
             id="v-pills-profile-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-profile"
@@ -53,8 +53,8 @@ const Testimonial = () => {
             aria-controls="v-pills-profile"
             aria-selected="false"
           >
-            <img src={jeniffer} className="col-3 my-2" alt="" />
-            <div className="col-9 text-start">
+            <img src={jeniffer} className="col-2 my-2" alt="" />
+            <div className="col-10 text-start">
               <div className="d-flex align-items-center ps-3 bold">
                 <h5 className={`${styles.commentName} mb-0 pe-2 text-black`}>
                   Jeniffer White
@@ -71,7 +71,7 @@ const Testimonial = () => {
           </button>
 
           <button
-            class="nav-link d-flex align-items-center my-3 w-100"
+            class="nav-link d-flex align-items-center my-3 px-5 py-4"
             id="v-pills-messages-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-messages"
@@ -80,8 +80,8 @@ const Testimonial = () => {
             aria-controls="v-pills-messages"
             aria-selected="false"
           >
-            <img src={Niromi} className="col-3 my-2" alt="" />
-            <div className="col-9 text-start">
+            <img src={Niromi} className="col-2 my-2" alt="" />
+            <div className="col-10 text-start">
               <div className="d-flex align-items-center ps-3 bold">
                 <h5 className={`${styles.commentName} mb-0 pe-2 text-black`}>
                   Niromi Taylor

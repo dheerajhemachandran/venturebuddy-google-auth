@@ -205,7 +205,7 @@ section {
 .btn-blue:hover {
   background-color: transparent;
   color: #283891 !important;
-  border: 2px solid #283891;
+  border: 2px solid #283891 !important;
   transition: all 200ms;
 }
 

@@ -27,19 +27,12 @@
     font-size: 14px;
 }
 
-/* 
-#dhl {
-    width: 181px;
-    height: auto;
-}
-
-#next {
-    width: 138px;
-    height: auto;
-}
- */
-
 #organizations img {
     width: 100%;
     height: auto;
+}
+
+#joinGrowingBusinesses {
+    position: relative;
+    top: -10rem;
 }
