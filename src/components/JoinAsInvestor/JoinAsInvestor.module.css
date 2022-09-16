@@ -14,3 +14,15 @@
     padding-top: 57px;
     padding-bottom: 70px;
 }
+
+#join {
+    color: #283891;
+}
+
+#joinBtn {
+    background-color: #283891;
+    padding: 16px 24px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}

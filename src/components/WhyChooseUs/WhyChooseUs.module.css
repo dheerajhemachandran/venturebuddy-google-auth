@@ -1,10 +1,9 @@
 #whyChooseUs {
-    /* background: url(./../../Assets/images/organisations-bg.png); */
     background: linear-gradient(180deg, #FFFFFF 0%, #EBF8ED 27.4%, #EBF8ED 74.79%, #FFFFFF 100%);
-
-    background-size: cover;
+    background-size: 100% 105%;
     background-repeat: no-repeat;
     background-position: center center;
+    padding: 58px 0;
 }
 
 .sectionText {
@@ -26,11 +25,17 @@
     line-height: 32px;
     width: 234px;
     color: #08090A;
+    margin-top: 30px;
 }
 
 .whyChooseCardParagraph {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
     color: #6D747A;
+}
+
+.whyChooseImg {
+    width: 73%;
+    height: auto;
 }

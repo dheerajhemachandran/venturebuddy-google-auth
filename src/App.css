@@ -204,21 +204,21 @@ section {
 }
 
 .text-blue {
-  color: #3D4B9B;
+  color: #283891;
 }
 
 .text-blue:hover {
-  color: #3D4B9B;
+  color: #283891;
   text-decoration: none;
 }
 
 .signUpLink {
-  color: #3D4B9B;
+  color: #283891;
 }
 
 .signUpLink:hover {
   text-decoration: none;
-  color: #3D4B9B;
+  color: #283891;
 }
 
 #loginImage {
