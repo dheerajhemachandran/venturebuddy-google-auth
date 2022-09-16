@@ -20,7 +20,7 @@ const Header = () => {
         </div>
 
         <div className="col-12 col-lg-7">
-          <div className="col-12 col-lg-8 ms-auto mt-3 pe-0 pe-lg-5">
+          <div className="col-12 col-lg-8 mx-auto mt-3 pe-0 pe-lg-5">
             <HeaderCarousel />
           </div>
         </div>

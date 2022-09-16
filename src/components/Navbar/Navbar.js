@@ -17,8 +17,21 @@ const Navbar = () => {
   }, [links]);
 
   return (
-    <div className={`bg-white sticky-top px-lg-5`}>
-      <nav className={`navbar navbar-expand-lg fw-bold mt-0 ${styles.navbar}`}>
+    <div className={`bg-white sticky-top py-0`}>
+      <div
+        className={`container-fluid bg-blue text-white text-center text-uppercase ${
+          location.pathname === "/" ? "d-block" : "d-none"
+        }`}
+        id="hello"
+      >
+        Calculate the valuation of your business in just 15 minutes.{" "}
+        <a className="text-white" href="#">
+          Click here
+        </a>
+      </div>
+      <nav
+        className={`navbar navbar-expand-lg fw-bold mt-0 px-lg-5 ${styles.navbar}`}
+      >
         <div className="container-fluid">
           <div className="col-4 col-lg-2">
             <NavLink to="/">
@@ -82,7 +95,7 @@ const Navbar = () => {
                   <div className="outline mx-auto"></div>
                   <Link
                     to="/"
-                    className="btn btn-green rounded-pill mx-auto px-4 py-2 w-100"
+                    className="btn btn-green mx-auto px-4 py-2 w-100"
                   >
                     Live deals
                   </Link>

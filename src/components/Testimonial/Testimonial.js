@@ -7,20 +7,20 @@ import styles from "./Testimonial.module.css";
 
 const Testimonial = () => {
   return (
-    <div className="container py-5" id="testimonial">
+    <div className="container-fluid p-5" id="testimonial">
       <h1 className="text-blue text-center" id={styles.sectionHeader}>
         What Clients say About us
       </h1>
 
-      <div class="d-flex align-items-start flex-column flex-lg-row py-5">
+      <div class="d-flex align-items-start flex-column flex-lg-row p-5">
         <div
-          class="nav nav-pills me-lg-3 col-12 col-lg-4"
+          class="nav nav-pills col-12 col-lg-5 pe-5"
           id="v-pills-tab"
           role="tablist"
           aria-orientation="horizontal"
         >
           <button
-            class="nav-link active d-flex align-items-center"
+            class="nav-link active d-flex align-items-center w-100"
             id="v-pills-home-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-home"
@@ -35,6 +35,7 @@ const Testimonial = () => {
                 <h5 className={`${styles.commentName} mb-0 pe-2 text-black`}>
                   Rohit Ransore
                 </h5>
+                <hr />
                 <p className={`ps-2 py-0 mb-0 ${styles.designation}`}>
                   Investor
                 </p>
@@ -43,7 +44,7 @@ const Testimonial = () => {
             </div>
           </button>
           <button
-            class="nav-link d-flex align-items-center my-3"
+            class="nav-link d-flex align-items-center my-3 w-100"
             id="v-pills-profile-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-profile"
@@ -58,6 +59,7 @@ const Testimonial = () => {
                 <h5 className={`${styles.commentName} mb-0 pe-2 text-black`}>
                   Jeniffer White
                 </h5>
+                <hr />
                 <p className={`ps-2 py-0 mb-0 ${styles.designation}`}>
                   Investor
                 </p>
@@ -69,7 +71,7 @@ const Testimonial = () => {
           </button>
 
           <button
-            class="nav-link d-flex align-items-center my-3"
+            class="nav-link d-flex align-items-center my-3 w-100"
             id="v-pills-messages-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-messages"
@@ -84,6 +86,7 @@ const Testimonial = () => {
                 <h5 className={`${styles.commentName} mb-0 pe-2 text-black`}>
                   Niromi Taylor
                 </h5>
+                <hr />
                 <p className={`ps-2 py-0 mb-0 ${styles.designation}`}>
                   Business
                 </p>
@@ -94,7 +97,7 @@ const Testimonial = () => {
             </div>
           </button>
         </div>
-        <div class="tab-content col-12 col-lg-8" id="v-pills-tabContent">
+        <div class="tab-content col-12 col-lg-7" id="v-pills-tabContent">
           <div
             class="tab-pane fade show active"
             id="v-pills-home"
@@ -102,7 +105,7 @@ const Testimonial = () => {
             aria-labelledby="v-pills-home-tab"
             tabindex="0"
           >
-            <div className="col-10 mx-auto">
+            <>
               <h4 className={styles.commentHeader}>
                 It was a great experience
               </h4>
@@ -124,7 +127,7 @@ const Testimonial = () => {
                 great experience It was a great experience It was a great
                 experience It was a great experience{" "}
               </p>
-            </div>
+            </>
           </div>
           <div
             class="tab-pane fade"
@@ -133,7 +136,7 @@ const Testimonial = () => {
             aria-labelledby="v-pills-profile-tab"
             tabindex="0"
           >
-            <div className="col-10 mx-auto">
+            <>
               <h4 className={styles.commentHeader}>
                 It was a great experience
               </h4>
@@ -155,7 +158,7 @@ const Testimonial = () => {
                 great experience It was a great experience It was a great
                 experience It was a great experience{" "}
               </p>
-            </div>
+            </>
           </div>
           <div
             class="tab-pane fade"
@@ -164,7 +167,7 @@ const Testimonial = () => {
             aria-labelledby="v-pills-messages-tab"
             tabindex="0"
           >
-            <div className="col-10 mx-auto">
+            <>
               <h4 className={styles.commentHeader}>
                 It was a great experience
               </h4>
@@ -186,7 +189,7 @@ const Testimonial = () => {
                 great experience It was a great experience It was a great
                 experience It was a great experience{" "}
               </p>
-            </div>
+            </>
           </div>
         </div>
       </div>

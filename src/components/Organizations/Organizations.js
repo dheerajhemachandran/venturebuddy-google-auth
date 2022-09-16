@@ -8,7 +8,6 @@ import serco from "./../../Assets/images/organizations/serco.png";
 import styles from "./Organization.module.css";
 
 const Organizations = () => {
-  console.log(styles);
   return (
     <>
       <div id={styles.organizations} className="container-fluid">
@@ -17,24 +16,28 @@ const Organizations = () => {
             2500+ Organisations using our services
           </h4>
 
-          <div className="row row-cols-6 align-items-center justify-content-center px-5">
-            <div className="d-flex justify-content-center p-lg-5">
-              <img className="my-4 img-fluid" src={dhl} alt="" />
+          <div className="row row-cols-6 mx-5 px-4">
+            <div className="col text-center my-auto">
+              <img src={dhl} alt="" />
             </div>
-            <div className="d-flex justify-content-center p-lg-5">
-              <img className="my-4 img-fluid" src={next} alt="" />
+            <div className="col text-center my-auto px-5">
+              <img src={next} alt="" />
             </div>
-            <div className="d-flex justify-content-center p-lg-5">
-              <img className="my-4 img-fluid" src={aviva} alt="" />
+            <div className="col my-auto p-4 pe-3">
+              <div className="ps-0 pe-5 me-3">
+                <img src={aviva} alt="" />
+              </div>
             </div>
-            <div className="d-flex justify-content-center p-lg-5">
-              <img className="my-4 img-fluid" src={santander} alt="" />
+            <div className="col text-center my-auto p-0 m-0">
+              <div className="px-2 pe-0 me-5">
+                <img src={santander} alt="" />
+              </div>
             </div>
-            <div className="d-flex justify-content-center p-lg-5">
-              <img className="my-4 img-fluid" src={serco} alt="" />
+            <div className="col text-center my-auto px-4 ps-0">
+              <img src={serco} alt="" />
             </div>
-            <div className="d-flex justify-content-center p-lg-5">
-              <img className="my-4 img-fluid" src={healthShield} alt="" />
+            <div className="col text-center my-auto px-3git add">
+              <img src={healthShield} alt="" />
             </div>
           </div>
         </>

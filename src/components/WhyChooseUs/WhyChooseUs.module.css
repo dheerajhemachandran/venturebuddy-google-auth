@@ -1,5 +1,7 @@
 #whyChooseUs {
-    background: url(./../../Assets/images/organisations-bg.png);
+    /* background: url(./../../Assets/images/organisations-bg.png); */
+    background: linear-gradient(180deg, #FFFFFF 0%, #EBF8ED 27.4%, #EBF8ED 74.79%, #FFFFFF 100%);
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -23,10 +25,12 @@
     font-size: 20px;
     line-height: 32px;
     width: 234px;
+    color: #08090A;
 }
 
 .whyChooseCardParagraph {
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
+    color: #6D747A;
 }

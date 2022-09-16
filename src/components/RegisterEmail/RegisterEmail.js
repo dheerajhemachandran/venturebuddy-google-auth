@@ -111,7 +111,7 @@ const RegisterEmail = ({ setEmailOrPhone, emailValidate, setName }) => {
 
         <button className="btn-outline-blue w-100">
           <img src={gIcon} className="img-fluid me-3" width={20} alt="" />
-          Signup with Google
+          <span id={styles.google}>Signup with Google</span>
         </button>
 
         <p className="text-center" id="signUp">

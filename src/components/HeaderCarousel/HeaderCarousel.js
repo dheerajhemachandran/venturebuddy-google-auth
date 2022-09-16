@@ -1,10 +1,10 @@
 import React from "react";
 import { Autoplay, EffectCreative } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import airbnb from "./../../Assets/images/slider/airbnb.png";
-import cocacola from "./../../Assets/images/slider/coca-cola.png";
-import uberEats from "./../../Assets/images/slider/uber-eats.png";
-import slide4 from "./../../Assets/images/slider/Slide 4.png";
+import airbnb from "./../../Assets/images/slider/airbnb-2.png";
+import cocacola from "./../../Assets/images/slider/coca-cola-2.png";
+import uberEats from "./../../Assets/images/slider/uber-eats2.png";
+import slide4 from "./../../Assets/images/slider/slide-4-2.png";
 import insightsImg from "./../../Assets/images/insights.png";
 import barchartImg from "./../../Assets/images/bar-charts.png";
 import CarouselSlide from "../Carousel/CarouselSlide";
@@ -26,7 +26,6 @@ const HeaderCarousel = () => {
           effect={"creative"}
           creativeEffect={{
             prev: {
-              shadow: true,
               translate: [0, 0, -400],
             },
             next: {

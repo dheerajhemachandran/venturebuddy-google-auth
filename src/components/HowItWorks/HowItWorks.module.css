@@ -11,7 +11,41 @@
     color: #939ca3;
 }
 
+#howItWorks h1 {
+    font-weight: 500;
+    font-size: 42px;
+}
 
+#howItWorks p {
+    color: #6D747A;
+    font-size: 18px;
+}
+
+.hr {
+    background-color: #000;
+    width: 63px;
+    height: 2px;
+    background: #7E88BD;
+    opacity: 0.6;
+    margin: 16px 0;
+}
+
+.serial {
+    font-size: 64px !important;
+    font-weight: 700 !important;
+}
+
+
+
+#counts h1 {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+#counts h6 {
+    font-size: 18px;
+    font-weight: 500;
+}
 
 @media(max-width: 600px) {
     #howItWorks {

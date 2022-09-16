@@ -44,7 +44,7 @@ const HowItWorks = () => {
     <div id={styles.howItWorks}>
       <div className="container-fluid col-lg-7 col-11 mt-5">
         <div className="text-center">
-          <h1 className="text-center text-blue fw-bold">How It Works</h1>
+          <h1 className="text-center text-blue">How It Works</h1>
           <p>Get Started in 4 easy steps</p>
 
           <div className="text-start">
@@ -62,23 +62,25 @@ const HowItWorks = () => {
         </div>
       </div>
 
-      <div className="my-5 py-5 bg-green text-white" id="counts">
-        <div className="container-fluid px-5">
-          <div className="row row-cols-1 row-cols-lg-4">
-            <div className="d-flex align-items-center justify-content-center flex-column flex-lg-row my-3">
-              <h1 className="fw-bolder">1.8B</h1>
+      <div className="my-5 py-5 bg-green text-white" id={styles.counts}>
+        <div className="container-fluid">
+          <div className="d-flex justify-content-evenly">
+            <div className="d-flex align-items-center flex-column flex-lg-row my-3">
+              <h1>1.8B</h1>
               <h6 className="ms-3">Total Valuation</h6>
             </div>
-            <div className="d-flex align-items-center justify-content-center flex-column flex-lg-row my-3">
-              <h1 className="fw-bolder">200+</h1>
-              <h6 className="ms-3">Businesses assisted all over an India</h6>
+            <div className="d-flex align-items-center flex-column flex-lg-row my-3">
+              <h1>200+</h1>
+              <h6 className="ms-3">
+                Businesses assisted <br /> all over an India
+              </h6>
             </div>
-            <div className="d-flex align-items-center justify-content-center flex-column flex-lg-row my-3">
-              <h1 className="fw-bolder">60+</h1>
+            <div className="d-flex align-items-center flex-column flex-lg-row my-3">
+              <h1>60+</h1>
               <h6 className="ms-3">Valued Startups</h6>
             </div>
-            <div className="d-flex align-items-center justify-content-center flex-column flex-lg-row my-3">
-              <h1 className="fw-bolder">15</h1>
+            <div className="d-flex align-items-center flex-column flex-lg-row my-3">
+              <h1>15</h1>
               <h6 className="ms-3">Industries</h6>
             </div>
           </div>

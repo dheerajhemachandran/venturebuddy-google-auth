@@ -1,19 +1,18 @@
 #registerEmail h1 {
-    font-size: 24px !important;
+    font-size: 29px !important;
     font-weight: 700 !important;
     line-height: 32px !important;
 }
 
 #registerEmail {
     padding-top: 16px;
-    padding-left: 56px;
-    padding-right: 78px;
+    padding-left: 61px;
+    padding-right: 96px;
     height: 70vh;
 }
 
 #registerEmail h6 {
-
-    font-size: 16px !important;
+    font-size: 19px !important;
     font-weight: 500 !important;
 }
 
@@ -22,13 +21,17 @@
 }
 
 #or {
-    font-size: 14px !important;
-    font-weight: 600 !important;
+    font-size: 17px !important;
+    font-weight: 700 !important;
     line-height: 16px !important;
     margin: 12px 0;
 }
 
 
+
+#google {
+    font-weight: 600 !important;
+}
 
 #signUp {
     font-weight: 600 !important;
