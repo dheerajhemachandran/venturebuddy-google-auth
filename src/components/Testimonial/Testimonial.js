@@ -97,7 +97,7 @@ const Testimonial = () => {
             </div>
           </button>
         </div>
-        <div class="tab-content col-12 col-lg-7" id="v-pills-tabContent">
+        <div class="tab-content col-12 col-lg-7 pt-3" id="v-pills-tabContent">
           <div
             class="tab-pane fade show active"
             id="v-pills-home"
