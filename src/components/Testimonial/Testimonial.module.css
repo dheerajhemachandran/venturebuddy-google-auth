@@ -42,13 +42,5 @@
     color: #283891;
     /* border-left: 2px solid #283891; */
     margin: 0;
-}
-
-hr {
-    width: 19px;
-    height: 3px;
-    margin: -4px;
-    transform: rotate(90deg);
-    opacity: 100% !important;
-    border-top: 2px solid #283891;
+    text-transform: uppercase;
 }

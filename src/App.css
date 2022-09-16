@@ -190,7 +190,7 @@ section {
   background-color: #fff;
   border: 2px solid #0F1F78;
   color: #0F1F78;
-  ;
+
   border-radius: 8px;
   padding: 16px 0 !important;
   font-weight: 600 !important;
@@ -245,6 +245,9 @@ section {
   font-weight: 400 !important;
 }
 
+#testimonial .text-secondary {
+  font-weight: 500;
+}
 
 #testimonial .nav .active {
   background: #FFFFFF;
@@ -254,6 +257,15 @@ section {
 
 #testimonial .active {
   color: #000 !important;
+}
+
+
+#testimonial .hr {
+  width: 3px !important;
+  height: 15px !important;
+  margin: -2px !important;
+  opacity: 100% !important;
+  background-color: #283891;
 }
 
 .comment-name {
@@ -266,7 +278,7 @@ section {
 }
 
 img.star {
-  width: 16px;
+  width: 18px;
 }
 
 #testimonial .comment {
