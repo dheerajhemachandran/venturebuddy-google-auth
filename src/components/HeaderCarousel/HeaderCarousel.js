@@ -19,7 +19,10 @@ const HeaderCarousel = () => {
 
   return (
     <div className={`mx-lg-4 ${carContainer}`}>
-      <div className="border border-1 p-3 rounded-4 me-5">
+      <div
+        className="border border-1 p-3 rounded-4 me-5"
+        id={styles.sliderContainer}
+      >
         <Swiper
           autoplay={{ delay: 3000 }}
           grabCursor={true}
@@ -33,6 +36,7 @@ const HeaderCarousel = () => {
             },
           }}
           modules={[EffectCreative, Autoplay]}
+          width={452}
         >
           <SwiperSlide>
             <CarouselSlide

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import logo from "./../../Assets/images/logo.png";
 import styles from "./Navbar.module.css";
 
@@ -90,16 +90,17 @@ const Navbar = () => {
                   Login & SignUp
                 </NavLink>
               </li>
-              <li className="nav-item px-4 ps-4 py-0">
-                <div className="position-relative">
-                  <div className="outline mx-auto"></div>
-                  <Link
-                    to="/"
-                    className="btn btn-green mx-auto px-4 py-2 w-100"
-                  >
-                    Live deals
-                  </Link>
-                </div>
+              <li
+                className="nav-item px-4 ps-4 py-0"
+                id={styles.animatedButton}
+              >
+                <div className={styles.outline}></div>
+                <a
+                  href="https://tiny-marzipan-457afd.netlify.app/"
+                  className={`${styles.liveDeals}`}
+                >
+                  Live Deals
+                </a>
               </li>
             </ul>
           </div>
