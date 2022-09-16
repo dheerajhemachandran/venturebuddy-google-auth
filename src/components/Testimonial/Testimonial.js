@@ -20,7 +20,7 @@ const Testimonial = () => {
           aria-orientation="horizontal"
         >
           <button
-            class="nav-link active d-flex align-items-center px-5 py-4"
+            class="nav-link active d-flex align-items-center my-3 px-5 py-4"
             id="v-pills-home-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-home"
