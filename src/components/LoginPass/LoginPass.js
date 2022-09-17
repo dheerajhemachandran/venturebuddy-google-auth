@@ -4,7 +4,6 @@ import eyeImage from "./../../Assets/images/eye.png";
 import styles from "./LoginPass.module.css";
 
 const LoginPass = ({ setPassword }) => {
-  console.log(document.getElementById(styles.eye));
   const [isVisible, setPasswordVisibility] = useState(false);
   const [eye, setEye] = useState("eye");
 

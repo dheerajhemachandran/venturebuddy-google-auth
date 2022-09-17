@@ -14,15 +14,13 @@ const RegisterVerification = ({ email }) => {
 
     // here dynamic value can be use for checking the otp
 
-    // if (result === "1234") {
-    //   setError(false);
+    if (result === "1234") {
+      setError(false);
 
-    //   document.getElementById("next").click();
-    // } else {
-    //   setError(true);
-    // }
-
-    document.getElementById("next").click();
+      document.getElementById("next").click();
+    } else {
+      setError(true);
+    }
   };
 
   useEffect(() => {

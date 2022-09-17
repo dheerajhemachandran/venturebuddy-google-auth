@@ -23,4 +23,5 @@
 
 #sliderContainer {
     box-shadow: 0 0 5px #ddd !important;
+    border-radius: 35px;
 }

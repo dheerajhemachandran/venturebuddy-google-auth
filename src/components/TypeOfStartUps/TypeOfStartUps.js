@@ -14,7 +14,19 @@ const TypeOfStartUps = () => {
   const [buttonActive, setButtonActive] = useState(false);
 
   const setStartUp = (id) => {
-    document.getElementById(id).classList.add(styles.active);
+    const items = document.getElementsByClassName(styles.active);
+    let item = [];
+
+    if (!document.getElementById(id).classList.contains(styles.active)) {
+      document.getElementById(id).classList.add(styles.active);
+      item = [...items];
+      item.length > 0 ? setButtonActive(true) : setButtonActive(false);
+    } else {
+      document.getElementById(id).classList.remove(styles.active);
+
+      item = [...items];
+      item.length > 0 ? setButtonActive(true) : setButtonActive(false);
+    }
   };
 
   const nextOfDeals = () => {
@@ -38,7 +50,6 @@ const TypeOfStartUps = () => {
               id="technology"
               onClick={() => {
                 setStartUp("technology");
-                setButtonActive(true);
               }}
             >
               <img src={technology} alt="" className="mx-auto" />
@@ -51,7 +62,6 @@ const TypeOfStartUps = () => {
               id="ecommerce"
               onClick={() => {
                 setStartUp("ecommerce");
-                setButtonActive(true);
               }}
             >
               <img src={ecommerce} alt="" className="mx-auto" />
@@ -64,7 +74,6 @@ const TypeOfStartUps = () => {
               id="wearables"
               onClick={() => {
                 setStartUp("wearables");
-                setButtonActive(true);
               }}
             >
               <img src={wearables} alt="" className="mx-auto" />
@@ -77,7 +86,6 @@ const TypeOfStartUps = () => {
               id="agency"
               onClick={() => {
                 setStartUp("agency");
-                setButtonActive(true);
               }}
             >
               <img src={agency} alt="" className="mx-auto" />
@@ -90,7 +98,6 @@ const TypeOfStartUps = () => {
               id="marketing"
               onClick={() => {
                 setStartUp("marketing");
-                setButtonActive(true);
               }}
             >
               <img src={marketing} alt="" className="mx-auto" />
@@ -104,7 +111,6 @@ const TypeOfStartUps = () => {
               id="services"
               onClick={() => {
                 setStartUp("services");
-                setButtonActive(true);
               }}
             >
               <img src={services} alt="" className="mx-auto" />
@@ -117,7 +123,6 @@ const TypeOfStartUps = () => {
               id="saas"
               onClick={() => {
                 setStartUp("saas");
-                setButtonActive(true);
               }}
             >
               <img src={saas} alt="" className="mx-auto" />
@@ -130,7 +135,6 @@ const TypeOfStartUps = () => {
               id="consumer"
               onClick={() => {
                 setStartUp("consumer");
-                setButtonActive(true);
               }}
             >
               <img src={consumer} alt="" className="mx-auto img-fluid" />
@@ -143,7 +147,6 @@ const TypeOfStartUps = () => {
               id="others"
               onClick={() => {
                 setStartUp("others");
-                setButtonActive(true);
               }}
             >
               <img src={others} alt="" className="mx-auto" />
@@ -151,9 +154,9 @@ const TypeOfStartUps = () => {
             <h6 className="pt-1">Other</h6>
           </div>
         </div>
-        <div className="text-center">
+        <div className="text-center pb-3">
           <button
-            className={`btn btn-blue px-4 ${buttonActive ? "" : "disabled"}`}
+            className={`btn btn-blue py-3 ${buttonActive ? "" : "disabled"}`}
             onClick={nextOfDeals}
           >
             Next

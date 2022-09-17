@@ -3,11 +3,14 @@ import eyeImage from "./../../Assets/images/eye.png";
 import styles from "./RegisterPass.module.css";
 
 const RegisterPass = () => {
-  const [isVisible, setPasswordVisibility] = useState(true);
+  const [isVisible, setPasswordVisibility] = useState(false);
   const [eye, setEye] = useState("eye");
   const [display, setDisplay] = useState("block");
   const [pass, setPass] = useState("");
   const [encodedPass, setEncodedPass] = useState("");
+  const [pass2, setPassword] = useState("");
+  const [char, setChar] = useState([]);
+  const [encode, setEncode] = useState([]);
 
   if (document.getElementById("register-left")) {
     document.getElementById("register-left").style.display = display;
@@ -32,7 +35,6 @@ const RegisterPass = () => {
 
   useEffect(() => {
     const img = document.createElement("img");
-    document.getElementById("passwordField").value = encodedPass;
     if (isVisible) {
       document.getElementById("passwordField").value = pass;
       img.src = eyeImage;
@@ -40,7 +42,7 @@ const RegisterPass = () => {
       document.getElementById(styles.eye).innerHTML = "";
       document.getElementById(styles.eye).appendChild(img);
     } else {
-      document.getElementById("passwordField").value = encodedPass;
+      document.getElementById("passwordField").value = encode.join("");
       document.getElementById(styles.eye).innerHTML = "";
       const i = document.createElement("i");
       i.classList.add("fas");
@@ -49,11 +51,27 @@ const RegisterPass = () => {
     }
   }, [isVisible]);
 
-  const showPassword = (e) => {
-    setPass(e.target.value);
-    const encode = "*";
-    setEncodedPass(encode.repeat(e.target.value.length));
+  const createPassword = (e) => {
+    if (e.keyCode !== 8) {
+      const password = e.target.value.split("").pop();
+
+      setChar([...char, password]);
+
+      for (let i = 0; i <= e.target.value.length; i++) {
+        setEncode([...encode, "*"]);
+        document.getElementById("passwordField").value = encode.join("");
+      }
+
+      setPass(char.join(""));
+    } else {
+      setChar([]);
+    }
   };
+
+  useEffect(() => {
+    setPassword(char);
+  }, [char]);
+
   return (
     <div className="text-dark" id={styles.registerPass}>
       <h1 className="my-0 pb-4">Signup</h1>
@@ -65,12 +83,14 @@ const RegisterPass = () => {
           className="form-control p-3"
           id="passwordField"
           placeholder="your password"
-          onKeyUp={(e) => showPassword(e)}
+          onKeyUp={(e) => createPassword(e)}
           required
         />
+
         <label id={styles.eye} htmlFor={styles.check}>
           <i className={`fas fa-${eye}`}></i>
         </label>
+
         <input
           type="checkbox"
           id={styles.check}

@@ -14,15 +14,11 @@ import "swiper/css/autoplay";
 import styles from "./HeaderCarousel.module.css";
 
 const HeaderCarousel = () => {
-  console.log(styles);
   const { borderImg, insights, barchart, carContainer } = styles;
 
   return (
     <div className={`mx-lg-4 ${carContainer}`}>
-      <div
-        className="border border-1 p-3 rounded-4 me-5"
-        id={styles.sliderContainer}
-      >
+      <div className="border border-1 p-3 me-5" id={styles.sliderContainer}>
         <Swiper
           autoplay={{ delay: 3000 }}
           grabCursor={true}

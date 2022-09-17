@@ -46,7 +46,7 @@ const TypeOfDeals = () => {
         >
           <h6>Angel Investor</h6> <p>above ₹ 2 lakhs </p>
         </div>
-        <div className="text-center">
+        <div className="text-center mt-5">
           <button
             className={`btn btn-blue px-4 ${buttonActive ? "" : "disabled"}`}
             onClick={nextOfDeals}
