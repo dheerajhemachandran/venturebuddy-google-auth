@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "./TypeOfDeals.module.css";
 
 const TypeOfDeals = () => {
-  console.log(styles);
   const [buttonActive, setButtonActive] = useState(false);
 
   const setRetailActive = () => {

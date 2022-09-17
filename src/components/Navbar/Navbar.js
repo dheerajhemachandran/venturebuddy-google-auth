@@ -64,7 +64,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item text-light py-0">
                 <NavLink className="nav-link" to="/valuation">
-                  Valuation Calculator
+                  Valuation calculator
                 </NavLink>
               </li>
               <li className="nav-item text-light py-0 border-bottom d-lg-none border-3">

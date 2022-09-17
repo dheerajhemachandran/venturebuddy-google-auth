@@ -3,10 +3,11 @@ import eyeImage from "./../../Assets/images/eye.png";
 import styles from "./RegisterPass.module.css";
 
 const RegisterPass = () => {
-  const [isVisible, setPasswordVisibility] = useState(false);
+  const [isVisible, setPasswordVisibility] = useState(true);
   const [eye, setEye] = useState("eye");
   const [display, setDisplay] = useState("block");
   const [pass, setPass] = useState("");
+  const [encodedPass, setEncodedPass] = useState("");
 
   if (document.getElementById("register-left")) {
     document.getElementById("register-left").style.display = display;
@@ -31,26 +32,28 @@ const RegisterPass = () => {
 
   useEffect(() => {
     const img = document.createElement("img");
+    document.getElementById("passwordField").value = encodedPass;
     if (isVisible) {
-      document.getElementById("passwordField").type = "text";
-
-      // document
-      //   .getElementById("passwordField")
-      //   .setAttribute("-webkit-text-security", "none");
+      document.getElementById("passwordField").value = pass;
       img.src = eyeImage;
-      img.width = 18;
+      img.width = 20;
       document.getElementById(styles.eye).innerHTML = "";
       document.getElementById(styles.eye).appendChild(img);
     } else {
+      document.getElementById("passwordField").value = encodedPass;
       document.getElementById(styles.eye).innerHTML = "";
       const i = document.createElement("i");
       i.classList.add("fas");
       i.classList.add("fa-eye-slash");
       document.getElementById(styles.eye).appendChild(i);
-      document.getElementById("passwordField").type = "password";
     }
   }, [isVisible]);
 
+  const showPassword = (e) => {
+    setPass(e.target.value);
+    const encode = "*";
+    setEncodedPass(encode.repeat(e.target.value.length));
+  };
   return (
     <div className="text-dark" id={styles.registerPass}>
       <h1 className="my-0 pb-4">Signup</h1>
@@ -58,11 +61,11 @@ const RegisterPass = () => {
 
       <div id={styles.password}>
         <input
-          type="password"
+          type="text"
           className="form-control p-3"
           id="passwordField"
           placeholder="your password"
-          onChange={(e) => setPass(e.target.value)}
+          onKeyUp={(e) => showPassword(e)}
           required
         />
         <label id={styles.eye} htmlFor={styles.check}>
