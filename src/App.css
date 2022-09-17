@@ -175,7 +175,8 @@ section {
 }
 
 .btn-blue.disabled {
-  background-color: #BFC3DE !important;
+  background-color: #9c9ad3 !important;
+  border: none;
 }
 
 .btn-blue:hover {
