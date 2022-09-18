@@ -15,10 +15,11 @@
 
 #eye {
     position: absolute;
-    top: 30%;
+    top: 16px;
     right: 4%;
     cursor: pointer;
     transform: scaleX(-1);
+    z-index: 999;
 }
 
 #check {

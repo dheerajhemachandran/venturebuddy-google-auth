@@ -10,13 +10,17 @@ const RegisterPass = () => {
   const [pass2, setPassword] = useState("");
   const [char, setChar] = useState([]);
   const [encode, setEncode] = useState([]);
+  const passwordChars = [];
+
+  const stars = [];
+  const chars = [];
 
   if (document.getElementById("register-left")) {
     document.getElementById("register-left").style.display = display;
   }
 
   const submitPassword = () => {
-    if (pass.length > 6) {
+    if (passwordChars.join("").length >= 6) {
       setDisplay("none");
       document.getElementById("next").click();
       document
@@ -52,19 +56,17 @@ const RegisterPass = () => {
 
   const createPassword = (e) => {
     if (e.nativeEvent.data) {
-      const password = e.target.value.split("").pop();
-
-      setChar([...char, password]);
-
-      for (let i = 0; i < e.target.value.length; i++) {
-        setEncode([...encode, "*"]);
-        document.getElementById("passwordField").value = encode.join("");
-      }
-
-      setPass(char.join(""));
+      passwordChars.push(e.target.value.split("").pop());
+      stars.push("*");
+      chars.push(e.target.value);
+      document.getElementById("passwordField2").value = stars.join("");
+      document.getElementById("passwordField3").value = passwordChars.join("");
     } else {
-      char.pop();
-      console.log(char);
+      stars.pop();
+      chars.pop();
+      passwordChars.pop();
+      document.getElementById("passwordField2").value = stars.join("");
+      document.getElementById("passwordField3").value = passwordChars.join("");
     }
   };
 
@@ -80,11 +82,30 @@ const RegisterPass = () => {
       <div id={styles.password}>
         <input
           type="text"
-          className="form-control p-3"
+          className="form-control p-3 position-absolute"
           id="passwordField"
           placeholder="your password"
           onChange={(e) => createPassword(e)}
           required
+          style={{ zIndex: 0 }}
+        />
+        <input
+          type="text"
+          className="form-control p-3 position-absolute"
+          id="passwordField2"
+          placeholder="your password"
+          onChange={(e) => createPassword(e)}
+          required
+          style={isVisible ? { zIndex: 1 } : { zIndex: 2 }}
+        />
+        <input
+          type="text"
+          className="form-control p-3 position-absolute"
+          id="passwordField3"
+          placeholder="your password"
+          onChange={(e) => createPassword(e)}
+          required
+          style={isVisible ? { zIndex: 2 } : { zIndex: 1 }}
         />
 
         <label id={styles.eye} htmlFor={styles.check}>
@@ -100,21 +121,23 @@ const RegisterPass = () => {
         />
       </div>
 
-      <h6 className="pt-4 pb-2">Referral Code (Optional)</h6>
-      <input
-        type="text"
-        className="form-control p-3"
-        placeholder="Your referral code"
-      />
-
+      <div className="mt-5 pt-3">
+        <h6 className="pt-4 pb-2">Referral Code (Optional)</h6>
+        <input
+          type="text"
+          className="form-control p-3"
+          placeholder="Your referral code"
+          id="referral"
+        />
+      </div>
       <input
         type="submit"
-        className="btn-blue w-100"
+        className="btn-blue w-100 mt-4"
         onClick={submitPassword}
         value="NEXT"
       />
       <button
-        className="carousel-control-next mt-3"
+        className="carousel-control-next"
         type="button"
         data-bs-target="#carouselExampleControls"
         data-bs-slide="next"
