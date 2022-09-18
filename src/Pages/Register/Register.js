@@ -11,6 +11,7 @@ import styles from "./Register.module.css";
 const Register = () => {
   const [name, setName] = useState("");
   const { pass, setPass } = useState("");
+  const [emailOrPhone, setEmailOrPhone] = useState("");
 
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -123,12 +124,13 @@ const Register = () => {
                   setName={setName}
                   setEmail={setEmail}
                   setPhone={setPhone}
+                  setEmailOrPhone={setEmailOrPhone}
                   emailValidate={emailValidate}
                 />
               </div>
               <div className="carousel-item">
                 <RegisterVerification
-                  email={email}
+                  email={emailOrPhone}
                   timer={timer}
                   sendOTP={sendOTP}
                 />

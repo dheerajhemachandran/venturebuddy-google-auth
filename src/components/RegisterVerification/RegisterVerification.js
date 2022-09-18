@@ -85,7 +85,7 @@ const RegisterVerification = ({ email, timer, sendOTP }) => {
       <p className="col-10 pb-2 mt-0">
         We have sent a verification code to{" "}
         <span>
-          {email.slice(0, 3)}XXX{email.slice(email.length - 3, email.length)}
+          {email?.slice(0, 3)}XXX{email?.slice(email.length - 3, email.length)}
         </span>
       </p>
 
