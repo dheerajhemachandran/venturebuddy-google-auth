@@ -62,7 +62,7 @@ const WhyChooseUs = () => {
       </div>
 
       <div className="container">
-        <div className="row row-cols-1 row-cols-lg-3 justify-content-center mt-5">
+        <div className="row row-cols-1 row-cols-lg-3 justify-content-center align-items-baseline mt-5">
           {servicess.map((item) => (
             <WhyChooseCard
               id={item.id}

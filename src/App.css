@@ -39,7 +39,7 @@ body {
 }
 
 img#verified {
-  width: 168px !important;
+  width: 137px !important;
 }
 
 section {
@@ -255,6 +255,9 @@ section {
   font-weight: 400 !important;
 }
 
+#rocket h2 {
+  margin-top: 42px;
+}
 
 #testimonial .nav .active {
   background: #FFFFFF;
@@ -267,8 +270,10 @@ section {
 }
 
 
+
+
 #testimonial #hr1 {
-  width: 3px !important;
+  width: 2.8px !important;
   height: 15px !important;
   margin: -2px !important;
   opacity: 100% !important;
