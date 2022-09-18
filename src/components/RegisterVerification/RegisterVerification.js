@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./RegisterVerification.module.css";
 
-const RegisterVerification = ({ email }) => {
+const RegisterVerification = ({ email, timer, sendOTP }) => {
   const [digitOne, setDigitOne] = useState("");
   const [digitTwo, setDigitTwo] = useState("");
   const [digitThree, setDigitThree] = useState("");
@@ -151,12 +151,17 @@ const RegisterVerification = ({ email }) => {
         ></button>
       </form>
       <p className="text-end w-100 ms-1 mt-0">
-        <span
-          className="text-primary py-1 px-2 mt-0 cursor-pointer"
-          style={{ cursor: "pointer" }}
-        >
-          Resend Code
-        </span>
+        {timer === "00:00" ? (
+          <span
+            className="text-primary py-1 px-2 mt-0 cursor-pointer"
+            style={{ cursor: "pointer", fontSize: 18 }}
+            onClick={sendOTP}
+          >
+            Resend code
+          </span>
+        ) : (
+          <span id={styles.resend}>Resend code in {timer} sec</span>
+        )}
       </p>
     </div>
   );

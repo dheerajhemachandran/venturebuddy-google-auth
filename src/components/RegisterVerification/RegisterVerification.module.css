@@ -28,5 +28,12 @@
 #verifyEmail p {
     font-weight: 400;
     color: #6D747A;
-    font-weight: 14px;
+    font-size: 14px;
+}
+
+#resend {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
 }

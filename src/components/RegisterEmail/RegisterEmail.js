@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import gIcon from "./../../Assets/icons/google-icon.png";
 import styles from "./RegisterEmail.module.css";
 
-const RegisterEmail = ({ setEmailOrPhone, emailValidate, setName }) => {
+const RegisterEmail = ({ setEmail, setPhone, emailValidate, setName }) => {
   const [method, setMethod] = useState("email");
 
   useEffect(() => {
@@ -68,23 +68,23 @@ const RegisterEmail = ({ setEmailOrPhone, emailValidate, setName }) => {
         </div>
 
         <div id="email-or-mobile">
-          <div id="mobile-input">
-            <input
-              type="text"
-              id="register-email"
-              className="form-control px-4 py-3"
-              placeholder="Your mobile number"
-              onChange={(e) => setEmailOrPhone(e.target.value)}
-              required
-            />
-          </div>
           <div id="email-input">
             <input
               type="email"
-              id="register-phone"
+              id="register-email"
               className="form-control px-4 py-3"
               placeholder="Your email address"
-              onChange={(e) => setEmailOrPhone(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+          <div id="mobile-input">
+            <input
+              type="phone"
+              id="register-phone"
+              className="form-control px-4 py-3"
+              placeholder="Your mobile number"
+              onChange={(e) => setPhone(e.target.value)}
               required
             />
           </div>

@@ -7,7 +7,6 @@ const RegisterPass = () => {
   const [eye, setEye] = useState("eye");
   const [display, setDisplay] = useState("block");
   const [pass, setPass] = useState("");
-  const [encodedPass, setEncodedPass] = useState("");
   const [pass2, setPassword] = useState("");
   const [char, setChar] = useState([]);
   const [encode, setEncode] = useState([]);
@@ -17,7 +16,7 @@ const RegisterPass = () => {
   }
 
   const submitPassword = () => {
-    if (pass.length > 0) {
+    if (pass.length > 6) {
       setDisplay("none");
       document.getElementById("next").click();
       document
@@ -29,7 +28,7 @@ const RegisterPass = () => {
     } else {
       document
         .getElementById("passwordField")
-        .setCustomValidity("Please enter a password");
+        ?.setCustomValidity("Please enter a password");
     }
   };
 
@@ -52,19 +51,20 @@ const RegisterPass = () => {
   }, [isVisible]);
 
   const createPassword = (e) => {
-    if (e.keyCode !== 8) {
+    if (e.nativeEvent.data) {
       const password = e.target.value.split("").pop();
 
       setChar([...char, password]);
 
-      for (let i = 0; i <= e.target.value.length; i++) {
+      for (let i = 0; i < e.target.value.length; i++) {
         setEncode([...encode, "*"]);
         document.getElementById("passwordField").value = encode.join("");
       }
 
       setPass(char.join(""));
     } else {
-      setChar([]);
+      char.pop();
+      console.log(char);
     }
   };
 
@@ -83,7 +83,7 @@ const RegisterPass = () => {
           className="form-control p-3"
           id="passwordField"
           placeholder="your password"
-          onKeyUp={(e) => createPassword(e)}
+          onChange={(e) => createPassword(e)}
           required
         />
 

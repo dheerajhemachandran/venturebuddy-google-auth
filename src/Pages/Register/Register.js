@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import RegisterEmail from "../../components/RegisterEmail/RegisterEmail";
 import RegisterVerification from "../../components/RegisterVerification/RegisterVerification";
 import RegisterPass from "../../components/RegisterPass/RegisterPass";
@@ -9,9 +9,11 @@ import TermsAndCondition from "../../components/TermsAndCondition/TermsAndCondit
 import styles from "./Register.module.css";
 
 const Register = () => {
-  const [emailOrPhone, setEmailOrPhone] = useState("");
   const [name, setName] = useState("");
   const { pass, setPass } = useState("");
+
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
 
   const emailValidation =
     /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
@@ -19,33 +21,81 @@ const Register = () => {
   const nameValidation = /(^[a-zA-Z][a-zA-Z\s]{0,20}[a-zA-Z]$)/;
 
   const emailValidate = () => {
+    if (emailValidation.test(email) && nameValidation.test(name)) {
+      document.getElementById("next").click();
+      clearTimer(getDeadTime());
+    }
+    if (!emailValidation.test(email)) {
+      document
+        .getElementById("register-email")
+        .setCustomValidity("Please enter a valid email address");
+    }
     if (!nameValidation.test(name)) {
       document
         .getElementById("name")
-        .setCustomValidity("Please enter your name correctly");
+        .setCustomValidity("Your Name is not correct");
     }
 
-    if (!emailOrPhone) {
-      document
-        .getElementById("register-email")
-        .setCustomValidity("Please Enter Your Email");
+    if (phoneValidation.test(phone) && nameValidation.test(name)) {
+      document.getElementById("next").click();
+      clearTimer(getDeadTime());
+    }
+    if (!phoneValidation.test(phone)) {
       document
         .getElementById("register-phone")
-        .setCustomValidity("Please Enter Your Phone Number");
+        .setCustomValidity("Please enter a valid phone number");
     }
+  };
 
-    if (phoneValidation.test(emailOrPhone) && nameValidation.test(name)) {
-      document.getElementById("next").click();
-    } else {
-      if (emailValidation.test(emailOrPhone) && nameValidation.test(name)) {
-        document.getElementById("next").click();
-      } else {
-        document
-          .getElementById("email-input")
-          .setCustomValidity("Email Or Phone Not Valid");
-        document.getElementById("email-input").reportValidity();
-      }
+  const [timer, setTimer] = useState("00:00");
+
+  const Ref = useRef(null);
+
+  const getTimeRemaining = (e) => {
+    const total = Date.parse(e) - Date.parse(new Date());
+    const seconds = Math.floor((total / 1000) % 60);
+    const minutes = Math.floor((total / 1000 / 60) % 60);
+    return {
+      total,
+      minutes,
+      seconds,
+    };
+  };
+
+  const startTimer = (e) => {
+    let { total, hours, minutes, seconds } = getTimeRemaining(e);
+    if (total >= 0) {
+      setTimer(
+        (minutes > 9 ? minutes : "0" + minutes) +
+          ":" +
+          (seconds > 9 ? seconds : "0" + seconds)
+      );
     }
+  };
+
+  const clearTimer = (e) => {
+    setTimer("00:30");
+
+    if (Ref.current) clearInterval(Ref.current);
+    const id = setInterval(() => {
+      startTimer(e);
+    }, 1000);
+    Ref.current = id;
+  };
+
+  const getDeadTime = () => {
+    let deadline = new Date();
+
+    deadline.setSeconds(deadline.getSeconds() + 30);
+    return deadline;
+  };
+
+  const onClickReset = () => {
+    clearTimer(getDeadTime());
+  };
+
+  const sendOTP = () => {
+    onClickReset();
   };
 
   return (
@@ -71,12 +121,17 @@ const Register = () => {
               <div className="carousel-item active">
                 <RegisterEmail
                   setName={setName}
-                  setEmailOrPhone={setEmailOrPhone}
+                  setEmail={setEmail}
+                  setPhone={setPhone}
                   emailValidate={emailValidate}
                 />
               </div>
               <div className="carousel-item">
-                <RegisterVerification email={emailOrPhone} />
+                <RegisterVerification
+                  email={email}
+                  timer={timer}
+                  sendOTP={sendOTP}
+                />
               </div>
               <div className="carousel-item">
                 <RegisterPass setPassword={setPass} />

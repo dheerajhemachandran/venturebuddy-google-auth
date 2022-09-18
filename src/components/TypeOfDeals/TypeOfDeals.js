@@ -27,7 +27,7 @@ const TypeOfDeals = () => {
         className="row row-cols-2 justify-content-center text-blue py-5 m-5 text-center"
       >
         <div
-          className={`bg-white border-1 border border-secondary rounded-4 ${styles.deal}`}
+          className={`bg-white border-1 border border-secondary rounded-4 ${styles.deal} my-2`}
           id={styles.retail}
           onClick={() => {
             setRetailActive();
@@ -37,7 +37,7 @@ const TypeOfDeals = () => {
           <h6>Retail Investor</h6> <p>upto ₹ 2 lakhs </p>
         </div>
         <div
-          className={`bg-white border-1 border border-secondary rounded-4 ${styles.deal}`}
+          className={`bg-white border-1 border border-secondary rounded-4 ${styles.deal} my-2`}
           id={styles.angel}
           onClick={() => {
             setAngelActive();
