@@ -3,27 +3,60 @@ import { Link } from "react-router-dom";
 import eyeImage from "./../../Assets/images/eye.png";
 import styles from "./LoginPass.module.css";
 
-const LoginPass = ({ setPassword }) => {
+const LoginPass = () => {
   const [isVisible, setPasswordVisibility] = useState(false);
   const [eye, setEye] = useState("eye");
+  const [pass, setPass] = useState("");
+  const [encode, setEncode] = useState([]);
+  const passwordChars = [];
+  const passwordField = document.getElementById("passwordField");
+
+  const stars = [];
+  const chars = [];
+
+  const submitPassword = () => {
+    if (passwordChars.join("").length >= 6) {
+    } else {
+      passwordField.setCustomValidity(
+        "Password should be at least 6 character long"
+      );
+      passwordField.reportValidity();
+    }
+  };
 
   useEffect(() => {
     const img = document.createElement("img");
     if (isVisible) {
-      document.getElementById("passwordField").type = "text";
+      document.getElementById("passwordField").value = pass;
       img.src = eyeImage;
-      img.width = 18;
+      img.width = 20;
       document.getElementById(styles.eye).innerHTML = "";
       document.getElementById(styles.eye).appendChild(img);
     } else {
+      document.getElementById("passwordField").value = encode.join("");
       document.getElementById(styles.eye).innerHTML = "";
       const i = document.createElement("i");
       i.classList.add("fas");
       i.classList.add("fa-eye-slash");
       document.getElementById(styles.eye).appendChild(i);
-      document.getElementById("passwordField").type = "password";
     }
   }, [isVisible]);
+
+  const createPassword = (e) => {
+    if (e.nativeEvent.data) {
+      passwordChars.push(e.target.value.split("").pop());
+      stars.push("*");
+      chars.push(e.target.value);
+      document.getElementById("passwordField2").value = stars.join("");
+      document.getElementById("passwordField3").value = passwordChars.join("");
+    } else {
+      stars.pop();
+      chars.pop();
+      passwordChars.pop();
+      document.getElementById("passwordField2").value = stars.join("");
+      document.getElementById("passwordField3").value = passwordChars.join("");
+    }
+  };
 
   return (
     <div id={styles.LoginRight} className="text-dark">
@@ -33,16 +66,37 @@ const LoginPass = ({ setPassword }) => {
       </h6>
       <div id={styles.password}>
         <input
-          type="password"
-          className="form-control p-3"
+          type="text"
+          className="form-control p-3 position-absolute"
           id="passwordField"
           placeholder="your password"
-          onBlur={(e) => setPassword(e.target.value)}
+          onChange={(e) => createPassword(e)}
           required
+          style={{ zIndex: 0 }}
         />
-        <label id={`${styles.eye}`} htmlFor={styles.check}>
+        <input
+          type="text"
+          className="form-control p-3 position-absolute"
+          id="passwordField2"
+          placeholder="your password"
+          onChange={(e) => createPassword(e)}
+          required
+          style={isVisible ? { zIndex: 1 } : { zIndex: 2 }}
+        />
+        <input
+          type="text"
+          className="form-control p-3 position-absolute"
+          id="passwordField3"
+          placeholder="your password"
+          onChange={(e) => createPassword(e)}
+          required
+          style={isVisible ? { zIndex: 2 } : { zIndex: 1 }}
+        />
+
+        <label id={styles.eye} htmlFor={styles.check}>
           <i className={`fas fa-${eye}`}></i>
         </label>
+
         <input
           type="checkbox"
           id={styles.check}
@@ -52,7 +106,13 @@ const LoginPass = ({ setPassword }) => {
         />
       </div>
 
-      <input type="submit" value="LOGIN" className="w-100 btn-blue fw-bold" />
+      <input
+        type="submit"
+        value="LOGIN"
+        className="w-100 btn-blue fw-bold"
+        id={styles.input}
+        onClick={submitPassword}
+      />
       <p className={`text-center text-dark ${styles.or}`}>OR</p>
 
       <button

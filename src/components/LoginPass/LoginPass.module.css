@@ -1,23 +1,35 @@
+#registerPass {
+    padding-top: 16px;
+    padding-left: 56px;
+    padding-right: 78px;
+    height: 70vh;
+}
+
 #password {
     position: relative;
 }
 
+#passwordField {
+    -webkit-text-security: none
+}
+
 #eye {
     position: absolute;
-    top: 30%;
+    top: 16px;
     right: 4%;
     cursor: pointer;
     transform: scaleX(-1);
+    z-index: 999;
 }
 
 #check {
     display: none;
 }
 
+.fa-eye-slash:before {
+    font-size: 15px !important;
+}
 
-
-.or {
-    margin: 16px 0 !important;
-    font-size: 14px !important;
-    font-weight: 600 !important;
+#input {
+    margin-top: 5rem;
 }
