@@ -16,7 +16,11 @@ const Header = () => {
             launched by Uber in 2014.
           </p>
 
-          <a href="#" className="btn btn-secondary-blue mt-3">
+          <a
+            href="#"
+            className="btn btn-secondary-blue mt-3"
+            id={styles.btnText}
+          >
             Become an Investor
           </a>
         </div>

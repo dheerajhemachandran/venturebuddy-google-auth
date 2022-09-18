@@ -35,7 +35,7 @@ const Testimonial = () => {
                 <h5 className={`${styles.commentName} mb-0 pe-2 text-black`}>
                   Rohit Ransore
                 </h5>
-                <div className="hr"></div>
+                <div className="hr" id="hr1"></div>
                 <p className={`ps-2 py-0 mb-0 ${styles.designation}`}>
                   Investor
                 </p>
@@ -59,7 +59,7 @@ const Testimonial = () => {
                 <h5 className={`${styles.commentName} mb-0 pe-2 text-black`}>
                   Jeniffer White
                 </h5>
-                <div className="hr"></div>
+                <div className="hr" id="hr2"></div>
                 <p className={`ps-2 py-0 mb-0 ${styles.designation}`}>
                   Investor
                 </p>
@@ -86,7 +86,7 @@ const Testimonial = () => {
                 <h5 className={`${styles.commentName} mb-0 pe-2 text-black`}>
                   Niromi Taylor
                 </h5>
-                <div className="hr"></div>
+                <div className="hr" id="hr3"></div>
                 <p className={`ps-2 py-0 mb-0 ${styles.designation}`}>
                   Business
                 </p>

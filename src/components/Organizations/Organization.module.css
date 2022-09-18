@@ -25,6 +25,8 @@
 #growBtn {
     font-weight: 600;
     font-size: 14px;
+    width: 153px;
+    height: 55px;
 }
 
 #organizations img {
@@ -35,4 +37,9 @@
 #joinGrowingBusinesses {
     position: relative;
     top: -10rem;
+}
+
+#joinGrowingBusinesses p {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }

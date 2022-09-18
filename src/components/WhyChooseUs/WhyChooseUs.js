@@ -3,6 +3,7 @@ import HasselessProject from "./../../Assets/images/Hasseless-Process.png";
 import investorDashboard from "./../../Assets/images/investor-dashboard.png";
 import periodic from "./../../Assets/images/periodic-reports.png";
 import buddies from "./../../Assets/images/genuine-startups.png";
+import verfiedStartups from "./../../Assets/images/verified-startups.png";
 import WhyChooseCard from "./WhyChooseCard";
 import styles from "./WhyChooseUs.module.css";
 
@@ -10,6 +11,7 @@ const WhyChooseUs = () => {
   const servicess = [
     {
       id: 1,
+      imgId: "hasseless",
       img: HasselessProject,
       header: "1. Hasseless Process",
       description:
@@ -17,6 +19,7 @@ const WhyChooseUs = () => {
     },
     {
       id: 2,
+      imgId: "investor",
       img: investorDashboard,
       header: "2. Investor Dashboards",
       description:
@@ -24,20 +27,23 @@ const WhyChooseUs = () => {
     },
     {
       id: 3,
+      imgId: "periodic",
       img: periodic,
       header: "3. Periodic Reports",
       description:
         "Venturebuddy's team of industry experts & consultants is committed to providing high-quality service to take your business to the next level.",
     },
     {
-      id: 4,
-      img: buddies,
+      id: "rocket",
+      imgId: "verified",
+      img: verfiedStartups,
       header: "4. Verified and Genuine Startups",
       description:
         "We offer end-to-end business consulting services to help you in all stages of your company's growth.",
     },
     {
       id: 5,
+      imgId: "buddies",
       img: buddies,
       header: "5. Venturebuddy’s Tools valuation tool access for Lifetime",
       description:
@@ -59,9 +65,11 @@ const WhyChooseUs = () => {
         <div className="row row-cols-1 row-cols-lg-3 justify-content-center mt-5">
           {servicess.map((item) => (
             <WhyChooseCard
+              id={item.id}
               img={item.img}
               header={item.header}
               desc={item.description}
+              imgId={item.imgId}
             />
           ))}
         </div>

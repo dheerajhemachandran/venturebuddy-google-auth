@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./WhyChooseUs.module.css";
 
-const WhyChooseCard = ({ img, header, desc }) => {
+const WhyChooseCard = ({ id, imgId, img, header, desc }) => {
   return (
-    <div className="col" style={styles.whyChooseCard}>
+    <div className="col" style={styles.whyChooseCard} id={id}>
       <div className="col-10 mx-auto">
-        <img src={img} alt="" className={styles.whyChooseImg} />
+        <img src={img} id={imgId} alt="" className={styles.whyChooseImg} />
         <h2 className={`${styles.whyChooseCardHeader} mx-auto`}>{header}</h2>
-        <p className={`col-9 mx-auto ${styles.whyChooseCardParagraph}`}>
+        <p className={`col-10 mx-auto ${styles.whyChooseCardParagraph}`}>
           {desc}
         </p>
       </div>

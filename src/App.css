@@ -38,6 +38,10 @@ body {
   background: #E9EBF4;
 }
 
+img#verified {
+  width: 168px !important;
+}
+
 section {
   margin: 100px 0;
 }
@@ -68,7 +72,8 @@ section {
 }
 
 .nav-link {
-  font-size: 18px !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
 }
 
 
@@ -250,9 +255,6 @@ section {
   font-weight: 400 !important;
 }
 
-#testimonial .text-secondary {
-  font-weight: 500;
-}
 
 #testimonial .nav .active {
   background: #FFFFFF;
@@ -265,13 +267,31 @@ section {
 }
 
 
-#testimonial .hr {
+#testimonial #hr1 {
   width: 3px !important;
   height: 15px !important;
   margin: -2px !important;
   opacity: 100% !important;
   background-color: #283891;
 }
+
+#testimonial #hr2 {
+  width: 2.5px !important;
+  height: 15px !important;
+  margin: -2px !important;
+  opacity: 100% !important;
+  background-color: #283891;
+}
+
+#testimonial #hr3 {
+  width: 2.5px !important;
+  height: 15px !important;
+  margin: -2px !important;
+  opacity: 100% !important;
+  background-color: #283891;
+}
+
+
 
 .comment-name {
   border-right: 2px solid blue;

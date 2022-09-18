@@ -45,22 +45,20 @@ const Organizations = () => {
 
       <div className="container-fluid px-5">
         <div
-          className="bg-secondary-blue text-center p-5 rounded-4 mx-5"
+          className="bg-secondary-blue p-5 rounded-4 mx-5 text-center"
           id={styles.joinGrowingBusinesses}
         >
-          <div className="py-5">
-            <h1 className="text-blue" id={styles.growHead}>
-              Join 23,000+ growing businesses that use Venturebuddy.
-            </h1>
-            <p className="text-blue py-3">
-              We offer end-to-end business consulting services to help you in
-              all stages of your company's growth.
-            </p>
+          <h1 className="text-blue mb-0" id={styles.growHead}>
+            Join 23,000+ growing businesses that use Venturebuddy.
+          </h1>
+          <p className="text-blue">
+            We offer end-to-end business consulting services to help you in all
+            stages of your company's growth.
+          </p>
 
-            <a href="#" className="btn-blue px-4" id={styles.growBtn}>
-              Get Started
-            </a>
-          </div>
+          <a href="#" className="btn-blue" id={styles.growBtn}>
+            Get Started
+          </a>
         </div>
       </div>
     </>

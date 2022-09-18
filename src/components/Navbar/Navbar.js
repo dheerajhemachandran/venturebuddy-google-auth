@@ -82,11 +82,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="py-0 my-auto">
-                <NavLink
-                  className="text-green nav-link"
-                  to="/login"
-                  style={{ marginLeft: 16 }}
-                >
+                <NavLink className="nav-link" to="/login">
                   Login & SignUp
                 </NavLink>
               </li>

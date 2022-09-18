@@ -1,6 +1,6 @@
 #whyChooseUs {
     background: linear-gradient(180deg, #FFFFFF 0%, #EBF8ED 27.4%, #EBF8ED 74.79%, #FFFFFF 100%);
-    background-size: 100% 98%;
+    background-size: 100% 104%;
     background-repeat: no-repeat;
     background-position: center center;
     padding: 58px 0;
@@ -30,12 +30,12 @@
 
 .whyChooseCardParagraph {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
     color: #6D747A;
 }
 
 .whyChooseImg {
-    width: 73%;
+    width: 55%;
     height: auto;
 }
