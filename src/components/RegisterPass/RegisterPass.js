@@ -11,6 +11,7 @@ const RegisterPass = () => {
   const [char, setChar] = useState([]);
   const [encode, setEncode] = useState([]);
   const passwordChars = [];
+  const passwordField = document.getElementById("passwordField");
 
   const stars = [];
   const chars = [];
@@ -30,9 +31,10 @@ const RegisterPass = () => {
         .getElementById("Register_registerLeft__hroVu")
         .classList.remove("d-md-block");
     } else {
-      document
-        .getElementById("passwordField")
-        ?.setCustomValidity("Please enter a password");
+      passwordField.setCustomValidity(
+        "Password should be at least 6 character long"
+      );
+      passwordField.reportValidity();
     }
   };
 
