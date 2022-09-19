@@ -14,13 +14,13 @@ const Testimonial = () => {
 
       <div class="d-flex align-items-start flex-column flex-lg-row p-5">
         <div
-          class="nav nav-pills col-12 col-lg-5 pe-5"
+          class="nav nav-pills col-12 col-lg-5"
           id="v-pills-tab"
           role="tablist"
           aria-orientation="horizontal"
         >
           <button
-            class="nav-link active d-flex align-items-center my-3 px-5 py-4"
+            class="nav-link active d-flex align-items-center my-3 px-3 py-4"
             id="v-pills-home-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-home"
@@ -29,22 +29,27 @@ const Testimonial = () => {
             aria-controls="v-pills-home"
             aria-selected="true"
           >
-            <img src={rohitImg} className="col-2 my-2" alt="" />
-            <div className="col-10 text-start">
-              <div className="d-flex align-items-center ps-3 bold">
-                <h5 className={`${styles.commentName} mb-0 pe-2 text-black`}>
-                  Rohit Ransore
-                </h5>
-                <div className="hr" id="hr1"></div>
-                <p className={`ps-2 py-0 mb-0 ${styles.designation}`}>
-                  Investor
-                </p>
+            <div className="col-2">
+              <img src={rohitImg} className="my-2 img-fluid" alt="" />
+            </div>
+            <div className="col-10 text-start ps-1">
+              <div className="row align-items-center bold">
+                <div className="col-7 ps-4 pe-0">
+                  <h5 className={`${styles.commentName} mb-0 text-black`}>
+                    Rohit Ransore
+                  </h5>
+                </div>
+
+                <div className="col-4 px-0 d-flex align-items-center gap-1">
+                  <div className="hr"></div>
+                  <p className={`py-0 mb-0 ${styles.designation}`}>Investor</p>
+                </div>
               </div>
-              <div className="ms-3 pt-0 text-secondary">UX Designer, ATG</div>
+              <div className="pt-0 text-secondary ps-2">UX Designer, ATG</div>
             </div>
           </button>
           <button
-            class="nav-link d-flex align-items-center my-3 px-5 py-4"
+            class="nav-link d-flex align-items-center my-3 px-3 py-4"
             id="v-pills-profile-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-profile"
@@ -53,25 +58,30 @@ const Testimonial = () => {
             aria-controls="v-pills-profile"
             aria-selected="false"
           >
-            <img src={jeniffer} className="col-2 my-2" alt="" />
-            <div className="col-10 text-start">
-              <div className="d-flex align-items-center ps-3 bold">
-                <h5 className={`${styles.commentName} mb-0 pe-2 text-black`}>
-                  Jeniffer White
-                </h5>
-                <div className="hr" id="hr2"></div>
-                <p className={`ps-2 py-0 mb-0 ${styles.designation}`}>
-                  Investor
-                </p>
+            <div className="col-2">
+              <img src={jeniffer} className="my-2 img-fluid" alt="" />
+            </div>
+            <div className="col-10 text-start ps-1">
+              <div className="row align-items-center bold">
+                <div className="col-7 ps-4 pe-0">
+                  <h5 className={`${styles.commentName} mb-0 text-black`}>
+                    Jeniffer White
+                  </h5>
+                </div>
+
+                <div className="col-4 px-0 d-flex align-items-center gap-1">
+                  <div className="hr"></div>
+                  <p className={`py-0 mb-0 ${styles.designation}`}>INVESTOR</p>
+                </div>
               </div>
-              <div className="ms-3 pt-0 text-secondary">
+              <div className="pt-0 text-secondary ps-2">
                 Vice President, Google
               </div>
             </div>
           </button>
 
           <button
-            class="nav-link d-flex align-items-center my-3 px-5 py-4"
+            class="nav-link d-flex align-items-center my-3 px-3 py-4"
             id="v-pills-messages-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-messages"
@@ -80,18 +90,25 @@ const Testimonial = () => {
             aria-controls="v-pills-messages"
             aria-selected="false"
           >
-            <img src={Niromi} className="col-2 my-2" alt="" />
-            <div className="col-10 text-start">
-              <div className="d-flex align-items-center ps-3 bold">
-                <h5 className={`${styles.commentName} mb-0 pe-2 text-black`}>
-                  Niromi Taylor
-                </h5>
-                <div className="hr" id="hr3"></div>
-                <p className={`ps-2 py-0 mb-0 ${styles.designation}`}>
-                  Business
-                </p>
+            <div className="col-2">
+              <img src={Niromi} className="my-2 img-fluid" alt="" />
+            </div>
+            <div className="col-10 text-start ps-1">
+              <div className="row align-items-center bold">
+                <div className="col-7 ps-4 pe-0">
+                  <h5 className={`${styles.commentName} mb-0 text-black`}>
+                    Niromi Taylor{" "}
+                  </h5>
+                </div>
+
+                <div className="col-4 px-0 d-flex align-items-center gap-1">
+                  <div className="hr"></div>
+                  <p className={`py-0 mb-0 ${styles.designation} px-0`}>
+                    Business
+                  </p>
+                </div>
               </div>
-              <div className="ms-3 pt-0 text-secondary">
+              <div className="pt-0 text-secondary ps-2">
                 Senior Manager, IKEA
               </div>
             </div>

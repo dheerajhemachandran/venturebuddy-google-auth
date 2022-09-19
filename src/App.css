@@ -272,26 +272,10 @@ section {
 
 
 
-#testimonial #hr1 {
+#testimonial .hr {
+  display: inline-block;
   width: 2.5px !important;
   height: 15px !important;
-  margin: -2px !important;
-  opacity: 100% !important;
-  background-color: #283891;
-}
-
-#testimonial #hr2 {
-  width: 2.5px !important;
-  height: 15px !important;
-  margin: -2px !important;
-  opacity: 100% !important;
-  background-color: #283891;
-}
-
-#testimonial #hr3 {
-  width: 2.5px !important;
-  height: 15px !important;
-  margin: -2px !important;
   opacity: 100% !important;
   background-color: #283891;
 }
