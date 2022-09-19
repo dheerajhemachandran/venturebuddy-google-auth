@@ -62,12 +62,30 @@
     color: #18a62b;
 }
 
-#types {
-    grid-gap: 0 60px;
-}
-
 #typeOfDeals h5 {
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #types {
+        grid-gap: 0 60px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #types {
+        grid-gap: 0 60px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #types {
+        grid-gap: 0 60px;
+    }
 }

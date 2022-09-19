@@ -41,7 +41,7 @@ const TypeOfStartUps = () => {
 
       <div className="row text-blue text-dark pt-5 pb-0 mb-0">
         <div
-          className="row row-cols-2 row-cols-md-5 justify-content-center mx-auto gap-0"
+          className="row row-cols-3 row-cols-md-5 justify-content-center mx-auto gap-0"
           id={styles.startUpContainer}
         >
           <div className="text-center py-2 p-0 d-flex align-items-center justify-content-center flex-column">

@@ -3,8 +3,14 @@
 
 
 
+#prev2 {
+  transform: rotate(180deg);
+  /* width: 100px; */
+  font-size: 30px;
+}
 
-input[name="method"] {
+input[name="method"],
+input[name="method2"] {
   accent-color: #3E4C9C;
   width: 20px;
   height: 20px;
@@ -151,7 +157,7 @@ section {
 
 .carousel p {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   margin-top: 18px;
   margin-bottom: 12px;
@@ -202,7 +208,7 @@ section {
   color: #0F1F78;
 
   border-radius: 8px;
-  padding: 16px 0 !important;
+  padding: 16px 0;
   font-weight: 600 !important;
 }
 

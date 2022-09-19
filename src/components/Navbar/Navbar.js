@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import logo from "./../../Assets/images/logo.png";
 import styles from "./Navbar.module.css";
@@ -6,6 +6,10 @@ import styles from "./Navbar.module.css";
 const Navbar = () => {
   const links = document.getElementsByClassName("nav-link");
   const location = useLocation();
+  const [arrowVisibility, setArrowVisibility] = useState("visible");
+  const registerEmailActiveness = document.getElementById("register-email-page")
+    ?.classList[1];
+
   useEffect(() => {
     for (let i = 0; i <= links.length; i++) {
       links[i]?.addEventListener("click", () => {
@@ -15,6 +19,13 @@ const Navbar = () => {
       });
     }
   }, [links]);
+
+  useEffect(() => {
+    console.log(location);
+    location.pathname === "/register" && registerEmailActiveness === "active"
+      ? (document.getElementById("prev2").style.display = "none")
+      : (document.getElementById("prev2").style.display = "block");
+  }, [registerEmailActiveness, location, location.pathname]);
 
   return (
     <div className={`bg-white sticky-top py-0`}>
@@ -32,24 +43,36 @@ const Navbar = () => {
       <nav
         className={`navbar navbar-expand-lg fw-bold mt-0 px-lg-5 ${styles.navbar}`}
       >
-        <div className="container-fluid">
-          <div className="col-4 col-lg-2">
+        <div className="container-fluid py-2">
+          <div className="col-4 col-lg-2 order-1 mx-auto fixed-sm-top mx-lg-0 order-lg-0">
             <NavLink to="/">
               <img src={logo} className="img-fluid col-8" alt="" />
             </NavLink>
           </div>
 
           <button
-            className="navbar-toggler"
+            className="carousel-control-prev text-dark d-lg-none"
+            type="button"
+            data-bs-target="#carouselExampleControls2"
+            data-bs-slide="prev"
+            id="prev2"
+          >
+            &#x2794;
+          </button>
+
+          <button
+            className="navbar-toggler border-0"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarText"
             aria-controls="navbarText"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            id="toggler"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+
           <div className="collapse navbar-collapse" id="navbarText">
             <ul className="navbar-nav ms-auto gap-4 mb-2 mb-lg-0">
               <li className="nav-item text-light py-0">
@@ -83,7 +106,7 @@ const Navbar = () => {
               </li>
               <li className="py-0 my-auto">
                 <NavLink className="nav-link" to="/login">
-                  Login & SignUp
+                  Login & Signup
                 </NavLink>
               </li>
               <li

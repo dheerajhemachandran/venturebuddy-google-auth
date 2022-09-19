@@ -29,3 +29,39 @@
 .fa-eye-slash:before {
     font-size: 15px !important;
 }
+
+
+@media only screen and (max-width: 600px) {
+    #registerPass {
+        background: white;
+        padding: 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #registerPass {
+        background: white;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #registerPass {
+        background: #F7F8F9;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #registerPass {
+        background: #F7F8F9;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #registerPass {
+        background: #F7F8F9;
+    }
+}

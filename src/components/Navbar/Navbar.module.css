@@ -35,15 +35,16 @@
     left: 0;
     top: -4px;
     animation: button-animation 1s infinite ease-in-out;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .liveDeals {
     position: absolute;
-    top: 8px;
+    top: 10px;
     color: #E9EBF4;
     text-decoration: none;
     width: 100%;
+    font-weight: 600;
 }
 
 .liveDeals:hover {

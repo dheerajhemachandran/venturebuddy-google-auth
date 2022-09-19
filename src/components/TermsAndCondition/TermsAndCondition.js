@@ -38,6 +38,7 @@ const TermsAndCondition = () => {
         </p>
       </div>
       <div className="text-center pb-3">
+        <button className="btn-outline-blue px-4 me-2">Decline</button>
         <button className="btn-blue px-4">ACCEPT</button>
       </div>
     </>

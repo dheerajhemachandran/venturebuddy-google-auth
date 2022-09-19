@@ -12,7 +12,7 @@ const Testimonial = () => {
         What Clients say About us
       </h1>
 
-      <div class="d-flex align-items-start flex-column flex-lg-row p-5">
+      <div class="row align-items-start flex-column flex-lg-row p-5">
         <div
           class="nav nav-pills col-12 col-lg-5"
           id="v-pills-tab"
@@ -20,7 +20,7 @@ const Testimonial = () => {
           aria-orientation="horizontal"
         >
           <button
-            class="nav-link active d-flex align-items-center my-3 px-3 py-4"
+            class="nav-link active d-flex align-items-center my-3 py-4"
             id="v-pills-home-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-home"
@@ -42,14 +42,14 @@ const Testimonial = () => {
 
                 <div className="col-4 px-0 d-flex align-items-center gap-1">
                   <div className="hr"></div>
-                  <p className={`py-0 mb-0 ${styles.designation}`}>Investor</p>
+                  <p className={`pt-1 mb-0 ${styles.designation}`}>Investor</p>
                 </div>
               </div>
               <div className="pt-0 text-secondary ps-2">UX Designer, ATG</div>
             </div>
           </button>
           <button
-            class="nav-link d-flex align-items-center my-3 px-3 py-4"
+            class="nav-link d-flex align-items-center my-3 py-4"
             id="v-pills-profile-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-profile"
@@ -71,7 +71,7 @@ const Testimonial = () => {
 
                 <div className="col-4 px-0 d-flex align-items-center gap-1">
                   <div className="hr"></div>
-                  <p className={`py-0 mb-0 ${styles.designation}`}>INVESTOR</p>
+                  <p className={`pt-1 mb-0 ${styles.designation}`}>INVESTOR</p>
                 </div>
               </div>
               <div className="pt-0 text-secondary ps-2">
@@ -81,7 +81,7 @@ const Testimonial = () => {
           </button>
 
           <button
-            class="nav-link d-flex align-items-center my-3 px-3 py-4"
+            class="nav-link d-flex align-items-center my-3 py-4"
             id="v-pills-messages-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-messages"
@@ -103,7 +103,7 @@ const Testimonial = () => {
 
                 <div className="col-4 px-0 d-flex align-items-center gap-1">
                   <div className="hr"></div>
-                  <p className={`py-0 mb-0 ${styles.designation} px-0`}>
+                  <p className={`pt-1 mb-0 ${styles.designation} px-0`}>
                     Business
                   </p>
                 </div>

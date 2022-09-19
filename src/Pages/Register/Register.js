@@ -22,8 +22,10 @@ const Register = () => {
   const nameValidation = /(^[a-zA-Z][a-zA-Z\s]{0,20}[a-zA-Z]$)/;
 
   const emailValidate = () => {
+    document.getElementById("toggler").style.display = "none";
     if (emailValidation.test(email) && nameValidation.test(name)) {
       document.getElementById("next").click();
+      document.getElementById("next2").click();
       clearTimer(getDeadTime());
     }
     if (!emailValidation.test(email)) {
@@ -100,8 +102,8 @@ const Register = () => {
   };
 
   return (
-    <div className="container" id="register">
-      <div className="row mt-5 mx-auto col-12 col-lg-9 justify-content-center">
+    <div className="container px-0" id="register">
+      <div className="row mx-auto col-12 col-lg-9 justify-content-center">
         <div
           className="text-center col-5 d-none d-md-block"
           id={styles.registerLeft}
@@ -119,7 +121,7 @@ const Register = () => {
             data-loop="false"
           >
             <div className="carousel-inner">
-              <div className="carousel-item active">
+              <div className="carousel-item active" id="register-email-page">
                 <RegisterEmail
                   setName={setName}
                   setEmail={setEmail}

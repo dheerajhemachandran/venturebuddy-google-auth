@@ -57,7 +57,7 @@ const RegisterPass = () => {
   }, [isVisible]);
 
   const createPassword = (e) => {
-    if (e.nativeEvent.data !== null) {
+    if (e.nativeEvent.data) {
       passwordChars.push(e.target.value.split("").pop());
       stars.push("*");
       chars.push(e.target.value);
