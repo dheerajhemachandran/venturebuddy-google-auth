@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./TermsAndCondition.module.css";
 
 const TermsAndCondition = () => {
@@ -39,7 +40,9 @@ const TermsAndCondition = () => {
       </div>
       <div className="text-center pb-3">
         <button className="btn-outline-blue px-4 me-2">Decline</button>
-        <button className="btn-blue px-4">ACCEPT</button>
+        <Link to="/" className="btn-blue px-4">
+          ACCEPT
+        </Link>
       </div>
     </>
   );

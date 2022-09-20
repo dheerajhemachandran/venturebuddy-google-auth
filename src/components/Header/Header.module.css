@@ -27,6 +27,50 @@
     color: #283891;
 }
 
-#header {
-    padding: 0 68px !important;
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #header {
+        padding: 16px 40px;
+    }
+
+    #logo {
+        position: absolute;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #header {
+        padding: 16px 123px;
+    }
+
+    #logo {
+        position: absolute;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #header {
+        padding: 16px 68px;
+    }
+
+    #logo {
+        position: static;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #header {
+        padding: 16px 68px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #header {
+        padding: 16px 68px;
+    }
 }

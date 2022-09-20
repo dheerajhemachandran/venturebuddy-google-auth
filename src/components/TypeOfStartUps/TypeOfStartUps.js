@@ -131,7 +131,7 @@ const TypeOfStartUps = () => {
           </div>
           <div className="text-center py-2 p-0 d-flex align-items-center justify-content-center flex-column">
             <div
-              className={`${styles.startUp} rounded-circle mt-4 mt-sm-0 mt-md-4 p-4 d-flex justify-content-center align-items-center`}
+              className={`${styles.startUp} rounded-circle mt-sm-0 mt-md-4 p-4 d-flex justify-content-center align-items-center`}
               id="consumer"
               onClick={() => {
                 setStartUp("consumer");
