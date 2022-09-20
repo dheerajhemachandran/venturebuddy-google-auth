@@ -23,6 +23,8 @@ const Register = () => {
 
   const emailValidate = () => {
     document.getElementById("toggler").style.display = "none";
+    document.getElementById("prev2").style.display = "block";
+
     if (emailValidation.test(email) && nameValidation.test(name)) {
       document.getElementById("next").click();
       document.getElementById("next2").click();

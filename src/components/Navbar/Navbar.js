@@ -3,10 +3,10 @@ import { NavLink, useLocation } from "react-router-dom";
 import logo from "./../../Assets/images/logo.png";
 import styles from "./Navbar.module.css";
 
-const Navbar = () => {
+const Navbar = ({ arrowVisibility, setArrowVisibility }) => {
   const links = document.getElementsByClassName("nav-link");
   const location = useLocation();
-  const [arrowVisibility, setArrowVisibility] = useState("visible");
+
   const registerEmailActiveness = document.getElementById("register-email-page")
     ?.classList[1];
 
@@ -21,11 +21,15 @@ const Navbar = () => {
   }, [links]);
 
   useEffect(() => {
-    console.log(location);
-    location.pathname === "/register" && registerEmailActiveness === "active"
-      ? (document.getElementById("prev2").style.display = "none")
-      : (document.getElementById("prev2").style.display = "block");
-  }, [registerEmailActiveness, location, location.pathname]);
+    if (
+      location.pathname === "/register" &&
+      registerEmailActiveness === "active"
+    ) {
+      setArrowVisibility(false);
+    } else {
+      setArrowVisibility(true);
+    }
+  }, [registerEmailActiveness, location.pathname]);
 
   return (
     <div className={`bg-white sticky-top py-0`}>
@@ -56,6 +60,7 @@ const Navbar = () => {
             data-bs-target="#carouselExampleControls2"
             data-bs-slide="prev"
             id="prev2"
+            style={arrowVisibility ? { display: "block" } : { display: "none" }}
           >
             &#x2794;
           </button>

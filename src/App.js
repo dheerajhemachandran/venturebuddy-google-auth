@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
@@ -8,9 +9,14 @@ import Register from "./Pages/Register/Register";
 const App = () => {
   const location = useLocation();
 
+  const [arrowVisibility, setArrowVisibility] = useState(false);
+
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar
+        arrowVisibility={arrowVisibility}
+        setArrowVisibility={setArrowVisibility}
+      ></Navbar>
 
       <Routes>
         <Route path="/" element={<Home />} />
