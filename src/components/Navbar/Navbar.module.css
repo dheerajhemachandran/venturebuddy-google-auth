@@ -26,7 +26,9 @@
     margin: auto;
 }
 
-
+#logo img {
+    /* width: 100%; */
+}
 
 #animatedButton {
     position: relative;
@@ -70,6 +72,10 @@
     #navbar {
         padding: 16px 0;
     }
+
+    #logo {
+        position: absolute;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -77,12 +83,20 @@
     #navbar {
         padding: 16px 68px;
     }
+
+    #logo {
+        position: absolute;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     #navbar {
         padding: 16px 68px;
+    }
+
+    #logo {
+        position: static;
     }
 }
 

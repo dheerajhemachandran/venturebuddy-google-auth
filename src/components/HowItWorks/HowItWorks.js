@@ -64,22 +64,22 @@ const HowItWorks = () => {
 
       <div className="my-5 py-5 bg-green text-white" id={styles.counts}>
         <div className="container-fluid">
-          <div className="d-flex justify-content-evenly">
-            <div className="d-flex align-items-center flex-column flex-lg-row my-3">
+          <div className="row row-cols-lg-4 row-cols-2">
+            <div className="d-flex align-items-center flex-column justify-content-center flex-lg-row my-3">
               <h1>1.8B</h1>
               <h6 className="ms-3">Total Valuation</h6>
             </div>
-            <div className="d-flex align-items-center flex-column flex-lg-row my-3">
+            <div className="d-flex align-items-center flex-column justify-content-center flex-lg-row my-3">
               <h1>200+</h1>
               <h6 className="ms-3">
                 Businesses assisted <br /> all over an India
               </h6>
             </div>
-            <div className="d-flex align-items-center flex-column flex-lg-row my-3">
+            <div className="d-flex align-items-center flex-column justify-content-center flex-lg-row my-3">
               <h1>60+</h1>
               <h6 className="ms-3">Valued Startups</h6>
             </div>
-            <div className="d-flex align-items-center flex-column flex-lg-row my-3">
+            <div className="d-flex align-items-center flex-column justify-content-center flex-lg-row my-3">
               <h1>15</h1>
               <h6 className="ms-3">Industries</h6>
             </div>

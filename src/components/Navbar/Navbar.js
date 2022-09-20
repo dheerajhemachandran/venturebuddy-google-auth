@@ -49,11 +49,11 @@ const Navbar = ({ arrowVisibility, setArrowVisibility }) => {
         </a>
       </div>
       <nav
-        className={`navbar navbar-expand-lg fw-bold mt-0 px-lg-5`}
+        className={`navbar navbar-expand-lg fw-bold mt-0`}
         id={styles.navbar}
       >
         <div
-          className="col-4 col-lg-2 order-1 mx-auto fixed-sm-top mx-lg-0 order-lg-0 position-absolute top-0 my-3 ms-lg-5 ps-lg-5"
+          className="col-4 col-lg-2 order-1 mx-auto fixed-sm-top mx-lg-0 order-lg-0 top-0 py-3 py-lg-0"
           id={styles.logo}
         >
           <NavLink to="/">

@@ -4,9 +4,9 @@ import styles from "./Header.module.css";
 
 const Header = () => {
   return (
-    <header className="container-fluid">
-      <div className="row align-items-center px-5">
-        <div className="order-2 col-12 col-lg-5 order-lg-0 py-5 ps-lg-5">
+    <header className="container-fluid" id={styles.header}>
+      <div className="row align-items-center">
+        <div className="order-2 col-12 col-lg-5 order-lg-0 py-5">
           <h6 className="text-blue" id={styles.h6}>
             THE INVESTMENT PLATFORM
           </h6>
@@ -26,7 +26,7 @@ const Header = () => {
         </div>
 
         <div className="col-12 col-lg-7 mx-lg-auto">
-          <div className="col-12 col-lg-8 mx-lg-auto mt-3 pe-0 pe-lg-5">
+          <div className="col-12 col-lg-8 ms-0 ms-lg-auto me-lg-5 mt-3 pe-0 pe-lg-5">
             <HeaderCarousel />
           </div>
         </div>

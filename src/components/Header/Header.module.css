@@ -26,3 +26,7 @@
 #btnText:hover {
     color: #283891;
 }
+
+#header {
+    padding: 0 68px !important;
+}

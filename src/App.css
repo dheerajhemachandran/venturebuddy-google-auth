@@ -80,8 +80,13 @@ section {
 .nav-link {
   font-size: 16px !important;
   font-weight: 500 !important;
+  color: #6d747a !important;
 }
 
+.nav-link.active {
+  color: #39B54A !important;
+  font-weight: 500 !important;
+}
 
 .text-green {
   color: #39B54A;
