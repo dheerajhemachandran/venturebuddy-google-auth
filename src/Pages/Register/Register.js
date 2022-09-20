@@ -104,7 +104,7 @@ const Register = () => {
   };
 
   return (
-    <div className="container px-0" id="register">
+    <div className="container px-0 pt-5" id="register">
       <div className="row mx-auto col-12 col-lg-9 justify-content-center">
         <div
           className="text-center col-5 d-none d-md-block"

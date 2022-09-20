@@ -4,6 +4,7 @@
     height: 80px;
     padding: 23px 21px;
     cursor: pointer;
+    transition: all .2s;
 }
 
 #typeOfStartUps h5 {

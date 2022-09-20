@@ -16,7 +16,7 @@ const Organizations = () => {
             2500+ Organisations using our services
           </h4>
 
-          <div className="row row-cols-6 mx-5 px-4">
+          <div className="row row-cols-2 row-cols-lg-6 mx-5 px-4">
             <div className="col text-center my-auto">
               <img src={dhl} alt="" />
             </div>
@@ -43,9 +43,9 @@ const Organizations = () => {
         </>
       </div>
 
-      <div className="container-fluid px-5">
+      <div className="container-fluid px-0 px-lg-5">
         <div
-          className="bg-secondary-blue p-5 rounded-4 mx-5 text-center"
+          className="bg-secondary-blue rounded-4 mx-5 text-center"
           id={styles.joinGrowingBusinesses}
         >
           <h1 className="text-blue mb-0" id={styles.growHead}>

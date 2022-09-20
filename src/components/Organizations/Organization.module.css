@@ -36,7 +36,8 @@
 
 #joinGrowingBusinesses {
     position: relative;
-    top: -10rem;
+    top: -11rem;
+    padding: 72px 0;
 }
 
 #joinGrowingBusinesses p {

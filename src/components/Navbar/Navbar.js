@@ -29,6 +29,10 @@ const Navbar = ({ arrowVisibility, setArrowVisibility }) => {
     } else {
       setArrowVisibility(true);
     }
+
+    if (location.pathname !== "/register") {
+      setArrowVisibility(false);
+    }
   }, [registerEmailActiveness, location.pathname]);
 
   return (
@@ -45,17 +49,20 @@ const Navbar = ({ arrowVisibility, setArrowVisibility }) => {
         </a>
       </div>
       <nav
-        className={`navbar navbar-expand-lg fw-bold mt-0 px-lg-5 ${styles.navbar}`}
+        className={`navbar navbar-expand-lg fw-bold mt-0 px-lg-5`}
+        id={styles.navbar}
       >
-        <div className="container-fluid py-2">
-          <div className="col-4 col-lg-2 order-1 mx-auto fixed-sm-top mx-lg-0 order-lg-0">
-            <NavLink to="/">
-              <img src={logo} className="img-fluid col-8" alt="" />
-            </NavLink>
-          </div>
-
+        <div
+          className="col-4 col-lg-2 order-1 mx-auto fixed-sm-top mx-lg-0 order-lg-0 position-absolute top-0 my-3 ms-lg-5 ps-lg-5"
+          id={styles.logo}
+        >
+          <NavLink to="/">
+            <img src={logo} className="img-fluid col-8" alt="" />
+          </NavLink>
+        </div>
+        <div className="container-fluid py-0">
           <button
-            className="carousel-control-prev text-dark d-lg-none"
+            className="carousel-control-prev text-dark d-lg-none mt-5"
             type="button"
             data-bs-target="#carouselExampleControls2"
             data-bs-slide="prev"
@@ -66,7 +73,7 @@ const Navbar = ({ arrowVisibility, setArrowVisibility }) => {
           </button>
 
           <button
-            className="navbar-toggler border-0"
+            className="navbar-toggler border-0 col-2"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarText"

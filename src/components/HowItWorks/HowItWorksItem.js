@@ -9,7 +9,7 @@ const HowItWorksItem = ({ serial, heading, paragraph, image, reverse }) => {
           <div className="col px-0">
             <img src={image} alt="" className="img-fluid col-9" />
           </div>
-          <div className="col order-2 order-lg-0 ps-5">
+          <div className="col order-2 order-lg-0 ps-3 ps-lg-5">
             <div className="col-12 col-lg-8">
               <h1 className={`text-blue text-start fw-bolder ${styles.serial}`}>
                 {serial}
