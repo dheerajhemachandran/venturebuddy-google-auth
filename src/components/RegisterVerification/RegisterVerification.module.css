@@ -1,6 +1,6 @@
 .otp {
-    width: 65px;
-    height: 60px;
+    width: 54px;
+    height: 52px;
     text-align: center;
     font-size: 14px;
     border: 1px solid #d9d9d9;
@@ -36,4 +36,89 @@
     font-size: 18px;
     line-height: 20px;
     color: #000;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #verifyEmail h6 {
+        margin-top: 36px;
+        margin-bottom: 16px;
+    }
+
+    #verifyEmail p {
+        margin-bottom: 16px;
+    }
+
+    #timer {
+        margin-top: 6px !important;
+        margin-bottom: 24px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #verifyEmail h6 {
+        margin-top: 36px;
+        margin-bottom: 16px;
+    }
+
+    #verifyEmail p {
+        margin-bottom: 16px;
+    }
+
+    #timer {
+        margin-top: 6px !important;
+        margin-bottom: 24px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #verifyEmail h6 {
+        margin-top: 36px;
+        margin-bottom: 16px;
+    }
+
+    #verifyEmail p {
+        margin-bottom: 16px;
+    }
+
+    #timer {
+        margin-top: 6px !important;
+        margin-bottom: 24px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #verifyEmail h6 {
+        margin-top: 36px;
+        margin-bottom: 16px;
+    }
+
+    #verifyEmail p {
+        margin-bottom: 16px;
+    }
+
+    #timer {
+        margin-top: 6px !important;
+        margin-bottom: 24px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #verifyEmail h6 {
+        margin-top: 36px;
+        margin-bottom: 16px;
+    }
+
+    #verifyEmail p {
+        margin-bottom: 16px;
+    }
+
+    #timer {
+        margin-top: 6px !important;
+        margin-bottom: 24px;
+    }
 }

@@ -78,8 +78,8 @@ const RegisterPass = () => {
 
   return (
     <div className="text-dark" id={styles.registerPass}>
-      <h1 className="my-0 pb-4">Signup</h1>
-      <h6 className="pb-2">Set Password</h6>
+      <h1>Signup</h1>
+      <h6>Set Password</h6>
 
       <div id={styles.password}>
         <input

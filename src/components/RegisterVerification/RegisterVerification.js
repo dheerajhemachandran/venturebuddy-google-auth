@@ -97,7 +97,7 @@ const RegisterVerification = ({ email, timer, sendOTP }) => {
   return (
     <>
       <div className="text-dark d-none d-lg-block" id={styles.verifyEmail}>
-        <h1 className="my-0 pb-4">Signup</h1>
+        <h1 className="my-0">Signup</h1>
         <h6 className="pb-2">Enter Verification Code</h6>
         <p className="col-10 pb-2 mt-0">
           We have sent a verification code to{" "}
@@ -187,9 +187,9 @@ const RegisterVerification = ({ email, timer, sendOTP }) => {
         className="text-dark d-lg-none bg-white px-2"
         id={styles.verifyEmail}
       >
-        <h1 className="my-0 pb-4">Signup</h1>
-        <h6 className="pb-2">Enter Verification Code</h6>
-        <p className="col-10 pb-2 mt-0">
+        <h1 className="my-0">Signup</h1>
+        <h6>Enter Verification Code</h6>
+        <p className="col-10">
           We have sent a verification code to{" "}
           <span>
             {email?.slice(0, 3)}XXX
@@ -243,7 +243,7 @@ const RegisterVerification = ({ email, timer, sendOTP }) => {
 
           {error ? <p id="error">Please enter a valid PIN</p> : ""}
 
-          <p className="text-end w-100 ms-1 mt-1">
+          <p className="text-end w-100" id={styles.timer}>
             {timer === "00:00" ? (
               <span
                 className="text-primary py-1 px-2 mt-0 cursor-pointer"
@@ -259,7 +259,7 @@ const RegisterVerification = ({ email, timer, sendOTP }) => {
 
           <input
             type="submit"
-            className={`btn-blue w-100 ${error ? "mt-0" : ""}`}
+            className={`btn-blue mt-0 w-100 ${error ? "mt-0" : ""}`}
             onClick={checkOTP}
             value="NEXT"
           />

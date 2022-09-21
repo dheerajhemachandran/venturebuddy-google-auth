@@ -144,13 +144,15 @@ const RegisterEmail = ({
       </form>
 
       <form
-        className="my-auto d-flex d-lg-none flex-column justify-content-between text-dark px-2 bg-white"
+        className="my-auto d-flex d-lg-none flex-column justify-content-between text-dark px-3 bg-white"
         onSubmit={(e) => e.preventDefault()}
         id={styles.registerEmail}
       >
-        <h1 className="my-0">Signup</h1>
-        <p className="pb-4 fw-normal">Let’s get you started.</p>
-        <h6 className="pb-2">Full Name</h6>
+        <div className="signup-heading">
+          <h1 className="my-0">Signup</h1>
+          <p className="fw-normal my-0">Let’s get you started.</p>
+        </div>
+        <h6>Full Name</h6>
 
         <input
           id="name"

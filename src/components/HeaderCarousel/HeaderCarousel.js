@@ -18,7 +18,7 @@ const HeaderCarousel = () => {
 
   return (
     <div className={`mx-lg-4 ${carContainer}`}>
-      <div className="border border-1 p-3 me-5" id={styles.sliderContainer}>
+      <div className="border border-1 p-3 me-lg-5" id={styles.sliderContainer}>
         <Swiper
           autoplay={{ delay: 3000 }}
           grabCursor={true}

@@ -3,6 +3,11 @@
     padding-left: 56px;
     padding-right: 78px;
     height: 70vh;
+    color: #000;
+}
+
+#registerPass h1 {
+    font-size: 20px;
 }
 
 #password {
@@ -36,12 +41,22 @@
         background: white;
         padding: 10px;
     }
+
+    #registerPass h1 {
+        margin-bottom: 36px;
+        /* font-size: 20px; */
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     #registerPass {
         background: white;
+    }
+
+    #registerPass h1 {
+        margin-bottom: 36px;
+        /* font-size: 20px; */
     }
 }
 
@@ -50,6 +65,11 @@
     #registerPass {
         background: #F7F8F9;
     }
+
+    #registerPass h1 {
+        margin-bottom: 36px;
+        /* font-size: 20px; */
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -57,11 +77,21 @@
     #registerPass {
         background: #F7F8F9;
     }
+
+    #registerPass h1 {
+        margin-bottom: 36px;
+        /* font-size: 20px; */
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     #registerPass {
         background: #F7F8F9;
+    }
+
+    #registerPass h1 {
+        margin-bottom: 36px;
+        /* font-size: 20px; */
     }
 }

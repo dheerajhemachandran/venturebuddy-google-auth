@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import logo from "./../../Assets/images/logo.png";
 import styles from "./Navbar.module.css";
+import arrow from "./../../Assets/icons/arrow.png";
 
 const Navbar = ({ arrowVisibility, setArrowVisibility }) => {
   const links = document.getElementsByClassName("nav-link");
@@ -33,7 +34,12 @@ const Navbar = ({ arrowVisibility, setArrowVisibility }) => {
     if (location.pathname !== "/register") {
       setArrowVisibility(false);
     }
-  }, [registerEmailActiveness, location.pathname]);
+  }, [
+    registerEmailActiveness,
+    location.pathname,
+    arrowVisibility,
+    setArrowVisibility,
+  ]);
 
   return (
     <div className={`bg-white sticky-top py-0`}>
@@ -53,27 +59,27 @@ const Navbar = ({ arrowVisibility, setArrowVisibility }) => {
         id={styles.navbar}
       >
         <div
-          className="col-4 col-lg-2 order-1 mx-auto fixed-sm-top mx-lg-0 order-lg-0 top-0 py-3 py-lg-0"
+          className="col-4 col-lg-2 order-1 mx-auto fixed-sm-top mx-lg-0 order-lg-0 top-0 py-4 py-lg-0 my-auto"
           id={styles.logo}
         >
           <NavLink to="/">
-            <img src={logo} className="img-fluid col-8" alt="" />
+            <img src={logo} className="img-fluid col-10 col-lg-8" alt="" />
           </NavLink>
         </div>
         <div className="container-fluid py-0">
           <button
-            className="carousel-control-prev text-dark d-lg-none mt-5"
+            className="carousel-control-prev position-relative text-dark d-lg-none"
             type="button"
             data-bs-target="#carouselExampleControls2"
             data-bs-slide="prev"
             id="prev2"
             style={arrowVisibility ? { display: "block" } : { display: "none" }}
           >
-            &#x2794;
+            <img src={arrow} alt="" className="img-fluid" />
           </button>
 
           <button
-            className="navbar-toggler border-0 col-2"
+            className="navbar-toggler border-0 col-2 p-0"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarText"

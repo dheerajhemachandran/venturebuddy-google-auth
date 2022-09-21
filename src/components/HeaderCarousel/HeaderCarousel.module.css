@@ -30,7 +30,7 @@
 @media only screen and (max-width: 600px) {
     .carContainer {
         position: relative;
-        width: 451px;
+        width: 351px;
         height: 533px;
     }
 }
@@ -39,7 +39,7 @@
 @media only screen and (min-width: 600px) {
     .carContainer {
         position: relative;
-        width: 451px;
+        width: 351px;
         height: 533px;
     }
 }

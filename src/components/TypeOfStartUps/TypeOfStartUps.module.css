@@ -1,5 +1,6 @@
-.startUp {
-    background-color: rgba(62, 76, 156, 0.6);
+.startUpImg {
+    background-color: #3E4C9C !important;
+    opacity: 0.6;
     width: 80px;
     height: 80px;
     padding: 23px 21px;
@@ -14,7 +15,7 @@
 
 #typeOfStartUps h6 {
     font-size: 14px !important;
-    font-weight: 400 !important;
+    font-weight: 400;
 }
 
 div#consumer {
@@ -30,9 +31,14 @@ div#consumer img {
     width: 40px;
 }
 
-.startUp.active {
-    background-color: #4dbc5c;
+.startUp.active .startUpImg {
+    background-color: #4dbc5c !important;
+    opacity: 1;
     box-shadow: 0px 0px 16px rgba(77, 188, 92, 0.5);
+}
+
+.startUp.active .startUpText {
+    font-weight: 600 !important;
 }
 
 #startUpContainer {
@@ -42,3 +48,21 @@ div#consumer img {
 #typeOfStartUps button.disabled {
     background-color: #BFC3DE;
 }
+
+@media only screen and (max-width: 600px) {
+    #typeOfStartUps {
+        height: 90vh;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

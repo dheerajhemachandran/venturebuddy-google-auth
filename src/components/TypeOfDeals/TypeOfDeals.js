@@ -19,7 +19,7 @@ const TypeOfDeals = () => {
   };
 
   return (
-    <div className="text-dark mt-5 px-0" id={styles.typeOfDeals}>
+    <div className="text-dark mt-5 px-2" id={styles.typeOfDeals}>
       <h5 className="text-center">What type of deals are you looking for?</h5>
 
       <div
@@ -27,7 +27,7 @@ const TypeOfDeals = () => {
         className="row row-cols-2 justify-content-center text-blue py-5 m-lg-5 text-center"
       >
         <div
-          className={`bg-white border-1 border border-secondary rounded-4 ${styles.deal} my-2 mx-2`}
+          className={`bg-white border-1 border border-secondary rounded-4 ${styles.deal} my-2`}
           id={styles.retail}
           onClick={() => {
             setRetailActive();
@@ -37,7 +37,7 @@ const TypeOfDeals = () => {
           <h6>Retail Investor</h6> <p>upto ₹ 2 lakhs </p>
         </div>
         <div
-          className={`bg-white border-1 border border-secondary rounded-4 ${styles.deal} my-2 mx-2`}
+          className={`bg-white border-1 border border-secondary rounded-4 ${styles.deal} my-2`}
           id={styles.angel}
           onClick={() => {
             setAngelActive();
@@ -46,7 +46,7 @@ const TypeOfDeals = () => {
         >
           <h6>Angel Investor</h6> <p>above ₹ 2 lakhs </p>
         </div>
-        <div className="text-center mt-5">
+        <div className="text-center mt-lg-5">
           <button
             className={`btn btn-blue px-4 ${buttonActive ? "" : "disabled"}`}
             onClick={nextOfDeals}

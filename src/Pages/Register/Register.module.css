@@ -25,13 +25,6 @@
     margin-top: 63px;
 }
 
-
-#registerRight label {
-    font-size: 19px !important;
-    font-weight: 500;
-}
-
-
 #registerRight {
     background-color: #f8f9fa;
     border-radius: 10px;
@@ -40,4 +33,65 @@
 
 #termsContainer {
     width: 100%;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #registerRight {
+        color: #000;
+    }
+
+    #registerRight label {
+        font-size: 16px !important;
+        font-weight: 500;
+    }
+
+    #termsContainer {
+        height: 90vh;
+    }
+
+    #termsAndCondition {
+        height: 80vh;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #registerRight label {
+        font-size: 16px !important;
+        font-weight: 500;
+    }
+
+    #termsContainer {
+        height: 90vh;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #registerRight label {
+        font-size: 19px !important;
+        font-weight: 500;
+    }
+
+    #termsContainer {
+        height: 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #registerRight label {
+        font-size: 19px !important;
+        font-weight: 500;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #registerRight label {
+        font-size: 19px !important;
+        font-weight: 500;
+    }
 }
