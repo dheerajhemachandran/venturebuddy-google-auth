@@ -60,6 +60,11 @@
     color: #39B54A;
 }
 
+#arrowIcon {
+    width: 30%;
+    height: auto;
+}
+
 #animatedButton:hover .outline {
     animation: none;
     background: transparent !important;

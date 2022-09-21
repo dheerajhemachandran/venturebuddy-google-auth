@@ -75,7 +75,12 @@ const Navbar = ({ arrowVisibility, setArrowVisibility }) => {
             id="prev2"
             style={arrowVisibility ? { display: "block" } : { display: "none" }}
           >
-            <img src={arrow} alt="" className="img-fluid" />
+            <img
+              src={arrow}
+              alt=""
+              className="img-fluid"
+              id={styles.arrowIcon}
+            />
           </button>
 
           <button
