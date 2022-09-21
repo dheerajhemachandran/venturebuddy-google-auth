@@ -6,6 +6,7 @@ const TermsAndCondition = () => {
   const setAccept = () => {
     document.getElementById("prev2").style.display = "none";
     document.getElementById("toggler").style.display = "block";
+    document.getElementById("toggler").classList.add("d-lg-none");
   };
   return (
     <>
