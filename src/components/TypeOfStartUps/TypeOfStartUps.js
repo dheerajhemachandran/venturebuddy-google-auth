@@ -148,7 +148,7 @@ const TypeOfStartUps = () => {
             id="consumer"
           >
             <div
-              className={`${styles.startUpImg} rounded-circle mt-sm-0 mt-md-4 p-4 d-flex justify-content-center align-items-center`}
+              className={`${styles.startUpImg} rounded-circle mt-sm-0 p-4 d-flex justify-content-center align-items-center`}
               onClick={() => {
                 setStartUp("consumer");
               }}

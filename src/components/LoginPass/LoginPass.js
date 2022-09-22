@@ -1,21 +1,27 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import eyeImage from "./../../Assets/images/eye.png";
 import styles from "./LoginPass.module.css";
 
-const LoginPass = () => {
-  const [isVisible, setPasswordVisibility] = useState(false);
-  const [eye, setEye] = useState("eye");
-  const [pass, setPass] = useState("");
-  const [encode, setEncode] = useState([]);
-  const passwordChars = [];
-  const passwordField = document.getElementById("passwordField");
+const stars = [];
+const passwordChars = [];
 
-  const stars = [];
-  const chars = [];
+const LoginPass = () => {
+  const navigate = useNavigate("");
+  const passwordValidate =
+    /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm;
+  const passwordField = document.getElementById("passwordField2");
+
+  const [isVisible, setPasswordVisibility] = useState(false);
 
   const submitPassword = () => {
     if (passwordChars.join("").length >= 6) {
+      if (passwordValidate.test(passwordChars.join(""))) {
+        navigate("/");
+      } else {
+        passwordField.setCustomValidity("Try to create a stronger password");
+        passwordField.reportValidity();
+      }
     } else {
       passwordField.setCustomValidity(
         "Password should be at least 6 character long"
@@ -27,13 +33,11 @@ const LoginPass = () => {
   useEffect(() => {
     const img = document.createElement("img");
     if (isVisible) {
-      document.getElementById("passwordField").value = pass;
       img.src = eyeImage;
       img.width = 20;
       document.getElementById(styles.eye).innerHTML = "";
       document.getElementById(styles.eye).appendChild(img);
     } else {
-      document.getElementById("passwordField").value = encode.join("");
       document.getElementById(styles.eye).innerHTML = "";
       const i = document.createElement("i");
       i.classList.add("fas");
@@ -43,18 +47,29 @@ const LoginPass = () => {
   }, [isVisible]);
 
   const createPassword = (e) => {
-    if (e.nativeEvent.data) {
-      passwordChars.push(e.target.value.split("").pop());
+    if (e.nativeEvent.data !== null) {
       stars.push("*");
-      chars.push(e.target.value);
+      passwordChars.push(e.target.value.split("").pop());
       document.getElementById("passwordField2").value = stars.join("");
-      document.getElementById("passwordField3").value = passwordChars.join("");
     } else {
       stars.pop();
-      chars.pop();
       passwordChars.pop();
       document.getElementById("passwordField2").value = stars.join("");
-      document.getElementById("passwordField3").value = passwordChars.join("");
+    }
+  };
+
+  const createEncodedPassword = (e) => {
+    if (e.nativeEvent.data !== null) {
+      passwordChars.push(e.target.value.split("").pop());
+      stars.push("*");
+      e.target.value = stars.join("");
+      document.getElementById("passwordField").value = passwordChars.join("");
+    } else {
+      passwordChars.pop();
+      stars.pop();
+      e.target.value = stars.join("");
+
+      document.getElementById("passwordField").value = passwordChars.join("");
     }
   };
 
@@ -72,29 +87,20 @@ const LoginPass = () => {
           placeholder="your password"
           onChange={(e) => createPassword(e)}
           required
-          style={{ zIndex: 0 }}
+          style={isVisible ? { zIndex: 1 } : { zIndex: 0 }}
         />
         <input
           type="text"
           className="form-control p-3 position-absolute"
           id="passwordField2"
           placeholder="your password"
-          onChange={(e) => createPassword(e)}
+          onChange={(e) => createEncodedPassword(e)}
+          style={isVisible ? { zIndex: 0 } : { zIndex: 1 }}
           required
-          style={isVisible ? { zIndex: 1 } : { zIndex: 2 }}
-        />
-        <input
-          type="text"
-          className="form-control p-3 position-absolute"
-          id="passwordField3"
-          placeholder="your password"
-          onChange={(e) => createPassword(e)}
-          required
-          style={isVisible ? { zIndex: 2 } : { zIndex: 1 }}
         />
 
         <label id={styles.eye} htmlFor={styles.check}>
-          <i className={`fas fa-${eye}`}></i>
+          <i className="fas fa-eye"></i>
         </label>
 
         <input

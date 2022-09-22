@@ -2,19 +2,16 @@ import React, { useEffect, useState } from "react";
 import eyeImage from "./../../Assets/images/eye.png";
 import styles from "./RegisterPass.module.css";
 
-const RegisterPass = () => {
-  const [isVisible, setPasswordVisibility] = useState(false);
-  const [eye, setEye] = useState("eye");
-  const [display, setDisplay] = useState("block");
-  const [pass, setPass] = useState("");
-  const [pass2, setPassword] = useState("");
-  const [char, setChar] = useState([]);
-  const [encode, setEncode] = useState([]);
-  const passwordChars = [];
-  const passwordField = document.getElementById("passwordField");
+const stars = [];
+const passwordChars = [];
 
-  const stars = [];
-  const chars = [];
+const RegisterPass = () => {
+  const [display, setDisplay] = useState("block");
+  const passwordValidate =
+    /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm;
+  const passwordField = document.getElementById("passwordField2");
+
+  const [isVisible, setPasswordVisibility] = useState(false);
 
   if (document.getElementById("register-left")) {
     document.getElementById("register-left").style.display = display;
@@ -22,14 +19,19 @@ const RegisterPass = () => {
 
   const submitPassword = () => {
     if (passwordChars.join("").length >= 6) {
-      setDisplay("none");
-      document.getElementById("next").click();
-      document
-        .getElementById("Register_registerRight__IOYTK")
-        .classList.remove("col-md-7");
-      document
-        .getElementById("Register_registerLeft__hroVu")
-        .classList.remove("d-md-block");
+      if (passwordValidate.test(passwordChars.join(""))) {
+        setDisplay("none");
+        document.getElementById("next").click();
+        document
+          .getElementById("Register_registerRight__IOYTK")
+          .classList.remove("col-md-7");
+        document
+          .getElementById("Register_registerLeft__hroVu")
+          .classList.remove("d-md-block");
+      } else {
+        passwordField.setCustomValidity("Try to create a stronger password");
+        passwordField.reportValidity();
+      }
     } else {
       passwordField.setCustomValidity(
         "Password should be at least 6 character long"
@@ -41,13 +43,11 @@ const RegisterPass = () => {
   useEffect(() => {
     const img = document.createElement("img");
     if (isVisible) {
-      document.getElementById("passwordField").value = pass;
       img.src = eyeImage;
       img.width = 20;
       document.getElementById(styles.eye).innerHTML = "";
       document.getElementById(styles.eye).appendChild(img);
     } else {
-      document.getElementById("passwordField").value = encode.join("");
       document.getElementById(styles.eye).innerHTML = "";
       const i = document.createElement("i");
       i.classList.add("fas");
@@ -57,24 +57,31 @@ const RegisterPass = () => {
   }, [isVisible]);
 
   const createPassword = (e) => {
-    if (e.nativeEvent.data) {
-      passwordChars.push(e.target.value.split("").pop());
+    if (e.nativeEvent.data !== null) {
       stars.push("*");
-      chars.push(e.target.value);
+      passwordChars.push(e.target.value.split("").pop());
       document.getElementById("passwordField2").value = stars.join("");
-      document.getElementById("passwordField3").value = passwordChars.join("");
     } else {
       stars.pop();
-      chars.pop();
       passwordChars.pop();
       document.getElementById("passwordField2").value = stars.join("");
-      document.getElementById("passwordField3").value = passwordChars.join("");
     }
   };
 
-  useEffect(() => {
-    setPassword(char);
-  }, [char]);
+  const createEncodedPassword = (e) => {
+    if (e.nativeEvent.data !== null) {
+      passwordChars.push(e.target.value.split("").pop());
+      stars.push("*");
+      e.target.value = stars.join("");
+      document.getElementById("passwordField").value = passwordChars.join("");
+    } else {
+      passwordChars.pop();
+      stars.pop();
+      e.target.value = stars.join("");
+
+      document.getElementById("passwordField").value = passwordChars.join("");
+    }
+  };
 
   return (
     <div className="text-dark" id={styles.registerPass}>
@@ -89,29 +96,20 @@ const RegisterPass = () => {
           placeholder="your password"
           onChange={(e) => createPassword(e)}
           required
-          style={{ zIndex: 0 }}
+          style={isVisible ? { zIndex: 1 } : { zIndex: 0 }}
         />
         <input
           type="text"
           className="form-control p-3 position-absolute"
           id="passwordField2"
           placeholder="your password"
-          onChange={(e) => createPassword(e)}
+          onChange={(e) => createEncodedPassword(e)}
+          style={isVisible ? { zIndex: 0 } : { zIndex: 1 }}
           required
-          style={isVisible ? { zIndex: 1 } : { zIndex: 2 }}
-        />
-        <input
-          type="text"
-          className="form-control p-3 position-absolute"
-          id="passwordField3"
-          placeholder="your password"
-          onChange={(e) => createPassword(e)}
-          required
-          style={isVisible ? { zIndex: 2 } : { zIndex: 1 }}
         />
 
         <label id={styles.eye} htmlFor={styles.check}>
-          <i className={`fas fa-${eye}`}></i>
+          <i className="fas fa-eye"></i>
         </label>
 
         <input
