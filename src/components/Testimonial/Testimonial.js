@@ -7,7 +7,7 @@ import styles from "./Testimonial.module.css";
 
 const Testimonial = () => {
   return (
-    <div className="container-fluid p-5" id="testimonial">
+    <div className="container-fluid" id="testimonial">
       <h1 className="text-blue text-center" id={styles.sectionHeader}>
         What Clients say About us
       </h1>
