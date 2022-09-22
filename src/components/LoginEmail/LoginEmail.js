@@ -27,6 +27,14 @@ const LoginEmail = ({ setPhoneOrEmail }) => {
     }
   };
 
+  const handleGoogleSignIn = (e) => {
+    e.preventDefault();
+
+    // google authentication functionality will go here
+    // ..
+    // ..
+  };
+
   return (
     <>
       <div id="login-right" className="text-dark">
@@ -66,7 +74,10 @@ const LoginEmail = ({ setPhoneOrEmail }) => {
 
           <p className="text-center fw-bold or">OR</p>
 
-          <button className="btn-outline-blue w-100">
+          <button
+            className="btn-outline-blue w-100"
+            onClick={handleGoogleSignIn}
+          >
             <img src={gIcon} className="img-fluid me-3" width={20} alt="" />
             Login with Google
           </button>

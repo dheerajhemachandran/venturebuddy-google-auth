@@ -38,7 +38,10 @@ const Login = () => {
                 <LoginEmail setPhoneOrEmail={setPhoneOrEmail}></LoginEmail>
               </div>
               <div className="carousel-item" id={styles.carouselItem}>
-                <LoginPass setPassword={setPassword}></LoginPass>
+                <LoginPass
+                  setPassword={setPassword}
+                  email={phoneOrEmail}
+                ></LoginPass>
               </div>
               <div className="carousel-item" id={styles.carouselItem}>
                 <OTP phoneOrEmail={phoneOrEmail}></OTP>

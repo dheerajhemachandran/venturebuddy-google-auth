@@ -6,7 +6,7 @@ import styles from "./LoginPass.module.css";
 const stars = [];
 const passwordChars = [];
 
-const LoginPass = () => {
+const LoginPass = ({ email }) => {
   const navigate = useNavigate("");
   const passwordValidate =
     /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm;
@@ -17,6 +17,8 @@ const LoginPass = () => {
   const submitPassword = () => {
     if (passwordChars.join("").length >= 6) {
       if (passwordValidate.test(passwordChars.join(""))) {
+        // login with email and password functionalities will go here
+
         navigate("/");
       } else {
         passwordField.setCustomValidity("Try to create a stronger password");
