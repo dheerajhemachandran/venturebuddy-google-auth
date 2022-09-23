@@ -16,6 +16,10 @@ const OTP = ({ phoneOrEmail }) => {
     result === "1234" ? setError(false) : setError(true);
   };
 
+  const changeEmail = () => {
+    document.getElementById("slide1").click();
+  };
+
   useEffect(() => {
     if (error) {
       for (const items of document.getElementsByClassName(styles.otp)) {
@@ -74,11 +78,20 @@ const OTP = ({ phoneOrEmail }) => {
   return (
     <div id={styles.loginRight} className="rounded-4 rounded-md-0 text-dark">
       <div className="mx-0 px-0 h-100">
-        <p className="text-center fw-bold mt-5 pt-3">
+        <p
+          className="text-center mt-5 pt-3"
+          style={{ fontWeight: 500, fontSize: "16px", lineHeight: "24px" }}
+        >
           Please enter the OTP sent to <br /> {phoneOrEmail}.
-          <span className="text-blue py-1 px-1">Change</span>
+          <span
+            className="text-blue px-1 cursor-pointer"
+            id={styles.changeText}
+            onClick={changeEmail}
+          >
+            Change
+          </span>
         </p>
-        <h6 className="mt-4 fw-bolder ps-1" style={{ marginTop: "32px" }}>
+        <h6 className="mt-4 ps-1" style={{ marginTop: "32px" }}>
           Enter OTP
         </h6>
         <form style={{ marginTop: 10 }} onSubmit={checkOTP}>

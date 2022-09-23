@@ -32,7 +32,35 @@ const Login = () => {
             id="carouselExampleControls"
             className="carousel slide"
             data-loop="false"
+            // data-bs-ride="true"
           >
+            <div class="carousel-indicators bg-primary">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide-to="0"
+                class="active d-none"
+                id="slide1"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide-to="1"
+                class="d-none"
+                id="slide2"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+                class="d-none"
+                id="slide3"
+              ></button>
+            </div>
             <div className="carousel-inner">
               <div className="carousel-item active" id={styles.carouselItem}>
                 <LoginEmail setPhoneOrEmail={setPhoneOrEmail}></LoginEmail>
