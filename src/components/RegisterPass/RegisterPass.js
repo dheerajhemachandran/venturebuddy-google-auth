@@ -93,6 +93,7 @@ const RegisterPass = () => {
           type="text"
           className="form-control p-3 position-absolute"
           id="passwordField"
+          autoComplete="off"
           placeholder="your password"
           onChange={(e) => createPassword(e)}
           required
@@ -102,6 +103,7 @@ const RegisterPass = () => {
           type="text"
           className="form-control p-3 position-absolute"
           id="passwordField2"
+          autoComplete="off"
           placeholder="your password"
           onChange={(e) => createEncodedPassword(e)}
           style={isVisible ? { zIndex: 0 } : { zIndex: 1 }}

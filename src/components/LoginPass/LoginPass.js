@@ -15,6 +15,7 @@ const LoginPass = ({ email }) => {
   const [isVisible, setPasswordVisibility] = useState(false);
 
   const submitPassword = () => {
+    console.log(passwordChars);
     if (passwordChars.join("").length >= 6) {
       if (passwordValidate.test(passwordChars.join(""))) {
         // login with email and password functionalities will go here
@@ -86,6 +87,7 @@ const LoginPass = ({ email }) => {
           type="text"
           className="form-control p-3 position-absolute"
           id="passwordField"
+          autoComplete="off"
           placeholder="your password"
           onChange={(e) => createPassword(e)}
           required
@@ -96,6 +98,7 @@ const LoginPass = ({ email }) => {
           className="form-control p-3 position-absolute"
           id="passwordField2"
           placeholder="your password"
+          autoComplete="off"
           onChange={(e) => createEncodedPassword(e)}
           style={isVisible ? { zIndex: 0 } : { zIndex: 1 }}
           required
